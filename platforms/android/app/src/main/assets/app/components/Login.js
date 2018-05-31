@@ -13,29 +13,17 @@ module.exports = {
         if (this.$userdata[i].account == this.AccountText && this.$userdata[i].password == this.PasswordText) {
           console.log("Login Successfully!");
 
-          var tmp_data = this.$userdata[i].account + "`" + this.$userdata[i].password + "`" + this.$userdata[i].dsp + "`true`" + i;
-          console.log(tmp_data);
-          
           this.$userdata[i].online = true;
           this.$userdata[i].id = i;
-
-          this.$cur_user_data_account.value = this.$userdata[i].account;
-          this.$cur_user_data_password.value = this.$userdata[i].password;
-          this.$cur_user_data_dsp.value = this.$userdata[i].dsp;
-          this.$cur_user_data_online.value = true;
-          this.$cur_user_data_id.value = i;
-
+      
           this.$cur_user_data.account.value = this.$userdata[i].account;
           this.$cur_user_data.password.value = this.$userdata[i].password;
           this.$cur_user_data.dsp.value = this.$userdata[i].dsp;
           this.$cur_user_data.online.value = true;
           this.$cur_user_data.id.value = i;
 
-          console.log(this.$cur_user_data);
-
-
-          this.$test.value = true;
-          this.$router.push('/profile');
+          this.$router.push('/user_profile');
+          
         }
       }
     },

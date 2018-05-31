@@ -49,60 +49,6 @@ Vue.prototype.$cur_user_data = {
     }
   }
 };
-Vue.prototype.$cur_user_data_account = {
-  value: "None",
-  set: function (data) {
-    this.value = data;
-  },
-};
-Vue.prototype.$cur_user_data_password = {
-  value: "None",
-  set: function (data) {
-    this.value = data;
-  },
-};
-Vue.prototype.$cur_user_data_dsp = {
-  value: "None",
-  set: function (data) {
-    this.value = data;
-  },
-};
-Vue.prototype.$cur_user_data_online = {
-  value: false,
-  set: function (data) {
-    this.value = data;
-  },
-};
-Vue.prototype.$cur_user_data_id = {
-  value: -1,
-  set: function (data) {
-    this.value = data;
-  },
-};
-Vue.prototype.$test = {
-  value: false,
-  set: function (prop) {
-    this.value = prop;
-  },
-  get: function () {
-    return this.value;
-  }
-};
-/*
-Object.defineProperty($cur_user_data, account, {
-  __proto__: null,
-  value: ""
-});
-
-console.log($cur_user_data.account);
-*/
-/*
-Vue.mixin({
-  created: function () {
-    this.UserId = -1;
-  }
-});
-*/
 
 const router = new VueRouter({
   pageRouting: true,

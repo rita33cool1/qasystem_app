@@ -2,11 +2,9 @@ module.exports = {
     data() {
         return {
             cur_user: this.$cur_user_data,
-            /*
-            cur_account: this.$cur_user_data_account,
-            cur_password: this.$cur_user_data_password,
-            new_dsp: this.$cur_user_data_dsp,
-            */
+            cur_account: cur_user.account.value,
+            cur_password: cur_user.password.value,
+            cur_dsp: cur_user.dsp.value
         }
     },
     methods: {
@@ -26,13 +24,13 @@ module.exports = {
                 <FormattedString>
                     <Span text="User Profile : \n\n" />
                     <Span text="UserAccount : " fontWeight="Bold" />
-                    <Span fontWeight="Bold" >{{ cur_user.account.value }}</Span>
+                    <Span fontWeight="Bold" >{{ cur_account }}</Span>
                     <Span text="\n" />
                     <Span text="UserPassword : " fontWeight="Bold" />
-                    <Span fontWeight="Bold" >{{ cur_user.password.value }}</Span>
+                    <Span fontWeight="Bold" >{{ cur_password }}</Span>
                     <Span text="\n" />
                     <Span text="Description : " fontWeight="Bold" />
-                    <Span fontWeight="Bold" >{{ cur_user.dsp.value }}</Span>
+                    <Span fontWeight="Bold" >{{ cur_dsp }}</Span>
                     <Span text="\n" />
                 </FormattedString>
             </TextView>
