@@ -56,7 +56,7 @@ const router = new VueRouter({
     { path: '/home', component: Home },
     { path: '/login', component: Login },
     { path: '/register', component: Register },
-    { path: '/user_profile', component: Profile },
+    { path: '/profile', component: Profile },
     { path: '/change', component: ChangeProfile },
     { path: '*', redirect: '/home' }
   ]

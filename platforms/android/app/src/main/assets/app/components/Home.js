@@ -21,8 +21,9 @@ module.exports = {
         <Button text="Register" @tap="$router.push('/register')" />
         <Button text="Login" @tap="$router.push('/login')" />
         <Button text="Check" @tap="check()" />
-        <Button text="Profile" v-if="this.$cur_user_data.online.value" @tap="$router.push('/user_profile')" />
-        <Button text="Profile_false" v-else @tap="$router.push('/user_profile')" />
+        <Button text="Profile" v-if="this.$cur_user_data.online.value" @tap="$router.push('/profile')" />
+        <Button text="Profile_false" v-else @tap="$router.push('/profile')" />
+        <Button text="Change" @tap="$router.push('/change')" />
         <!--Button text="To Details (with query param)" @tap="$router.push('/detail?user=John+Appleseed')"></Button>
       </StackLayout>
     </Page>

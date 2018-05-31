@@ -22,7 +22,7 @@ module.exports = {
           this.$cur_user_data.online.value = true;
           this.$cur_user_data.id.value = i;
 
-          this.$router.push('/user_profile');
+          this.$router.push('/change');
           
         }
       }

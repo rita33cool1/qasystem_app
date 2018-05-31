@@ -2,19 +2,23 @@ module.exports = {
     data() {
         return {
             cur_user: this.$cur_user_data,
-            new_account: cur_user.account.value,
-            new_password: cur_user.password.value,
-            new_dsp: cur_user.dsp.value,
+            new_account: this.$cur_user_data.account.value,
+            new_password: this.$cur_user_data.password.value,
+            new_dsp: this.$cur_user_data.dsp.value,
         }
     },
     methods: {
 
         submit: function () {
             console.log("Change profile");
-            //console.log(cur_user);
-            this.$cur_user_data.account.value = new_account;
-            this.$cur_user_data.password.value = new_password;
-            this.$cur_user_data.dsp.value = new_dsp;
+            this.$cur_user_data.account.value = this.new_account;
+            this.$cur_user_data.password.value = this.new_password;
+            this.$cur_user_data.dsp.value = this.new_dsp;
+
+            var id = this.$cur_user_data.id.value;
+            this.$userdata[id].account = this.new_account;
+            this.$userdata[id].password = this.new_password;
+            this.$userdata[id].dsp = this.new_dsp;
         }
     },
     template: `

@@ -2,9 +2,9 @@ module.exports = {
     data() {
         return {
             cur_user: this.$cur_user_data,
-            cur_account: cur_user.account.value,
-            cur_password: cur_user.password.value,
-            cur_dsp: cur_user.dsp.value
+            cur_account: this.$cur_user_data.account.value,
+            cur_password: this.$cur_user_data.password.value,
+            cur_dsp: this.$cur_user_data.dsp.value
         }
     },
     methods: {
