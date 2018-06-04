@@ -4,20 +4,18 @@ This repo serves as the starting point for NativeScript + Vue.js projects, using
 
 ## Usage
 
-1.  Install NativeScript tools (see http://docs.nativescript.org/start/quick-setup)
+相關說明 : 
+https://docs.nativescript.org/start/quick-setup
 
-2.  Create app from this template
+1.  Install Node.js
 
-```bash
-tns create hello-ns-vue --template nativescript-vue-template
+2.  Install NativeScript tools (see http://docs.nativescript.org/start/quick-setup)
+    npm install -g nativescript
+    選項皆選擇(Y)es
 
-cd hello-ns-vue
-```
+3.  install android requirement
 
-> While the `nativescript-vue` project is not up-to-date on npm, you may have to run
-> `npm link nativescript-vue` in the project folder (like [described here](https://github.com/rigor789/nativescript-vue/blob/master/CONTRIBUTING.md)).
-
-3.  Run in Android or iOS
+4.  Run in Android or iOS
 
 ```bash
 tns run android
