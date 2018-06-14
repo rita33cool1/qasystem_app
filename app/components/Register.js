@@ -1,8 +1,11 @@
 module.exports = {
     data() {
         return {
-            AccountText: "Username",
-            PasswordText: "Userpwd",
+            apiUrl: 'http://211.149.193.19:8080/api/customers',
+            Email: "123@example.com",
+            AccountText: "Name",
+            PasswordText: "Pwd",
+            item: {},
         }
     },
     methods: {
@@ -10,15 +13,31 @@ module.exports = {
             console.log("Register Successfully!");
             //vm.user_account[this.user_account.length] = this.AccountText;
             //console.log(this.user_account[this.user_account.length]);
-            
+
             var tmp_data = {
-                account : this.AccountText,
-                password : this.PasswordText,
-                dsp : "hello! " + this.AccountText,
-                online : false,
-                id : -1,
-            }
+                "email": this.Email,
+                "username": this.AccountText,
+                "password": this.PasswordText,
+            };
             this.$userdata.push(tmp_data);
+            //http
+            var vm = this;
+            vm.$http.post(vm.apiUrl, vm.item)
+                .then((response) => {
+                    vm.$set('item', {})
+                    //vm.getCustomers()
+                })
+            /*
+            this.$http.post(this.apiUrl).then(function (successCallback) {
+                console.log("success!!");
+                console.log(successCallback);
+            }, function (errorCallback) {
+                console.log("error!!");
+                console.log(errorCallback);
+            });
+            */
+            //this.$http.post('/someUrl', [body], [options]).then(successCallback, errorCallback);
+
             this.$router.go(-1);
         },
     },
