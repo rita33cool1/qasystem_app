@@ -14,11 +14,11 @@ module.exports = {
             //vm.user_account[this.user_account.length] = this.AccountText;
             //console.log(this.user_account[this.user_account.length]);
 
-            var tmp_data = {
+            var tmp_data = JSON.stringify({
                 "email": this.Email,
                 "username": this.AccountText,
                 "password": this.PasswordText,
-            };
+            });
             this.$userdata.push(tmp_data);
             //http
             var vm = this;
