@@ -1,0 +1,25 @@
+{
+	"time": "Fri Jun 15 2018 12:03:39 GMT+0800 (CST)",
+	"nativePlatformStatus": "3",
+	"bundle": false,
+	"release": false,
+	"changesRequireBuild": false,
+	"projectFileHash": "616b0bb34807d4a602b8c46df927aba6907071a9b41ea3d58acfd1c663a08066",
+	"changesRequireBuildTime": "Fri Jun 15 2018 12:01:46 GMT+0800 (CST)",
+	"appFilesHashes": {
+		"/Users/chaowen/qasystem_test/app/LICENSE": "7ba7946732cf86c068c159fb1d1b83fc45642fa0",
+		"/Users/chaowen/qasystem_test/app/README.md": "6f7913e82dd1f42672c64916972055852231c968",
+		"/Users/chaowen/qasystem_test/app/app.css": "66f5e39b0d81ec7d0ea7dad8ecb79bd12150c329",
+		"/Users/chaowen/qasystem_test/app/components/App.js": "3eaf13bd51130ac823fcf75bd4c7d6bd9eacd41c",
+		"/Users/chaowen/qasystem_test/app/components/Changeprofile.js": "8ac1c2efe3f974e9f0c2c176a249dc7014fb46e9",
+		"/Users/chaowen/qasystem_test/app/components/Counter.js": "ebafadc9e47ca1c356b5e1919f96b35f79ab4602",
+		"/Users/chaowen/qasystem_test/app/components/Home.js": "f06bbacdf6db04529889e7bb2c6c1b78f518bd1c",
+		"/Users/chaowen/qasystem_test/app/components/Login.js": "789efeb195dbb1cfb733f59a5f42a91a81e9a7f9",
+		"/Users/chaowen/qasystem_test/app/components/Profile.js": "e62b9431cab1bf46a36b6f0f4ed868b09c4cdc0e",
+		"/Users/chaowen/qasystem_test/app/components/Question.js": "32e544dcb10e774252b8ab84ed5622534a2ad65b",
+		"/Users/chaowen/qasystem_test/app/components/Register.js": "d8392046a8d6160bd253910f100b39e55bf48f62",
+		"/Users/chaowen/qasystem_test/app/images/NativeScript-Vue.png": "31f09bdba72293198ee2e2a83c4fe5aa5744bc3d",
+		"/Users/chaowen/qasystem_test/app/main.js": "449ce559b0a77f27e903204e1281ae96d04f4245",
+		"/Users/chaowen/qasystem_test/app/package.json": "5d5e4aa1734dedea04f084c9a3857f1f20ea6840"
+	}
+}
