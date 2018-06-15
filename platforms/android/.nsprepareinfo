@@ -1,9 +1,9 @@
 {
-	"time": "Thu May 31 2018 17:25:14 GMT+0800 (台北標準時間)",
+	"time": "Fri Jun 15 2018 16:11:34 GMT+0800 (台北標準時間)",
 	"nativePlatformStatus": "3",
 	"bundle": false,
 	"release": false,
 	"changesRequireBuild": false,
-	"projectFileHash": "1e0180bf43f6d3b898d93d63881e7538faf3bf1304122e56c35d141b6deca2da",
-	"changesRequireBuildTime": "Sun May 27 2018 17:35:42 GMT+0800 (台北標準時間)"
+	"projectFileHash": "ca0793996d87c151c29ac42c2c1c45709172c47480b0872e563b7be73417a256",
+	"changesRequireBuildTime": "Fri Jun 15 2018 12:43:09 GMT+0800 (台北標準時間)"
 }

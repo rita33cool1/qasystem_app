@@ -1,32 +1,35 @@
 {
-  "_from": "tns-core-modules@^3.4.1",
-  "_id": "tns-core-modules@3.4.1",
+  "_args": [
+    [
+      "tns-core-modules@4.1.0",
+      "/Users/chaowen/qasystem_test"
+    ]
+  ],
+  "_from": "tns-core-modules@4.1.0",
+  "_id": "tns-core-modules@4.1.0",
   "_inBundle": false,
-  "_integrity": "sha512-sz/yTmoW7WyDPpr4JEC+trlfiEI14X365jGF//tMCT/G6ISzANr43wc17fgbGH1UA1XbKzujbAl0xPNssRHVUA==",
+  "_integrity": "sha512-ZTpH7/zHfARrJ+1bPwbBYyqFVQO+2unnygfLW8Bu3clzpTkdwwW++1DS+Qbzw7r84+dzdVPZ7zwEVkjpfAFogw==",
   "_location": "/tns-core-modules",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "tns-core-modules@^3.4.1",
+    "raw": "tns-core-modules@4.1.0",
     "name": "tns-core-modules",
     "escapedName": "tns-core-modules",
-    "rawSpec": "^3.4.1",
+    "rawSpec": "4.1.0",
     "saveSpec": null,
-    "fetchSpec": "^3.4.1"
+    "fetchSpec": "4.1.0"
   },
   "_requiredBy": [
-    "/nativescript-vue-template"
+    "/"
   ],
-  "_resolved": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-3.4.1.tgz",
-  "_shasum": "be6882cd04127296e8803eeb10eb7ebfd9afe717",
-  "_spec": "tns-core-modules@^3.4.1",
-  "_where": "C:\\test-app\\node_modules\\nativescript-vue-template",
-  "bundleDependencies": false,
+  "_resolved": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-4.1.0.tgz",
+  "_spec": "4.1.0",
+  "_where": "/Users/chaowen/qasystem_test",
   "dependencies": {
-    "tns-core-modules-widgets": "3.4.0"
+    "tns-core-modules-widgets": "4.1.0"
   },
-  "deprecated": false,
   "description": "Telerik NativeScript Core Modules",
   "devDependencies": {
     "@types/node": "~7.0.5",
@@ -52,13 +55,13 @@
   "name": "tns-core-modules",
   "nativescript": {
     "platforms": {
-      "ios": "3.0.0",
-      "android": "3.0.0"
+      "ios": "4.0.0",
+      "android": "4.0.0"
     }
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NativeScript/NativeScript/commit/533630c4a64f77a799c5806d61851489f50ab807"
+    "url": "https://github.com/NativeScript/NativeScript/commit/86f9d3870688f1e7a759fa72061ea07d5d488e09"
   },
   "snapshot": {
     "android": {
@@ -71,5 +74,5 @@
     }
   },
   "typings": "tns-core-modules.d.ts",
-  "version": "3.4.1"
+  "version": "4.1.0"
 }

@@ -1,1 +1,1 @@
-C:\test-app\platforms\android\app/src/main/assets/metadata
+C:\qasystem_test\platforms\android\app/src/main/assets/metadata

@@ -1,4 +1,6 @@
 {
+    "events": true,
+    "https": true,
     "nativescript-theme-core": true,
     "nativescript-vue": true,
     "tns-core-modules": true,

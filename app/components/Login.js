@@ -1,13 +1,32 @@
+const httpModule = require("http");
 module.exports = {
+    data() {
+        return {
+            apiUrl:  "http://140.114.79.86:8000/accounts/api/users/login",
+            AccountText: "",
+            PasswordText: "",
+        }
+    },
     methods: {
-        data() {
-            return {
-                AccountText: "",
-                PasswordText: "",
-            }
-        },
-        signin: function() {
+        
+        signin: function () {
             console.log("Signin!");
+            httpModule.request({
+                url: this.apiUrl,
+                method: "POST",
+                content: JSON.stringify({
+                    username: this.AccountText,
+                    password: this.PasswordText
+                })
+            }).then((response) => {
+                console.log("Success!!");
+                console.log(response.content);
+                this.$router.go(-1);
+                //console.log(response.content.toJson.prototype);
+            }, (e) => {
+                console.log(e);
+            });
+            /*
             var i = 0;
             for (i = 0; i < this.$userdata.length; i++) {
                 if (this.$userdata[i].account == this.AccountText && this.$userdata[i].password == this.PasswordText) {
@@ -22,9 +41,10 @@ module.exports = {
                     this.$cur_user_data.online.value = true;
                     this.$cur_user_data.id.value = i;
 
-                    this.$router.go(-1);
+                    
                 }
             }
+            */
         },
     },
     template: `

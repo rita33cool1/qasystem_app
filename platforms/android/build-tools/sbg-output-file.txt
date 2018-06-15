@@ -1,1 +1,1 @@
-C:\test-app\platforms\android\app/src/main/java
+C:\qasystem_test\platforms\android\app/src/main/java

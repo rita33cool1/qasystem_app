@@ -1,21 +1,25 @@
 module.exports = {
+    data() {
+        return {
+            AccountText: "Username",
+            PasswordText: "Userpwd",
+        }
+    },
     methods: {
         register: function () {
-            console.log("Register!");
-            var account = $("TextField[v-model=Account]").val();
-            var pwd = $("TextField[v-model=Password]").val();
-            firebase.auth().createUserWithEmailAndPassword(account.value, pwd.value)
-                .then(function (result) {
-                    
-                })
-                .catch(function (error) {
-                    // Handle Errors here.
-                    var errorCode = error.code;
-                    var errorMsg = error.message;
-                    console.log(errorMsg);
-                });
-
-
+            console.log("Register Successfully!");
+            //vm.user_account[this.user_account.length] = this.AccountText;
+            //console.log(this.user_account[this.user_account.length]);
+            
+            var tmp_data = {
+                account : this.AccountText,
+                password : this.PasswordText,
+                dsp : "hello! " + this.AccountText,
+                online : false,
+                id : -1,
+            }
+            this.$userdata.push(tmp_data);
+            this.$router.go(-1);
         },
     },
     template: `
@@ -25,8 +29,8 @@ module.exports = {
         </ActionBar>
         <StackLayout>
             <Label :text="Register" />
-            <TextField v-model="Account" hint="Account..." />
-            <TextField v-model="Password" hint="Password..." />
+            <TextField v-model="AccountText" hint="Enter Account..." />
+            <TextField v-model="PasswordText" hint="Enter Password..." />
             <Button text="Submit" @tap="register()" />
             <Button text="Back" @tap="$router.go(-1)" />
         </StackLayout>

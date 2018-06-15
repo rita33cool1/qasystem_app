@@ -2,7 +2,7 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl: 'http://211.149.193.19:8080/api/customers',
+            apiUrl:  "http://140.114.79.86:8000/accounts/api/users/register",
             Email: "123@example.com",
             AccountText: "Name",
             PasswordText: "Pwd",
@@ -12,10 +12,17 @@ module.exports = {
     methods: {
         register: function () {
             httpModule.request({
-                url: "https://httpbin.org/get",
-                method: "GET"
+                url: this.apiUrl,
+                method: "POST",
+                content: JSON.stringify({
+                    email: this.Email,
+                    username: this.AccountText,
+                    password: this.PasswordText
+                })
             }).then((response) => {
-                console.log(response)
+                console.log("Success!!");
+                console.log(response.content);
+                //console.log(response.content.toJson.prototype);
             }, (e) => {
                 console.log(e);
             });
