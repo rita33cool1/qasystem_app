@@ -20,7 +20,7 @@ module.exports = {
                 })
             }).then((response) => {
                 console.log("Success!!");
-                console.log(response.content);
+                console.log(response);
                 this.$router.go(-1);
                 //console.log(response.content.toJson.prototype);
             }, (e) => {
