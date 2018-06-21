@@ -2,7 +2,7 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl:  "http://140.114.79.86:8000/accounts/api/users/login",
+            apiUrl:  "http://140.114.79.86:8000/accounts/api/users/login/",
             AccountText: "",
             PasswordText: "",
         }
@@ -10,21 +10,22 @@ module.exports = {
     methods: {
         
         signin: function () {
-            console.log("Signin!");
+            
             httpModule.request({
                 url: this.apiUrl,
                 method: "POST",
+                headers: { "Content-Type": "application/json" },
                 content: JSON.stringify({
                     username: this.AccountText,
                     password: this.PasswordText
                 })
             }).then((response) => {
-                console.log("Success!!");
+                console.log("Login Success!!");
                 console.log(response);
                 this.$router.go(-1);
                 //console.log(response.content.toJson.prototype);
             }, (e) => {
-                console.log(e);
+                console.log("response: " + e);
             });
             /*
             var i = 0;

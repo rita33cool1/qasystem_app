@@ -8,7 +8,7 @@ module.exports = {
         }
     },
     methods: {
-        change: function () {
+        change: function() {
             console.log("Go to change profile page");
             this.$router.push('./change');
         }
@@ -20,16 +20,17 @@ module.exports = {
         </ActionBar>
         <StackLayout>
             <Label :text="Profile" />
-            <TextView editable="true">
-                <FormattedString>
-                    <Span text="User Profile : \n\n" />
+            <Span text="User Profile" fontWeight="Bold" />       
+            <TextView editable="false">
+                <FormattedString>   
+                    
                     <Span text="UserAccount : " fontWeight="Bold" />
                     <Span fontWeight="Bold" >{{ cur_account }}</Span>
                     <Span text="\n" />
                     <Span text="UserPassword : " fontWeight="Bold" />
                     <Span fontWeight="Bold" >{{ cur_password }}</Span>
                     <Span text="\n" />
-                    <Span text="Description : " fontWeight="Bold" />
+                    <Span text="Majority : " fontWeight="Bold" />
                     <Span fontWeight="Bold" >{{ cur_dsp }}</Span>
                     <Span text="\n" />
                 </FormattedString>

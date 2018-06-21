@@ -4,6 +4,7 @@ C:\qasystem_test\platforms\android\app\src\main\assets\app\components\Counter.js
 C:\qasystem_test\platforms\android\app\src\main\assets\app\components\Home.js
 C:\qasystem_test\platforms\android\app\src\main\assets\app\components\Login.js
 C:\qasystem_test\platforms\android\app\src\main\assets\app\components\Profile.js
+C:\qasystem_test\platforms\android\app\src\main\assets\app\components\Question.js
 C:\qasystem_test\platforms\android\app\src\main\assets\app\components\Register.js
 C:\qasystem_test\platforms\android\app\src\main\assets\app\main.js
 C:\qasystem_test\platforms\android\app\src\main\assets\app\tns_modules\nativescript-vue\dist\index.js
@@ -108,7 +109,6 @@ C:\qasystem_test\platforms\android\app\src\main\assets\app\tns_modules\tns-core-
 C:\qasystem_test\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\list-picker\list-picker.js
 C:\qasystem_test\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\list-view\list-view-common.js
 C:\qasystem_test\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\list-view\list-view.js
-C:\qasystem_test\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\page\constants.js
 C:\qasystem_test\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\page\page-common.js
 C:\qasystem_test\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\page\page.js
 C:\qasystem_test\platforms\android\app\src\main\assets\app\tns_modules\tns-core-modules\ui\placeholder\placeholder.js

@@ -1,6 +1,5 @@
 const Vue = require('nativescript-vue');
 const VueRouter = require('vue-router');
-import VueResource from 'vue-resource';
 const Home = require('./components/Home');
 const Login = require('./components/Login');
 const Register = require('./components/Register');
@@ -8,6 +7,8 @@ const Profile = require('./components/Profile');
 const ChangeProfile = require('./components/Changeprofile');
 const Question = require('./components/Question');
 require("nativescript-vue").registerElement("RadDataForm", () => require("nativescript-ui-dataform").RadDataForm);
+const VueResource = require('vue-resource');
+//import VueResource from 'vue-resource';
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
@@ -73,16 +74,6 @@ const router = new VueRouter({
     ]
 });
 
-
-/*
-Vue.http.post('http://140.114.79.86:8000/accounts/api/users/register', tmp_data).then(function (successCallback) {
-    console.log("success!!");
-    console.log(successCallback);
-}, function (errorCallback) {
-    console.log("error!!");
-    console.log(errorCallback);
-});
-*/
 router.replace('/home');
 
 var vm = new Vue({

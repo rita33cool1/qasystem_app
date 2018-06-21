@@ -1,41 +1,44 @@
 {
-  "_from": "nativescript-vue@^1.3.1",
+  "_args": [
+    [
+      "nativescript-vue@1.3.1",
+      "C:\\qasystem_test"
+    ]
+  ],
+  "_from": "nativescript-vue@1.3.1",
   "_id": "nativescript-vue@1.3.1",
   "_inBundle": false,
   "_integrity": "sha512-G7wOr+7Yt/fva/Q+cheDEWV34X8G4UNVQIcWOXEGOCsbJmZUxwt2MdJm6s6Uo5WqQlEJDzMDqWQTe5A60EYjrg==",
   "_location": "/nativescript-vue",
   "_phantomChildren": {},
   "_requested": {
-    "type": "range",
+    "type": "version",
     "registry": true,
-    "raw": "nativescript-vue@^1.3.1",
+    "raw": "nativescript-vue@1.3.1",
     "name": "nativescript-vue",
     "escapedName": "nativescript-vue",
-    "rawSpec": "^1.3.1",
+    "rawSpec": "1.3.1",
     "saveSpec": null,
-    "fetchSpec": "^1.3.1"
+    "fetchSpec": "1.3.1"
   },
   "_requiredBy": [
-    "/nativescript-vue-template"
+    "/"
   ],
   "_resolved": "https://registry.npmjs.org/nativescript-vue/-/nativescript-vue-1.3.1.tgz",
-  "_shasum": "ab156e9ab6fa23f1172f98d0e2decf7247b50c7c",
-  "_spec": "nativescript-vue@^1.3.1",
-  "_where": "C:\\test-app\\node_modules\\nativescript-vue-template",
+  "_spec": "1.3.1",
+  "_where": "C:\\qasystem_test",
   "author": {
     "name": "Igor Randjelovic"
   },
   "bugs": {
     "url": "https://github.com/rigor789/nativescript-vue/issues"
   },
-  "bundleDependencies": false,
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "dependencies": {},
-  "deprecated": false,
   "description": "NativeScript and Vue integration",
   "devDependencies": {
     "@commitlint/cli": "^6.1.0",
