@@ -1,3 +1,4 @@
+const httpModule = require("http");
 module.exports = {
     data() {
         return {
@@ -8,6 +9,32 @@ module.exports = {
         }
     },
     methods: {
+        load: function() {
+            httpModule.request({
+                url: this.apiUrl,
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                content: JSON.stringify({
+                    username: this.AccountText,
+                    password: this.PasswordText
+                })
+            }).then((response) => {
+                if (response.statusCode == 200) {
+                    console.log("Get profile Success!!");
+                    console.log(response);
+                    const result = response.content.toJSON();
+                    console.log(result);
+                    this.$router.go(-1);
+                } else {
+                    const result = response.content.toJSON();
+                    console.log(result);
+                }
+
+                //console.log(response.content.toJson.prototype);
+            }, (e) => {
+                console.log("response: " + e);
+            });
+        },
         change: function() {
             console.log("Go to change profile page");
             this.$router.push('./change');

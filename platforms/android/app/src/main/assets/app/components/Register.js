@@ -2,7 +2,7 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl:  "http://140.114.79.86:8000/accounts/api/users/register/",
+            apiUrl: "http://140.114.79.86:8000/accounts/api/users/register/",
             Email: "123@example.com",
             AccountText: "Nametmp",
             PasswordText: "Pwdtmp",
@@ -10,26 +10,33 @@ module.exports = {
         }
     },
     methods: {
-        register: function () {
-            
+        register: function() {
+
             httpModule.request({
                 url: this.apiUrl,
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 content: JSON.stringify({
-                    email: this.Email,
-                    username: this.AccountText,
-                    password: this.PasswordText
+                    "email": this.Email,
+                    "username": this.AccountText,
+                    "password": this.PasswordText
                 })
             }).then((response) => {
-                console.log("Register Successfully!");
-                console.log(response);
-                //console.log(response.content.toJson.prototype);
+                if (response.statusCode == 200) {
+                    console.log("Register Successfully!");
+                    console.log(response);
+                    const result = response.content.toJSON();
+                    console.log(result);
+                    this.$router.go(-1);
+                } else {
+                    const result = response.content.toJSON();
+                    console.log(result);
+                }
             }, (e) => {
                 console.log("response: " + e);
             });
-            
-            this.$router.go(-1);
+
+
         },
     },
     template: `
