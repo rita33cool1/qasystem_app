@@ -24,7 +24,6 @@ module.exports = {
             }).then((response) => {
                 if (response.statusCode == 200) {
                     console.log("Register Successfully!");
-                    console.log(response);
                     const result = response.content.toJSON();
                     console.log(result);
                     this.$router.go(-1);

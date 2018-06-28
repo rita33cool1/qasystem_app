@@ -17,49 +17,12 @@ Vue.http.options.emulateJSON = true;
 Vue.config.silent = false;
 /*global var*/
 Vue.prototype.$userdata = [];
-Vue.prototype.$cur_user_data = {
-    account: {
-        value: "None",
-        set: function (data) {
-            console.log("set data: " + data);
-            this.value = data;
-        }
-    },
-    password: {
-        value: "None",
-        set: function (data) {
-            console.log("set data: " + data);
-            this.value = data;
-        }
-    },
-    dsp: {
-        value: "None",
-        set: function (data) {
-            console.log("set data: " + data);
-            this.value = data;
-        }
-    },
-    online: {
-        value: false,
-        set: function (data) {
-            console.log("set data: " + data);
-            this.value = data;
-        }
-    },
-    id: {
-        value: -1,
-        set: function (data) {
-            console.log("set data: " + data);
-            this.value = data;
-        }
-    },
-    image: {
-        src: "",
-        set: function (data) {
-            this.src = data;
-        }
+Vue.prototype.$user_id = {
+    val: "0",
+    set: function(data) {
+        this.val = data;
     }
-};
+}
 
 const router = new VueRouter({
     pageRouting: true,
@@ -79,6 +42,3 @@ router.replace('/home');
 var vm = new Vue({
     router
 }).$start();
-
-
-

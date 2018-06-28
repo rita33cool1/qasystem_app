@@ -2,28 +2,30 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            cur_user: this.$cur_user_data,
-            cur_account: this.$cur_user_data.account.value,
-            cur_password: this.$cur_user_data.password.value,
-            cur_dsp: this.$cur_user_data.dsp.value
+            apiUrl: "http://140.114.79.86:8000/accounts/api/users/profile/",
+            cur_username: "",
+            cur_expertise: "",
+            cur_email: ""
         }
     },
     methods: {
         load: function() {
+            console.log("Load profile!!");
             httpModule.request({
                 url: this.apiUrl,
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 content: JSON.stringify({
-                    username: this.AccountText,
-                    password: this.PasswordText
+                    key: this.$user_id.val
                 })
             }).then((response) => {
                 if (response.statusCode == 200) {
                     console.log("Get profile Success!!");
-                    console.log(response);
                     const result = response.content.toJSON();
                     console.log(result);
+                    this.cur_username = result.username;
+                    this.cur_expertise = result.expertise;
+                    this.cur_email = result.email;
                     this.$router.go(-1);
                 } else {
                     const result = response.content.toJSON();
@@ -41,7 +43,7 @@ module.exports = {
         }
     },
     template: `
-      <Page>
+      <Page @loaded="load()">
         <ActionBar :title="$route.path">
           <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.back()" />
         </ActionBar>
@@ -51,14 +53,14 @@ module.exports = {
             <TextView editable="false">
                 <FormattedString>   
                     
-                    <Span text="UserAccount : " fontWeight="Bold" />
-                    <Span fontWeight="Bold" >{{ cur_account }}</Span>
+                    <Span text="UserName : " fontWeight="Bold" />
+                    <Span fontWeight="Bold" >{{ cur_username }}</Span>
                     <Span text="\n" />
-                    <Span text="UserPassword : " fontWeight="Bold" />
-                    <Span fontWeight="Bold" >{{ cur_password }}</Span>
+                    <Span text="Expertise : " fontWeight="Bold" />
+                    <Span fontWeight="Bold" >{{ cur_expertise }}</Span>
                     <Span text="\n" />
-                    <Span text="Majority : " fontWeight="Bold" />
-                    <Span fontWeight="Bold" >{{ cur_dsp }}</Span>
+                    <Span text="Email : " fontWeight="Bold" />
+                    <Span fontWeight="Bold" >{{ cur_email }}</Span>
                     <Span text="\n" />
                 </FormattedString>
             </TextView>
