@@ -1,23 +1,26 @@
 module.exports = {
     methods: {
         sendQuestion() {
-            console.log("Send the question!!");
-            var time = new Date();
-            console.log(this.TitleText + " :\n" + this.QuestionText);
-            let year = time.getFullYear();
-            let month = time.getMonth();
-            let day = time.getDate();
-            let hour = time.getHours();
-            let minute = time.getMinutes();
-            let sec = time.getSeconds();
+            if (this.$user_id.val != "0") {
+                console.log("Send the question!!");
+                var time = new Date();
+                console.log(this.TitleText + " :\n" + this.QuestionText);
+                let year = time.getFullYear();
+                let month = time.getMonth();
+                let day = time.getDate();
+                let hour = time.getHours();
+                let minute = time.getMinutes();
+                let sec = time.getSeconds();
+                console.log("Time stamp : ");
+                console.log(year + "/" + month + "/" + day);
+                console.log(hour + ":" + minute + ":" + sec);
+                console.log("Expertise : ")
+                console.log(this.category[this.selectCategory.number]);
+            } else {
+                console.log("You haven't login!");
+            }
 
-            console.log("Time stamp : ");
-            console.log(year + "/" + month + "/" + day);
-            console.log(hour + ":" + minute + ":" + sec);
-            console.log("Category : ")
-            console.log(this.category[this.selectCategory.number]);
-            console.log("Wanted time : ")
-            console.log(this.wantedtime[this.selectTime.number]);
+
         },
     },
     data() {

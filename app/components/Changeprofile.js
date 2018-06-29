@@ -1,6 +1,7 @@
 module.exports = {
     data() {
         return {
+            apiUrl: "http://140.114.79.86:8000/accounts/api/users/set_profile/",
             cur_user: this.$cur_user_data,
             userprofile: {
                 new_account: this.$cur_user_data.account.value,
@@ -13,8 +14,30 @@ module.exports = {
     },
     methods: {
 
-        submit: function () {
+        submit: function() {
             console.log("Change profile");
+            httpModule.request({
+                url: this.apiUrl,
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                content: JSON.stringify({
+                    key: this.$user_id.val,
+                    expertise: this.majority[this.selectMajority]
+                })
+            }).then((response) => {
+                if (response.statusCode == 200 || response.statusCode == 202) {
+                    console.log("Set profile Success!!");
+                    const result = response.content.toJSON();
+                    console.log(result);
+                } else {
+                    const result = response.content.toJSON();
+                    console.log(result);
+                }
+
+                //console.log(response.content.toJson.prototype);
+            }, (e) => {
+                console.log("response: " + e);
+            });
             /*
             this.$cur_user_data.account.value = this.new_account;
             this.$cur_user_data.password.value = this.new_password;

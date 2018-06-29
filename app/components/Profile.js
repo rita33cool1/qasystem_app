@@ -19,14 +19,13 @@ module.exports = {
                     key: this.$user_id.val
                 })
             }).then((response) => {
-                if (response.statusCode == 200) {
+                if (response.statusCode == 200 || response.statusCode == 202) {
                     console.log("Get profile Success!!");
                     const result = response.content.toJSON();
                     console.log(result);
                     this.cur_username = result.username;
                     this.cur_expertise = result.expertise;
                     this.cur_email = result.email;
-                    this.$router.go(-1);
                 } else {
                     const result = response.content.toJSON();
                     console.log(result);
@@ -39,7 +38,7 @@ module.exports = {
         },
         change: function() {
             console.log("Go to change profile page");
-            this.$router.push('./change');
+            this.$router.push('/change');
         }
     },
     template: `

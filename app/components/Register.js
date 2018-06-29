@@ -3,9 +3,9 @@ module.exports = {
     data() {
         return {
             apiUrl: "http://140.114.79.86:8000/accounts/api/users/register/",
-            Email: "123@example.com",
-            AccountText: "Nametmp",
-            PasswordText: "Pwdtmp",
+            Email: "789@example.com",
+            AccountText: "Zxcvbn",
+            PasswordText: "Asdfgh",
             item: {},
         }
     },
@@ -17,9 +17,9 @@ module.exports = {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 content: JSON.stringify({
-                    "email": this.Email,
-                    "username": this.AccountText,
-                    "password": this.PasswordText
+                    email: this.Email,
+                    username: this.AccountText,
+                    password: this.PasswordText
                 })
             }).then((response) => {
                 if (response.statusCode == 200) {
