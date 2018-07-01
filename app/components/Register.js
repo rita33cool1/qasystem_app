@@ -32,7 +32,7 @@ module.exports = {
                     console.log(result);
                 }
             }, (e) => {
-                console.log("response: " + e);
+                console.log(e);
             });
 
 

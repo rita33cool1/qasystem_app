@@ -18,9 +18,9 @@ module.exports = {
         <Button text="Login" @tap="$router.push('/login')" />
         <Button text="Check" @tap="check()" />
         <Button text="Profile"        v-if="this.$user_id.val != '0'" @tap="$router.push('/profile')" />
-        <Button text="Profile_false"  v-else @tap="$router.push('/profile')" />
         <Button text="Change"         v-if="this.$user_id.val != '0'" @tap="$router.push('/change')" />
-        <Button text="Ask Question"   @tap="$router.push('/question')" />
+        <Button text="Ask Question"   v-if="this.$user_id.val != '0'" @tap="$router.push('/question')" />
+        <Button text="Question List"   @tap="$router.push('/questionlist')" />
       </StackLayout>
     </Page>
   `

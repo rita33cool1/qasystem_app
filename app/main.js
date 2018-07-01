@@ -6,6 +6,7 @@ const Register = require('./components/Register');
 const Profile = require('./components/Profile');
 const ChangeProfile = require('./components/Changeprofile');
 const Question = require('./components/Question');
+const Questionlist = require('./components/Questionlist');
 require("nativescript-vue").registerElement("RadDataForm", () => require("nativescript-ui-dataform").RadDataForm);
 const VueResource = require('vue-resource');
 //import VueResource from 'vue-resource';
@@ -16,7 +17,6 @@ Vue.version = '__VERSION__';
 Vue.http.options.emulateJSON = true;
 Vue.config.silent = false;
 /*global var*/
-Vue.prototype.$userdata = [];
 Vue.prototype.$user_id = {
     val: "0",
     set: function(data) {
@@ -33,6 +33,7 @@ const router = new VueRouter({
         { path: '/profile', component: Profile },
         { path: '/change', component: ChangeProfile },
         { path: '/question', component: Question },
+        { path: '/questionlist', component: Questionlist },
         { path: '*', redirect: '/home' }
     ]
 });

@@ -20,19 +20,18 @@ module.exports = {
                     password: this.PasswordText
                 })
             }).then((response) => {
+                const result = response.content.toJSON();
                 if (response.statusCode == 200 || response.statusCode == 202) {
                     console.log("Login Success!!");
-                    const result = response.content.toJSON();
                     console.log(result);
                     this.$user_id.val = result.token.toString();
                     this.$router.go(-1);
                 } else {
-                    const result = response.content.toJSON();
                     console.log(result);
                 }
                 //console.log(response.content.toJson.prototype);
             }, (e) => {
-                console.log("response: " + e);
+                console.log(e);
             });
             /*
             var i = 0;
