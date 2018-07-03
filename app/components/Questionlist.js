@@ -1,34 +1,37 @@
 const httpModule = require("http");
 module.exports = {
-    methods: {
-
-    },
     data() {
+        return {
+            apirul: "http://140.114.79.86:8000/accounts/api/get_question/question_id/",
+        }
+    },
+    methods: {
+        load: function() {
+            console.log("Load question");
+            httpModule.request({
+                url: this.apiUrl,
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                content: JSON.stringify({
+                    key: this.$user_id.val
+                })
+            }).then((response) => {
 
+            }, (e) => {
+
+            });
+        }
     },
     template: `
     <Page>
-    <ActionBar :title="$route.path">
-        <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.back()" />
-    </ActionBar>
-    <GridLayout rows="auto auto auto auto auto auto auto auto auto auto auto auto">
-        
-            <Span text="Title : \n" row="1"/>
-            <TextField v-model="TitleText" hint="Enter the title" row="2"/>
-            <Span text="Description : \n" row="3" />
-            <TextField v-model="QuestionText" hint="Describe the quesion" row="4"/>
+        <ActionBar :title="$route.path">
+            <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.go(-1);" />
+        </ActionBar>
+        <StackLayout>
+            <Span text="Question id : " fontWeight="Bold" />
             
-
-            <ScrollView orientation="vertical" row="5">
-            <StackLayout orientation="vertical" class="scroll-menu">
-                <StackLayout >
-                    <Span text="Category : \n"/>
-                    <ListPicker :items="category" v-model="selectCategory" />        
-                    <Button text="submit" @tap="sendQuestion()" />                  
-                </StackLayout>
-            </StackLayout>
-        </ScrollView>   
-    </GridLayout>   
+            <Span text="\n" />    
+        </StackLayout>
     </Page>
   `
 };
