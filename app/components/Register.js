@@ -3,7 +3,7 @@ module.exports = {
     data() {
         return {
             apiUrl: "http://140.114.79.86:8000/accounts/api/users/register/",
-            Email: "789@example.com",
+            EmailText: "789@example.com",
             AccountText: "Zxcvbn",
             PasswordText: "Asdfgh",
             item: {},
@@ -47,6 +47,7 @@ module.exports = {
             <Label :text="Register" />
             <TextField v-model="AccountText" hint="Enter Account..." />
             <TextField v-model="PasswordText" hint="Enter Password..." />
+            <TextField v-model="EmailText" hint="Enter Email..." />
             <Button text="Submit" @tap="register()" />
             <Button text="Back" @tap="$router.go(-1)" />
         </StackLayout>

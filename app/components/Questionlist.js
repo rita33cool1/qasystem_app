@@ -2,7 +2,7 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apirul: "http://140.114.79.86:8000/accounts/api/get_question/question_id/",
+            apiUrl: "http://140.114.79.86:8000/accounts/api/get_question/",
         }
     },
     methods: {
