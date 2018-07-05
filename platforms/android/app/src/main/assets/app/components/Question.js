@@ -2,7 +2,7 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl: "http://140.114.79.86:8000/accounts/api/users/post_question/",
+            apiUrl: " http://140.114.79.86:8000/api/user/question/post/",
             TitleText: "",
             QuestionText: "",
             category: ["C++", "Python", "JavaScript"],
