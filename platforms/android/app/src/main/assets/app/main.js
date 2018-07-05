@@ -17,18 +17,19 @@ Vue.version = '__VERSION__';
 Vue.http.options.emulateJSON = true;
 Vue.config.silent = false;
 /*global var*/
+Vue.prototype.$question_list = [];
 Vue.prototype.$user_id = {
     val: "0",
     set: function(data) {
         this.val = data;
     }
-}
+};
 Vue.prototype.$question_num = {
     val: 0,
     set: function(data) {
         this.val = data;
     }
-}
+};
 
 const router = new VueRouter({
     pageRouting: true,
