@@ -7,6 +7,7 @@ const Profile = require('./components/Profile');
 const ChangeProfile = require('./components/Changeprofile');
 const Question = require('./components/Question');
 const Questionlist = require('./components/Questionlist');
+const ShowQuestion = require('./components/Showquestion');
 require("nativescript-vue").registerElement("RadDataForm", () => require("nativescript-ui-dataform").RadDataForm);
 const VueResource = require('vue-resource');
 //import VueResource from 'vue-resource';
@@ -30,7 +31,12 @@ Vue.prototype.$question_num = {
         this.val = data;
     }
 };
-
+Vue.prototype.$question_cur_link = {
+    val: "",
+    set: function(data) {
+        this.val = data;
+    }
+};
 const router = new VueRouter({
     pageRouting: true,
     routes: [
@@ -41,6 +47,7 @@ const router = new VueRouter({
         { path: '/change', component: ChangeProfile },
         { path: '/question', component: Question },
         { path: '/questionlist', component: Questionlist },
+        { path: '/showquestion', component: ShowQuestion },
         { path: '*', redirect: '/home' }
     ]
 });
