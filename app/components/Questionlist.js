@@ -49,7 +49,6 @@ module.exports = {
             <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.go(-1);" />
         </ActionBar>
         <StackLayout>
-            <Span text="Question id : " fontWeight="Bold" />
             <ListView class="list-group" for="question in $question_list" @itemTap="onItemTap" style="height:1250px">
                 <v-template>
                     <FlexboxLayout flexDirection="row" class="list-group-item">

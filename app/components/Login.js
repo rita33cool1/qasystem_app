@@ -24,13 +24,15 @@ module.exports = {
                 if (response.statusCode == 200 || response.statusCode == 202) {
                     console.log("Login Success!!");
                     console.log(result);
-                    this.$user_id.val = result.token.toString();
+                    this.$user_id.val = result.key.toString();
                     this.$router.go(-1);
                 } else {
+                    alert(result.errorMsg);
                     console.log(result);
                 }
                 //console.log(response.content.toJson.prototype);
             }, (e) => {
+                alert(result.errorMsg);
                 console.log(e);
             });
             /*
@@ -62,7 +64,7 @@ module.exports = {
         <StackLayout>
             <Label :text="Login" />
             <TextField v-model="AccountText" hint="Account..." />
-            <TextField v-model="PasswordText" hint="Password..." />
+            <TextField v-model="PasswordText" hint="Password..." secure=true />
             <Button text="Submit" @tap="signin()" />
             <Button text="Back" @tap="$router.go(-1)" />
         </StackLayout>
