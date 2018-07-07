@@ -3,6 +3,7 @@ module.exports = {
     data() {
         return {
             apiUrl: "http://140.114.79.86:8000/api/question/" + this.$question_cur_link.val + "/",
+            deleteUrl: "http://140.114.79.86:8000/api/user/question/delete/",
             title: "Tmp title",
             content: "None",
             askername: "None"
@@ -26,6 +27,26 @@ module.exports = {
             }, (e) => {
                 console.log(e);
             });
+        },
+        deleteQuestion: function() {
+            console.log("delete the question");
+            httpModule.request({
+                url: this.deleteUrl,
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                content: JSON.stringify({
+                    key: this.$user_id.val,
+                    question_id: this.$question_cur_link.val
+                })
+            }).then((response) => {
+                const result = response.content.toJSON();
+                console.log(result);
+            }, (e) => {
+                console.log(e);
+            });
+        },
+        modifyQuestion: function() {
+            console.log("modify the question");
         }
     },
     template: `
@@ -47,6 +68,8 @@ module.exports = {
                     <Span text="\n" />
                 </FormattedString>
             </TextView>
+            <Button text="delete" v-if="this.$user_id.val == this.askername" @tap="deleteQuestion()" />
+            <Button text="modify" v-if="this.$user_id.val == this.askername" @tap="modifyQuestion()" />
         </StackLayout>
     </Page>
   `

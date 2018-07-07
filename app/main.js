@@ -25,6 +25,12 @@ Vue.prototype.$user_id = {
         this.val = data;
     }
 };
+Vue.prototype.$user_name = {
+    val: "0",
+    set: function(data) {
+        this.val = data;
+    }
+};
 Vue.prototype.$question_num = {
     val: 0,
     set: function(data) {
