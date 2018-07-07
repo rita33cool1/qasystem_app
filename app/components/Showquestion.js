@@ -68,8 +68,8 @@ module.exports = {
                     <Span text="\n" />
                 </FormattedString>
             </TextView>
-            <Button text="delete" v-if="this.$user_id.val == this.askername" @tap="deleteQuestion()" />
-            <Button text="modify" v-if="this.$user_id.val == this.askername" @tap="modifyQuestion()" />
+            <Button text="delete" v-if="this.$user_name.val == this.askername" @tap="deleteQuestion()" />
+            <Button text="modify" v-if="this.$user_name.val == this.askername" @tap="modifyQuestion()" />
         </StackLayout>
     </Page>
   `

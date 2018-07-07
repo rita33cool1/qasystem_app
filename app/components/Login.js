@@ -22,9 +22,9 @@ module.exports = {
             }).then((response) => {
                 const result = response.content.toJSON();
                 console.log(response.statusCode);
-                if (response.statusCode == 200 || response.statusCode == 202) {
+                if (result.msg == "Success") {
                     console.log(result);
-                    this.$user_id.val = result.token.toString();
+                    this.$user_id.val = result.token;
                     this.$user_name.val = this.AccountText;
                     this.$router.go(-1);
                 } else {
