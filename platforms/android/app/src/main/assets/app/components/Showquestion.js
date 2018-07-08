@@ -40,7 +40,10 @@ module.exports = {
                 })
             }).then((response) => {
                 const result = response.content.toJSON();
-                console.log(result);
+                if (result.msg == "Success") {
+                    alert(result.msg);
+                    this.$router.go(-1);
+                }
             }, (e) => {
                 console.log(e);
             });

@@ -36,7 +36,7 @@ module.exports = {
                         key: this.$user_id.val,
                         title: this.TitleText,
                         content: this.QuestionText,
-                        hashtags: ["test", this.category[this.selectCategory]]
+                        expertises: ["test", this.category[this.selectCategory]]
                     })
                 }).then((response) => {
                     const result = response.content.toJSON();
