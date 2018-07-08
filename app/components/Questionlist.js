@@ -19,17 +19,15 @@ module.exports = {
                 console.log(result);
                 this.$question_num = result.questions.length;
                 console.log(this.$question_num);
-                if (this.$question_list.length < this.$question_num) {
-                    for (var i = this.$question_list.length; i < this.$question_num; i++) {
-                        console.log(result.questions[i]);
-                        var tmp_data = {
-                            title: result.questions[i].question.title,
-                            id: i + 1
-                        };
-                        this.$question_list.push(tmp_data);
-                    }
-                    this.questionlist = this.$question_list;
+                for (var i = this.$question_list.length; i < this.$question_num; i++) {
+                    console.log(result.questions[i]);
+                    var tmp_data = {
+                        title: result.questions[i].question.title,
+                        id: i + 1
+                    };
+                    this.$question_list.push(tmp_data);
                 }
+                this.questionlist = this.$question_list;
                 console.log(this.$question_list);
                 console.log(this.questionlist);
             }, (e) => {

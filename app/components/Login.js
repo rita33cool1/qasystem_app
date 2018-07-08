@@ -20,17 +20,23 @@ module.exports = {
                     password: this.PasswordText
                 })
             }).then((response) => {
-                const result = response.content.toJSON();
-                console.log(response.statusCode);
-                if (result.msg == "Success") {
-                    console.log(result);
-                    this.$user_id.val = result.key;
-                    this.$user_name.val = this.AccountText;
-                    this.$router.go(-1);
+
+                if (response.statusCode == 200) {
+
+                    const result = response.content.toJSON();
+                    //console.log(result);
+                    if (result.msg == "Success") {
+                        this.$user_id.val = result.key;
+                        this.$user_name.val = this.AccountText;
+                        this.$router.go(-1);
+                    } else {
+                        alert(result.errorMsg);
+                    }
                 } else {
-                    console.log(result);
+                    alert('Connect Fail!');
                 }
-                //console.log(response.content.toJson.prototype);
+
+
             }, (e) => {
                 console.log(e);
             });

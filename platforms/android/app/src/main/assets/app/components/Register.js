@@ -22,21 +22,25 @@ module.exports = {
                     password: this.PasswordText
                 })
             }).then((response) => {
+
                 if (response.statusCode == 200) {
-                    console.log("Register Successfully!");
+
                     const result = response.content.toJSON();
-                    console.log(result);
-                    alert('Regist Success!')
-                    this.$router.go(-1);
+                    //console.log(result);
+                    if (result.msg == "Success") {
+                        alert('Regist Success!').then(() => {
+                            console.log('Regist Success!');
+                            this.$router.push('/login');
+                        });
+                    } else {
+                        alert(result.errorMsg);
+                    }
                 } else {
-                    const result = response.content.toJSON();
-                    console.log(result);
+                    alert('Connect Fail!');
                 }
             }, (e) => {
-                console.log(e);
+                alert(e);
             });
-
-
         },
     },
     template: `
