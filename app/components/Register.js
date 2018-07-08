@@ -2,10 +2,10 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl: " http://140.114.79.86:8000/api/user/register/",
-            EmailText: "789@example.com",
-            AccountText: "Zxcvbn",
-            PasswordText: "Asdfgh",
+            apiUrl: "http://140.114.79.86:8000/api/user/register/",
+            EmailText: "",
+            AccountText: "",
+            PasswordText: "",
             item: {},
         }
     },
@@ -17,7 +17,7 @@ module.exports = {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 content: JSON.stringify({
-                    email: this.Email,
+                    email: this.EmailText,
                     username: this.AccountText,
                     password: this.PasswordText
                 })
@@ -26,6 +26,7 @@ module.exports = {
                     console.log("Register Successfully!");
                     const result = response.content.toJSON();
                     console.log(result);
+                    alert('Regist Success!')
                     this.$router.go(-1);
                 } else {
                     const result = response.content.toJSON();
@@ -46,7 +47,7 @@ module.exports = {
         <StackLayout>
             <Label :text="Register" />
             <TextField v-model="AccountText" hint="Enter Account..." />
-            <TextField v-model="PasswordText" hint="Enter Password..." />
+            <TextField v-model="PasswordText" hint="Enter Password..." secure=true />
             <TextField v-model="EmailText" hint="Enter Email..." />
             <Button text="Submit" @tap="register()" />
             <Button text="Back" @tap="$router.go(-1)" />

@@ -2,7 +2,7 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl: "http://140.114.79.86:8000/accounts/api/users/profile/",
+            apiUrl: "http://140.114.79.86:8000/api/user/profile/",
             cur_username: "",
             cur_expertise: "",
             cur_email: ""
