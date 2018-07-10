@@ -2,7 +2,7 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl: "http://140.114.79.86:8000/api/question/" + this.$question_cur_link.val + "/",
+            apiUrl: "http://140.114.79.86:8000/api/questions/?qid=" + this.$question_cur_link.val,
             deleteUrl: "http://140.114.79.86:8000/api/user/question/delete/",
             title: "Tmp title",
             content: "None",
@@ -21,9 +21,9 @@ module.exports = {
                 const result = response.content.toJSON();
                 console.log(result);
 
-                this.title = result.title;
-                this.content = result.content;
-                this.askername = result.username;
+                this.title = result[0].title;
+                this.content = result[0].content;
+                this.askername = result[0].username;
             }, (e) => {
                 console.log(e);
             });
