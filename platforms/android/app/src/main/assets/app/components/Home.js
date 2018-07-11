@@ -26,10 +26,7 @@ module.exports = {
                     };
                     this.$question_list.push(tmp_data);
                 }
-                this.questionlist = this.$question_list;
 
-                console.log(this.$question_list);
-                console.log(this.questionlist);
             }, (e) => {
                 console.log(e);
             });

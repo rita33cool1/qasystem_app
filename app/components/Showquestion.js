@@ -50,6 +50,7 @@ module.exports = {
         },
         modifyQuestion: function() {
             console.log("modify the question");
+            this.$router.push('/modifyquestion');
         }
     },
     template: `

@@ -1,5 +1,5 @@
 {
-	"time": "Tue Jul 10 2018 22:41:37 GMT+0800 (台北標準時間)",
+	"time": "Wed Jul 11 2018 18:22:30 GMT+0800 (台北標準時間)",
 	"nativePlatformStatus": "3",
 	"bundle": false,
 	"release": false,
@@ -7,21 +7,21 @@
 	"projectFileHash": "cd48f06b5a41fa1379d4a75fbc0ec6c78dc76f6709152150eb5c3b1a81f5678c",
 	"changesRequireBuildTime": "Wed Jun 20 2018 17:44:41 GMT+0800 (台北標準時間)",
 	"appFilesHashes": {
-		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\Modifyquestion.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
 		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\app.css": "e8a314c0a49afb897e3d58c04c60e464c6dea535",
 		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\app.css": "2b1d709a09298d64d70cd155465281498419d98e",
 		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\Changeprofile.js": "8d5ea7232f5f8f318c5dbd4186a53c52bcf582d6",
 		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\Counter.js": "f5c2713a6a12f426da52faf2a31ed36dd89fa64a",
-		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\Home.js": "19bd0af429155d3a19430e9afe10573c20f5c3a7",
-		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\Login.js": "3422bb761b83eec5dedf6e1e801d208b7dbbb9b3",
+		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\Home.js": "75f138e850cc8b59a2a417c3d1212dc6ec4e7422",
+		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\Login.js": "c318995c211c6a5d1de025ce31ec449f977ca0af",
+		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\Modifyquestion.js": "853cfe567daded7e4111b8d1bf00b1365af4c32a",
 		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\Profile.js": "1f048213b4a17d9644961b784fedc960d603e30e",
 		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\Question.js": "fe712d63e2c0664e6f31b7545633fe4a2d464f3c",
 		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\Questionlist.js": "d8d14e8197b5a478aeb7759b9ad049da79997c41",
 		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\Register.js": "ff0295c3c822dbcaa0b05b3e46f72f06bdf29ea4",
-		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\Showquestion.js": "e01d78c5ade8b3715ef86e4042594024cc6c5c2c",
+		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\Showquestion.js": "2e5148deb570b07ffd5d1cab4469af11165ec9fb",
 		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\images\\NativeScript-Vue.png": "31f09bdba72293198ee2e2a83c4fe5aa5744bc3d",
 		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\LICENSE": "eead458ad656e9f3129b081780800f175b67a9a9",
-		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\main.js": "ae12982ffec14ea1833ffbee4befbf870c38dc17",
+		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\main.js": "0288f544f101861f58d06100552d688c76eb40ae",
 		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\package.json": "7795a4253d3bc60b48dca7fdc03410a64f8aa9b3",
 		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\README.md": "5f0be8a44eebb8feed41603ffeee4ed72751402e"
 	}
