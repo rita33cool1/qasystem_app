@@ -24,19 +24,6 @@ module.exports = {
             }).then((response) => {
 
                 if (response.statusCode == 200) {
-<<<<<<< HEAD
-                    const result = response.content.toJSON();
-                    if(result.msg=="Success"){
-                    console.log("Register Successfully!");
-                    console.log(result);
-                    alert('Regist Success!')
-                    .then(() => {
-                        console.log('regist success');
-                        this.$router.push('/login');
-                    });
-                }
-                    else alert(result.errorMsg);
-=======
 
                     const result = response.content.toJSON();
                     //console.log(result);
@@ -48,7 +35,6 @@ module.exports = {
                     } else {
                         alert(result.errorMsg);
                     }
->>>>>>> 030d5f9c4d386be2a337a9b69390d96b8e567dd5
                 } else {
                     alert('Connect Fail!');
                 }
