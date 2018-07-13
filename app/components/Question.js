@@ -2,7 +2,7 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl: " http://140.114.79.86:8000/api/user/question/post/",
+            apiUrl: "http://140.114.79.86:8000/api/user/question/post/",
             TitleText: "",
             QuestionText: "",
             category: ["C++", "Python", "JavaScript"],
@@ -26,7 +26,7 @@ module.exports = {
                 console.log("Time stamp : ");
                 console.log(year + "/" + month + "/" + day);
                 console.log(hour + ":" + minute + ":" + sec);
-                console.log("Expertise : " + this.category[this.selectCategory.number])
+                console.log(this.category[this.selectCategory])
 
                 httpModule.request({
                     url: this.apiUrl,
@@ -36,12 +36,12 @@ module.exports = {
                         key: this.$user_id.val,
                         title: this.TitleText,
                         content: this.QuestionText,
-                        hashtags: ["test", this.category[this.selectCategory.number]]
+                        expertises: ["test", this.category[this.selectCategory]]
                     })
                 }).then((response) => {
                     const result = response.content.toJSON();
-                    if (response.statusCode == 200 || response.statusCode == 202) {
-                        console.log("Post question Success!!");
+                    if (response.statusCode == 200) {
+
                         console.log(result);
                         this.$router.go(-1);
                     } else {
@@ -49,7 +49,7 @@ module.exports = {
                     }
                     //console.log(response.content.toJson.prototype);
                 }, (e) => {
-                    console.log(e);
+                    alert(e);
                 });
 
             } else {

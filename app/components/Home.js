@@ -14,19 +14,20 @@ module.exports = {
             }).then((response) => {
                 const result = response.content.toJSON();
                 console.log(result);
-                this.$question_num = result.questions.length;
-                console.log(this.$question_num);
-                if (this.$question_list.length < this.$question_num) {
-                    for (var i = this.$question_list.length; i < this.$question_num; i++) {
-                        console.log(result.questions[i]);
-                        var tmp_data = {
-                            title: result.questions[i].question.title,
-                            id: i + 1
-                        };
-                        this.$question_list.push(tmp_data);
-                    }
-                    this.questionlist = this.$question_list;
+                this.$question_list = [];
+                this.$question_num = result.length;
+
+                for (var i = this.$question_list.length; i < this.$question_num; i++) {
+                    console.log(result[i]);
+                    var tmp_data = {
+                        title: result[i].title,
+                        qid: result[i].question_id,
+                        uid: result[i].user_id
+                    };
+                    this.$question_list.push(tmp_data);
                 }
+                this.questionlist = this.$question_list;
+
                 console.log(this.$question_list);
                 console.log(this.questionlist);
             }, (e) => {
@@ -36,7 +37,7 @@ module.exports = {
     },
     data() {
         return {
-            apiUrl: "http://140.114.79.86:8000/api/question/0/",
+            apiUrl: "http://140.114.79.86:8000/api/questions/",
         };
     },
     template: `

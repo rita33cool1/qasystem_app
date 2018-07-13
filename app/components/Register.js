@@ -22,7 +22,9 @@ module.exports = {
                     password: this.PasswordText
                 })
             }).then((response) => {
+
                 if (response.statusCode == 200) {
+<<<<<<< HEAD
                     const result = response.content.toJSON();
                     if(result.msg=="Success"){
                     console.log("Register Successfully!");
@@ -34,12 +36,24 @@ module.exports = {
                     });
                 }
                     else alert(result.errorMsg);
-                } else {
+=======
+
                     const result = response.content.toJSON();
-                    console.log(result);
+                    //console.log(result);
+                    if (result.msg == "Success") {
+                        alert('Regist Success!').then(() => {
+                            console.log('Regist Success!');
+                            this.$router.push('/login');
+                        });
+                    } else {
+                        alert(result.errorMsg);
+                    }
+>>>>>>> 030d5f9c4d386be2a337a9b69390d96b8e567dd5
+                } else {
+                    alert('Connect Fail!');
                 }
             }, (e) => {
-                console.log(e);
+                alert(e);
             });
         },
     },
