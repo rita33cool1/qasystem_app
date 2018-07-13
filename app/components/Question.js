@@ -67,12 +67,16 @@ module.exports = {
     </ActionBar>
     <ScrollView>
         <StackLayout >
-            <Span text="Title : \n" row="1"/>
-            <TextField v-model="TitleText" hint="Enter the title" row="2"/>
-            <Span text="Description : \n" row="3" />
+            <Label>
+                <Span text="Title : \n" row="1"/>
+            </Label>
+            <TextField v-model="TitleText" hint="Enter the title" row="2">
+                <Span text="Description : \n" row="3" />
+            </TextField>
             <TextField v-model="QuestionText" hint="Describe the quesion" row="4"/>
-    
-            <Span text="Category : \n"/>
+            <Label>
+                <Span text="Category : \n"/>
+            </Label>
             <ListPicker :items="category" v-model="selectCategory" />        
             <Button text="submit" @tap="sendQuestion()" />                  
                 

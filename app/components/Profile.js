@@ -47,8 +47,9 @@ module.exports = {
           <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.back()" />
         </ActionBar>
         <StackLayout>
-            <Label :text="Profile" />
-            <Span text="User Profile" fontWeight="Bold" />       
+            <Label :text="Profile">
+                <Span text="User Profile" fontWeight="Bold" />
+            </Label>       
             <TextView editable="false">
                 <FormattedString>   
                     

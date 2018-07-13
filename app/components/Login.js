@@ -70,7 +70,7 @@ module.exports = {
         <StackLayout>
             <Label :text="Login" />
             <TextField v-model="AccountText" hint="Account..." />
-            <TextField v-model="PasswordText" hint="Password..." secure=true/>
+            <TextField v-model="PasswordText" hint="Password..." secure=true />
             <Button text="Submit" @tap="signin()" />
             <Button text="Back" @tap="$router.go(-1)" />
         </StackLayout>
