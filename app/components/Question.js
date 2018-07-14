@@ -78,20 +78,17 @@ module.exports = {
     </ActionBar>
     <ScrollView>
         <StackLayout >
-            <Label text="Title :" />
-            <TextField v-model="TitleText" hint="Enter the title" />
-            <Label text="Description :" />
-            <TextField v-model="QuestionText" hint="Describe the quesion" />
-    
-            <Label text="Expertise :" />
-            <TextField v-model="Expertise1" hint="Enter the Expertise" />
-            <TextField v-model="Expertise2" hint="Enter the Expertise" />
-            <!--ListPicker :items="category" v-model="selectCategory" width="50" /--> 
-            <!--ListPicker :items="category" v-model="selectCategory2" width="50" /-->
-            <Label text="Wantedtime :" />
-            <ListPicker :items="wantedtime" v-model="selectTime" width="50" />       
-            <Button text="submit" @tap="sendQuestion()" />                  
-                     
+            <Label>
+                <Span text="Title : \n" row="1"/>
+            </Label>
+            <TextField v-model="TitleText" hint="Enter the title" row="2">
+                <Span text="Description : \n" row="3" />
+            </TextField>
+            <TextField v-model="QuestionText" hint="Describe the quesion" row="4"/>
+            <Label>
+                <Span text="Category : \n"/>
+            </Label>
+            <ListPicker :items="category" v-model="selectCategory" />                
         </StackLayout>
     </ScrollView>
       
