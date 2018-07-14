@@ -5,14 +5,11 @@ module.exports = {
             apiUrl: "http://140.114.79.86:8000/api/user/question/post/",
             TitleText: "",
             QuestionText: "",
-            category: ["None", "C++", "Python", "JavaScript"],
             wantedtime: [1, 2, 4, 8, 16],
-            selectCategory: number = 0,
-            selectCategory2: number = 0,
-            selectCategory3: number = 0,
             selectTime: number = 0,
             Expertise1: "",
-            Expertise2: ""
+            Expertise2: "",
+            Expertise3: ""
         }
     },
     methods: {
@@ -40,6 +37,10 @@ module.exports = {
             if (this.Expertise2 != "") {
                 new_expertises.push(this.Expertise2);
             }
+            if (this.Expertise3 != "") {
+                new_expertises.push(this.Expertise3);
+            }
+
 
             console.log(new_expertises);
 
@@ -79,17 +80,19 @@ module.exports = {
     <ScrollView>
         <StackLayout >
             <Label>
-                <Span text="Title : \n" row="1"/>
+                <Span text="Title : \n"/>
             </Label>
-            <TextField v-model="TitleText" hint="Enter the title" row="2">
-                <Span text="Description : \n" row="3" />
+            <TextField v-model="TitleText" hint="Enter the title" >
+                <Span text="Description : \n"  />
             </TextField>
-            <TextField v-model="QuestionText" hint="Describe the quesion" row="4"/>
+            <TextField v-model="QuestionText" hint="Describe the quesion" />
             <Label>
                 <Span text="Category : \n"/>
             </Label>
 
-            <ListPicker :items="category" v-model="selectCategory" />        
+            <TextField v-model="Expertise1" hint="Enter Expertise..." />
+            <TextField v-model="Expertise2" hint="Enter Expertise..." />
+            <TextField v-model="Expertise3" hint="Enter Expertise..." />        
             <Button text="submit" @tap="sendQuestion()" />                  
  
         </StackLayout>
