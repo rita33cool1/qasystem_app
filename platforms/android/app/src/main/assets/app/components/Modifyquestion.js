@@ -5,7 +5,8 @@ module.exports = {
             apiUrl: "http://140.114.79.86:8000/api/questions/?qid=" + this.$question_cur_link.val,
             EditapiUrl: "http://140.114.79.86:8000/api/question/edit/",
             new_title: "New title",
-            new_content: "None"
+            new_content: "None",
+            new_expertise: ["", "", ""],
         }
     },
     methods: {
@@ -21,6 +22,11 @@ module.exports = {
 
                 this.new_title = result[0].title;
                 this.new_content = result[0].content;
+
+                for (var i = 0; i < result[0].expertises.length; i++) {
+                    this.new_expertise[i] = result[0].expertises[i];
+                }
+                console.log(this.new_expertise);
 
             }, (e) => {
                 console.log(e);
@@ -55,9 +61,15 @@ module.exports = {
             <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.go(-1);" />
         </ActionBar>
         <StackLayout>
+            <Label text="Title" />
             <TextField v-model="new_title" />
+            <Label text="Content" />
             <textField v-model="new_content" />
-            
+            <Label text="Expertise" />
+            <textField v-model="new_expertise[0]" />
+            <textField v-model="new_expertise[1]" />
+            <textField v-model="new_expertise[2]" />
+
             <Button text="Send" @tap="SendQuestion()" />
         </StackLayout>
     </Page>

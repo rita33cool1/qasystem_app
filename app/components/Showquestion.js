@@ -6,7 +6,8 @@ module.exports = {
             deleteUrl: "http://140.114.79.86:8000/api/user/question/delete/",
             title: "Tmp title",
             content: "None",
-            askername: "None"
+            askername: "None",
+            expertises: [],
         }
     },
     methods: {
@@ -24,6 +25,12 @@ module.exports = {
                 this.title = result[0].title;
                 this.content = result[0].content;
                 this.askername = result[0].username;
+
+                for (var i = 0; i < result[0].expertises.length; i++) {
+                    this.expertises.push(result[0].expertises[i]);
+                }
+                console.log(this.expertises);
+
             }, (e) => {
                 console.log(e);
             });

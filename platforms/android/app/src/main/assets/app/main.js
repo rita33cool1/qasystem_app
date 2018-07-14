@@ -9,6 +9,7 @@ const Question = require('./components/Question');
 const Questionlist = require('./components/Questionlist');
 const ShowQuestion = require('./components/Showquestion');
 const ModifyQuestion = require('./components/Modifyquestion');
+const Userlist = require('./components/Userlist');
 require("nativescript-vue").registerElement("RadDataForm", () => require("nativescript-ui-dataform").RadDataForm);
 const VueResource = require('vue-resource');
 //import VueResource from 'vue-resource';
@@ -20,6 +21,8 @@ Vue.http.options.emulateJSON = true;
 Vue.config.silent = false;
 /*global var*/
 Vue.prototype.$question_list = [];
+Vue.prototype.$user_list = [];
+
 Vue.prototype.$user_id = {
     val: "0",
     set: function(data) {
@@ -56,6 +59,7 @@ const router = new VueRouter({
         { path: '/questionlist', component: Questionlist },
         { path: '/showquestion', component: ShowQuestion },
         { path: '/modifyquestion', component: ModifyQuestion },
+        { path: '/userlist', component: Userlist },
         { path: '*', redirect: '/home' }
     ]
 });
