@@ -2,3 +2,8 @@ Button {
     width: 100;
     font-size: 20;
 }
+
+ListPicker {
+    width: 50%;
+    font-size: 20;
+}

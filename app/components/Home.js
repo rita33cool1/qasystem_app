@@ -26,10 +26,7 @@ module.exports = {
                     };
                     this.$question_list.push(tmp_data);
                 }
-                this.questionlist = this.$question_list;
 
-                console.log(this.$question_list);
-                console.log(this.questionlist);
             }, (e) => {
                 console.log(e);
             });
@@ -51,6 +48,7 @@ module.exports = {
         <Button text="Change"         v-if="this.$user_id.val != '0'" @tap="$router.push('/change')" />
         <Button text="Ask Question"   v-if="this.$user_id.val != '0'" @tap="$router.push('/question')" />
         <Button text="Question List"   @tap="$router.push('/questionlist')" />
+        <Button text="User List"   @tap="$router.push('/userlist')" />
       </StackLayout>
     </Page>
   `
