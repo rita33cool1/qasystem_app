@@ -77,6 +77,9 @@ module.exports = {
                     <Span text="Asker : " fontWeight="Bold" />
                     <Span fontWeight="Bold" >{{ askername }}</Span>
                     <Span text="\n" />
+                    <Span text="Expertises : " fontWeight="Bold" />
+                    <Span fontWeight="Bold" >{{ expertises }}</Span>
+                    <Span text="\n" />
                 </FormattedString>
             </TextView>
             <Button text="delete" v-if="this.$user_name.val == this.askername" @tap="deleteQuestion()" />

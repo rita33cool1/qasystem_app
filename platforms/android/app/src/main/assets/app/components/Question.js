@@ -5,14 +5,11 @@ module.exports = {
             apiUrl: "http://140.114.79.86:8000/api/user/question/post/",
             TitleText: "",
             QuestionText: "",
-            category: ["None", "C++", "Python", "JavaScript"],
             wantedtime: [1, 2, 4, 8, 16],
-            selectCategory: number = 0,
-            selectCategory2: number = 0,
-            selectCategory3: number = 0,
             selectTime: number = 0,
             Expertise1: "",
-            Expertise2: ""
+            Expertise2: "",
+            Expertise3: ""
         }
     },
     methods: {
@@ -40,6 +37,10 @@ module.exports = {
             if (this.Expertise2 != "") {
                 new_expertises.push(this.Expertise2);
             }
+            if (this.Expertise3 != "") {
+                new_expertises.push(this.Expertise3);
+            }
+
 
             console.log(new_expertises);
 
@@ -78,20 +79,22 @@ module.exports = {
     </ActionBar>
     <ScrollView>
         <StackLayout >
-            <Label text="Title :" />
-            <TextField v-model="TitleText" hint="Enter the title" />
-            <Label text="Description :" />
+            <Label>
+                <Span text="Title : \n"/>
+            </Label>
+            <TextField v-model="TitleText" hint="Enter the title" >
+                <Span text="Description : \n"  />
+            </TextField>
             <TextField v-model="QuestionText" hint="Describe the quesion" />
-    
-            <Label text="Expertise :" />
-            <TextField v-model="Expertise1" hint="Enter the Expertise" />
-            <TextField v-model="Expertise2" hint="Enter the Expertise" />
-            <!--ListPicker :items="category" v-model="selectCategory" width="50" /--> 
-            <!--ListPicker :items="category" v-model="selectCategory2" width="50" /-->
-            <Label text="Wantedtime :" />
-            <ListPicker :items="wantedtime" v-model="selectTime" width="50" />       
+            <Label>
+                <Span text="Category : \n"/>
+            </Label>
+
+            <TextField v-model="Expertise1" hint="Enter Expertise..." />
+            <TextField v-model="Expertise2" hint="Enter Expertise..." />
+            <TextField v-model="Expertise3" hint="Enter Expertise..." />        
             <Button text="submit" @tap="sendQuestion()" />                  
-                     
+ 
         </StackLayout>
     </ScrollView>
       

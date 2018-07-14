@@ -2,59 +2,45 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl:  "http://140.114.79.86:8000/accounts/api/users/register",
-            Email: "123@example.com",
-            AccountText: "Name",
-            PasswordText: "Pwd",
+            apiUrl: "http://140.114.79.86:8000/api/user/register/",
+            EmailText: "",
+            AccountText: "",
+            PasswordText: "",
             item: {},
         }
     },
     methods: {
-        register: function () {
+        register: function() {
+            console.log(this.EmailText)
             httpModule.request({
                 url: this.apiUrl,
                 method: "POST",
+                headers: { "Content-Type": "application/json" },
                 content: JSON.stringify({
-                    email: this.Email,
+                    email: this.EmailText,
                     username: this.AccountText,
                     password: this.PasswordText
                 })
             }).then((response) => {
-                console.log("Success!!");
-                console.log(response.content);
-                //console.log(response.content.toJson.prototype);
-            }, (e) => {
-                console.log(e);
-            });
-            console.log("Register Successfully!");
-            //vm.user_account[this.user_account.length] = this.AccountText;
-            //console.log(this.user_account[this.user_account.length]);
-            /*
-            var tmp_data = JSON.stringify({
-                "email": this.Email,
-                "username": this.AccountText,
-                "password": this.PasswordText,
-            });
-            this.$userdata.push(tmp_data);
-            //http
-            var vm = this;
-            vm.$http.post(vm.apiUrl, vm.item)
-                .then((response) => {
-                    vm.$set('item', {})
-                    //vm.getCustomers()
-                })*/
-            /*
-            this.$http.post(this.apiUrl).then(function (successCallback) {
-                console.log("success!!");
-                console.log(successCallback);
-            }, function (errorCallback) {
-                console.log("error!!");
-                console.log(errorCallback);
-            });
-            */
-            //this.$http.post('/someUrl', [body], [options]).then(successCallback, errorCallback);
 
-            this.$router.go(-1);
+                if (response.statusCode == 200) {
+
+                    const result = response.content.toJSON();
+                    //console.log(result);
+                    if (result.msg == "Success") {
+                        alert('Regist Success!').then(() => {
+                            console.log('Regist Success!');
+                            this.$router.push('/login');
+                        });
+                    } else {
+                        alert(result.errorMsg);
+                    }
+                } else {
+                    alert('Connect Fail!');
+                }
+            }, (e) => {
+                alert(e);
+            });
         },
     },
     template: `
@@ -65,7 +51,8 @@ module.exports = {
         <StackLayout>
             <Label :text="Register" />
             <TextField v-model="AccountText" hint="Enter Account..." />
-            <TextField v-model="PasswordText" hint="Enter Password..." />
+            <TextField v-model="PasswordText" hint="Enter Password..." secure=true />
+            <TextField v-model="EmailText" hint="Enter Email..." />
             <Button text="Submit" @tap="register()" />
             <Button text="Back" @tap="$router.go(-1)" />
         </StackLayout>

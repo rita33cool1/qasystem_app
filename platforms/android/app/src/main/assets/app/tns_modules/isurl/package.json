@@ -2,10 +2,9 @@
   "_args": [
     [
       "isurl@1.0.0",
-      "C:\\qasystem_test"
+      "/Users/chaowen/qasystem_test"
     ]
   ],
-  "_development": true,
   "_from": "isurl@1.0.0",
   "_id": "isurl@1.0.0",
   "_inBundle": false,
@@ -27,7 +26,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/isurl/-/isurl-1.0.0.tgz",
   "_spec": "1.0.0",
-  "_where": "C:\\qasystem_test",
+  "_where": "/Users/chaowen/qasystem_test",
   "author": {
     "name": "Steven Vachon",
     "email": "contact@svachon.com",

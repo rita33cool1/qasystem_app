@@ -1,58 +1,100 @@
+const httpModule = require("http");
 module.exports = {
+    data() {
+        return {
+            apiUrl: "http://140.114.79.86:8000/api/user/question/post/",
+            TitleText: "",
+            QuestionText: "",
+            category: ["None", "C++", "Python", "JavaScript"],
+            wantedtime: [1, 2, 4, 8, 16],
+            selectCategory: number = 0,
+            selectCategory2: number = 0,
+            selectCategory3: number = 0,
+            selectTime: number = 0,
+            Expertise1: "",
+            Expertise2: ""
+        }
+    },
     methods: {
         sendQuestion() {
+
             console.log("Send the question!!");
             var time = new Date();
-            console.log(this.TitleText + " :\n" + this.QuestionText);
+            console.log(this.TitleText + " : " + this.QuestionText);
             let year = time.getFullYear();
             let month = time.getMonth();
             let day = time.getDate();
             let hour = time.getHours();
             let minute = time.getMinutes();
             let sec = time.getSeconds();
-
             console.log("Time stamp : ");
             console.log(year + "/" + month + "/" + day);
             console.log(hour + ":" + minute + ":" + sec);
-            console.log("Category : ")
-            console.log(this.category[this.selectCategory.number]);
-            console.log("Wanted time : ")
-            console.log(this.wantedtime[this.selectTime.number]);
+            console.log(this.category[this.selectCategory2]);
+
+            var new_expertises = [];
+
+            if (this.Expertise1 != "") {
+                new_expertises.push(this.Expertise1);
+            }
+            if (this.Expertise2 != "") {
+                new_expertises.push(this.Expertise2);
+            }
+
+            console.log(new_expertises);
+
+            httpModule.request({
+                url: this.apiUrl,
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                content: JSON.stringify({
+                    key: this.$user_id.val,
+                    title: this.TitleText,
+                    content: this.QuestionText,
+                    expertises: new_expertises
+                })
+            }).then((response) => {
+                const result = response.content.toJSON();
+                if (result.msg == "Success") {
+
+                    console.log(result);
+                    this.$router.go(-1);
+                } else {
+                    console.log(result);
+                }
+                //console.log(response.content.toJson.prototype);
+            }, (e) => {
+                alert(e);
+            });
+
+
         },
     },
-    data() {
-        return {
-            TitleText: "",
-            QuestionText: "",
-            category: ["C++", "Python", "JavaScript"],
-            wantedtime: [1, 2, 4, 8, 16],
-            selectCategory: number = 0,
-            selectTime: number = 0,
-        }
-    },
+
     template: `
     <Page>
     <ActionBar :title="$route.path">
         <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.back()" />
     </ActionBar>
-    <GridLayout rows="auto auto auto auto auto auto auto auto auto auto auto auto">
-        
-            <Span text="Title : \n" row="1"/>
-            <TextField v-model="TitleText" hint="Enter the title" row="2"/>
-            <Span text="Description : \n" row="3" />
+    <ScrollView>
+        <StackLayout >
+            <Label>
+                <Span text="Title : \n" row="1"/>
+            </Label>
+            <TextField v-model="TitleText" hint="Enter the title" row="2">
+                <Span text="Description : \n" row="3" />
+            </TextField>
             <TextField v-model="QuestionText" hint="Describe the quesion" row="4"/>
-            
+            <Label>
+                <Span text="Category : \n"/>
+            </Label>
 
-            <ScrollView orientation="vertical" row="5">
-            <StackLayout orientation="vertical" class="scroll-menu">
-                <StackLayout >
-                    <Span text="Category : \n"/>
-                    <ListPicker :items="category" v-model="selectCategory" />        
-                    <Button text="submit" @tap="sendQuestion()" />                  
-                </StackLayout>
-            </StackLayout>
-        </ScrollView>   
-    </GridLayout>   
+            <ListPicker :items="category" v-model="selectCategory" />        
+            <Button text="submit" @tap="sendQuestion()" />                  
+ 
+        </StackLayout>
+    </ScrollView>
+      
     </Page>
   `
 };
