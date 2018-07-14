@@ -42,8 +42,9 @@ module.exports = {
           <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.back()" />
         </ActionBar>
         <StackLayout>
-            
-            <Span text="New Expertise : " fontWeight="Bold" />
+            <Label>
+                <Span text="New Expertise : " fontWeight="Bold" />
+            </Label>
             <TextField v-model="Experise1" hint="Enter Expertise1..." />
             <TextField v-model="Experise2" hint="Enter Expertise2..." />
             <TextField v-model="Experise3" hint="Enter Expertise3..." />

@@ -11,7 +11,7 @@ module.exports = {
     },
     methods: {
         register: function() {
-
+            console.log(this.EmailText)
             httpModule.request({
                 url: this.apiUrl,
                 method: "POST",

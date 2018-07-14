@@ -38,6 +38,7 @@ module.exports = {
 
 
             }, (e) => {
+                alert(result.errorMsg);
                 console.log(e);
             });
             /*

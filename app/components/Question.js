@@ -88,8 +88,10 @@ module.exports = {
             <Label>
                 <Span text="Category : \n"/>
             </Label>
-            <ListPicker :items="category" v-model="selectCategory" />  
-            <Button text="submit" @tap="sendQuestion()" />              
+
+            <ListPicker :items="category" v-model="selectCategory" />        
+            <Button text="submit" @tap="sendQuestion()" />                  
+ 
         </StackLayout>
     </ScrollView>
       
