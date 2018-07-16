@@ -26,6 +26,7 @@ module.exports = {
                     const result = response.content.toJSON();
                     //console.log(result);
                     if (result.msg == "Success") {
+                        console.log(result);
                         this.$user_id.val = result.key;
                         this.$user_name.val = this.AccountText;
                         this.$router.go(-1);

@@ -2,7 +2,7 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl: "http://140.114.79.86:8000/api/questions/?qid=" + this.$cur_qid.val,
+            apiUrl: "http://140.114.79.86:8000/api/questions/?uid=",
             deleteUrl: "http://140.114.79.86:8000/api/user/question/delete/",
             title: "Tmp title",
             content: "None",
@@ -57,10 +57,6 @@ module.exports = {
         modifyQuestion: function() {
             console.log("modify the question");
             this.$router.push('/modifyquestion');
-        },
-        responseQuestion: function() {
-            console.log("response the question");
-            //this.$router.push('/modifyquestion');
         }
     },
     template: `
@@ -86,7 +82,6 @@ module.exports = {
                 </FormattedString>
             </TextView>
             <Button text="delete" v-if="this.$user_name.val == this.askername" @tap="deleteQuestion()" />
-            <Button text="Response" v-if="this.$user_name.val != this.askername && this.$user_id != '' " @tap="responseQuestion()" />
             <Button text="modify" v-if="this.$user_name.val == this.askername" @tap="modifyQuestion()" />
         </StackLayout>
     </Page>

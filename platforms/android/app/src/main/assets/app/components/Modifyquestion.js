@@ -2,7 +2,7 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl: "http://140.114.79.86:8000/api/questions/?qid=" + this.$question_cur_link.val,
+            apiUrl: "http://140.114.79.86:8000/api/questions/?qid=" + this.$cur_qid.val,
             EditapiUrl: "http://140.114.79.86:8000/api/question/edit/",
             new_title: "New title",
             new_content: "None",
@@ -39,7 +39,7 @@ module.exports = {
                 headers: { "Content-Type": "application/json" },
                 content: JSON.stringify({
                     key: this.$user_id.val,
-                    question_id: this.$question_cur_link.val,
+                    question_id: this.$cur_qid.val,
                     title: this.new_title,
                     content: this.new_content
                 })

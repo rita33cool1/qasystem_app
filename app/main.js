@@ -10,6 +10,7 @@ const Questionlist = require('./components/Questionlist');
 const ShowQuestion = require('./components/Showquestion');
 const ModifyQuestion = require('./components/Modifyquestion');
 const Userlist = require('./components/Userlist');
+const Personalquestionlist = require('./components/Personalquestionlist');
 require("nativescript-vue").registerElement("RadDataForm", () => require("nativescript-ui-dataform").RadDataForm);
 const VueResource = require('vue-resource');
 //import VueResource from 'vue-resource';
@@ -41,7 +42,7 @@ Vue.prototype.$question_num = {
         this.val = data;
     }
 };
-Vue.prototype.$question_cur_link = {
+Vue.prototype.$cur_qid = {
     val: "",
     set: function(data) {
         this.val = data;

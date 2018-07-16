@@ -2,7 +2,7 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl: "http://140.114.79.86:8000/api/questions/?qid=" + this.$question_cur_link.val,
+            apiUrl: "http://140.114.79.86:8000/api/questions/?qid=" + this.$cur_qid.val,
             deleteUrl: "http://140.114.79.86:8000/api/user/question/delete/",
             title: "Tmp title",
             content: "None",
@@ -13,7 +13,6 @@ module.exports = {
     methods: {
         load: function() {
             console.log("Show the question");
-            console.log(this.$question_cur_link.val);
             httpModule.request({
                 url: this.apiUrl,
                 method: "GET",
@@ -43,7 +42,7 @@ module.exports = {
                 headers: { "Content-Type": "application/json" },
                 content: JSON.stringify({
                     key: this.$user_id.val,
-                    question_id: this.$question_cur_link.val
+                    question_id: this.$cur_qid.val
                 })
             }).then((response) => {
                 const result = response.content.toJSON();
@@ -58,10 +57,14 @@ module.exports = {
         modifyQuestion: function() {
             console.log("modify the question");
             this.$router.push('/modifyquestion');
+        },
+        responseQuestion: function() {
+            console.log("response the question");
+            //this.$router.push('/modifyquestion');
         }
     },
     template: `
-    <Page @loaded="load()">
+    <Page @loaded="load()" >
         <ActionBar :title="$route.path">
             <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.go(-1);" />
         </ActionBar>
@@ -83,6 +86,7 @@ module.exports = {
                 </FormattedString>
             </TextView>
             <Button text="delete" v-if="this.$user_name.val == this.askername" @tap="deleteQuestion()" />
+            <Button text="Response" v-if="this.$user_name.val != this.askername && this.$user_id != '' " @tap="responseQuestion()" />
             <Button text="modify" v-if="this.$user_name.val == this.askername" @tap="modifyQuestion()" />
         </StackLayout>
     </Page>

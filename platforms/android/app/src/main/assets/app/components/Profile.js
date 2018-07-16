@@ -65,7 +65,7 @@ module.exports = {
                 </FormattedString>
             </TextView>
             <Button text="Change" @tap="change()" />
-            <Button text="Home" @tap="$router.push('./home')" />
+            <Button text="Question" @tap="$router.push('./personal_questionlist')" />
         </StackLayout>
       </Page>
     `

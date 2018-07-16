@@ -1,5 +1,10 @@
 const httpModule = require("http");
 module.exports = {
+    data() {
+        return {
+            apiUrl: "http://140.114.79.86:8000/api/questions/",
+        };
+    },
     methods: {
         check: function() {
             console.log("Check for data");
@@ -13,7 +18,6 @@ module.exports = {
                 headers: { "Content-Type": "application/json" }
             }).then((response) => {
                 const result = response.content.toJSON();
-                console.log(result);
                 this.$question_list = [];
                 this.$question_num = result.length;
 
@@ -32,11 +36,6 @@ module.exports = {
             });
         },
     },
-    data() {
-        return {
-            apiUrl: "http://140.114.79.86:8000/api/questions/",
-        };
-    },
     template: `
     <Page @loaded="load()">
       <ActionBar :title="$route.path" />
@@ -45,7 +44,6 @@ module.exports = {
         <Button text="Login" @tap="$router.push('/login')" />
         <Button text="Check" @tap="check()" />
         <Button text="Profile"        v-if="this.$user_id.val != '0'" @tap="$router.push('/profile')" />
-        <Button text="Change"         v-if="this.$user_id.val != '0'" @tap="$router.push('/change')" />
         <Button text="Ask Question"   v-if="this.$user_id.val != '0'" @tap="$router.push('/question')" />
         <Button text="Question List"   @tap="$router.push('/questionlist')" />
         <Button text="User List"   @tap="$router.push('/userlist')" />
