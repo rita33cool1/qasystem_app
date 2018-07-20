@@ -10,7 +10,8 @@ const Questionlist = require('./components/Questionlist');
 const ShowQuestion = require('./components/Showquestion');
 const ModifyQuestion = require('./components/Modifyquestion');
 const Userlist = require('./components/Userlist');
-const Personalquestionlist = require('./components/Personalquestionlist');
+const Personalquestionlist = require('./components/Per_qlist');
+const Answerquestion = require('./components/Answerquestion');
 require("nativescript-vue").registerElement("RadDataForm", () => require("nativescript-ui-dataform").RadDataForm);
 const VueResource = require('vue-resource');
 //import VueResource from 'vue-resource';
@@ -42,7 +43,19 @@ Vue.prototype.$question_num = {
         this.val = data;
     }
 };
+Vue.prototype.$user_num = {
+    val: 0,
+    set: function(data) {
+        this.val = data;
+    }
+};
 Vue.prototype.$cur_qid = {
+    val: "",
+    set: function(data) {
+        this.val = data;
+    }
+};
+Vue.prototype.$cur_uid = {
     val: "",
     set: function(data) {
         this.val = data;
@@ -61,6 +74,8 @@ const router = new VueRouter({
         { path: '/showquestion', component: ShowQuestion },
         { path: '/modifyquestion', component: ModifyQuestion },
         { path: '/userlist', component: Userlist },
+        { path: '/personalquestionlist', component: Personalquestionlist },
+        { path: '/answer', component: Answerquestion },
         { path: '*', redirect: '/home' }
     ]
 });

@@ -20,7 +20,7 @@ module.exports = {
             }).then((response) => {
                 const result = response.content.toJSON();
                 console.log(result);
-
+                /*
                 this.title = result[0].title;
                 this.content = result[0].content;
                 this.askername = result[0].username;
@@ -29,7 +29,7 @@ module.exports = {
                     this.expertises.push(result[0].expertises[i]);
                 }
                 console.log(this.expertises);
-
+                */
             }, (e) => {
                 console.log(e);
             });
@@ -60,7 +60,7 @@ module.exports = {
         },
         responseQuestion: function() {
             console.log("response the question");
-            //this.$router.push('/modifyquestion');
+            this.$router.push('/answer');
         }
     },
     template: `
@@ -86,7 +86,7 @@ module.exports = {
                 </FormattedString>
             </TextView>
             <Button text="delete" v-if="this.$user_name.val == this.askername" @tap="deleteQuestion()" />
-            <Button text="Response" v-if="this.$user_name.val != this.askername && this.$user_id != '' " @tap="responseQuestion()" />
+            <Button text="Response" v-if="this.$user_name.val != this.askername && this.$user_id.val != '0' " @tap="responseQuestion()" />
             <Button text="modify" v-if="this.$user_name.val == this.askername" @tap="modifyQuestion()" />
         </StackLayout>
     </Page>

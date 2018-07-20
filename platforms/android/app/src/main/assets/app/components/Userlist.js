@@ -9,7 +9,7 @@ module.exports = {
     },
     methods: {
         load: function() {
-            console.log("Load question");
+            console.log("Load userlist");
             httpModule.request({
                 url: this.apiUrl,
                 method: "GET",
@@ -18,23 +18,23 @@ module.exports = {
                 const result = response.content.toJSON();
                 console.log(result[0]);
                 //this.$question_list = [];
-                this.$question_num = result.length;
+                this.$user_num = result.length;
 
-                for (var i = this.$question_list.length; i < this.$question_num; i++) {
-                    console.log(result[i]);
+                for (var i = this.$user_list.length; i < this.$user_num; i++) {
                     var tmp_data = {
                         username: result[i].username,
                         uid: result[i].id,
                     };
                     this.$user_list.push(tmp_data);
                 }
-
+                console.log(this.$user_list);
             }, (e) => {
                 console.log(e);
             });
         },
         onItemTap: function(args) {
-            console.log("Success");
+            console.log(args.item.uid);
+            this.$cur_uid.val = args.item.uid;
         }
     },
     template: `

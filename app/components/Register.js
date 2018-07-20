@@ -30,7 +30,7 @@ module.exports = {
                     if (result.msg == "Success") {
                         alert('Regist Success!').then(() => {
                             console.log('Regist Success!');
-                            this.$router.push('/login');
+                            this.$router.go('/login');
                         });
                     } else {
                         alert(result.errorMsg);

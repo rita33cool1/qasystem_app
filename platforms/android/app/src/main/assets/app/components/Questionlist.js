@@ -33,7 +33,7 @@ module.exports = {
         },
         onItemTap: function(args) {
             console.log(args.item.qid);
-            this.$cur_qid.val = args.item.qid.toString();
+            this.$cur_qid.val = args.item.qid;
             this.$router.push('/showquestion');
         }
     },
