@@ -16,14 +16,13 @@ module.exports = {
                 headers: { "Content-Type": "application/json" }
             }).then((response) => {
                 const result = response.content.toJSON();
-                console.log(result[0]);
-                //this.$question_list = [];
                 this.$user_num = result.length;
 
                 for (var i = this.$user_list.length; i < this.$user_num; i++) {
+
                     var tmp_data = {
                         username: result[i].username,
-                        uid: result[i].id,
+                        uid: result[i].user_id,
                     };
                     this.$user_list.push(tmp_data);
                 }

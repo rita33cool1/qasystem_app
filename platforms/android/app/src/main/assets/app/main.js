@@ -5,13 +5,14 @@ const Login = require('./components/Login');
 const Register = require('./components/Register');
 const Profile = require('./components/Profile');
 const ChangeProfile = require('./components/Changeprofile');
-const Question = require('./components/Question');
+const SendQuestion = require('./components/Sendquestion');
 const Questionlist = require('./components/Questionlist');
 const ShowQuestion = require('./components/Showquestion');
 const ModifyQuestion = require('./components/Modifyquestion');
 const Userlist = require('./components/Userlist');
 const Personalquestionlist = require('./components/Per_qlist');
 const Answerquestion = require('./components/Answerquestion');
+const FriendList = require('./components/Friendlist');
 require("nativescript-vue").registerElement("RadDataForm", () => require("nativescript-ui-dataform").RadDataForm);
 const VueResource = require('vue-resource');
 //import VueResource from 'vue-resource';
@@ -69,12 +70,12 @@ const router = new VueRouter({
         { path: '/register', component: Register },
         { path: '/profile', component: Profile },
         { path: '/change', component: ChangeProfile },
-        { path: '/question', component: Question },
+        { path: '/sendquestion', component: SendQuestion },
         { path: '/questionlist', component: Questionlist },
         { path: '/showquestion', component: ShowQuestion },
         { path: '/modifyquestion', component: ModifyQuestion },
         { path: '/userlist', component: Userlist },
-        { path: '/personalquestionlist', component: Personalquestionlist },
+        { path: '/per_qlist', component: Personalquestionlist },
         { path: '/answer', component: Answerquestion },
         { path: '*', redirect: '/home' }
     ]

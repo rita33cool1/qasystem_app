@@ -20,7 +20,7 @@ module.exports = {
             }).then((response) => {
                 const result = response.content.toJSON();
                 console.log(result);
-                /*
+                
                 this.title = result[0].title;
                 this.content = result[0].content;
                 this.askername = result[0].username;
@@ -29,7 +29,7 @@ module.exports = {
                     this.expertises.push(result[0].expertises[i]);
                 }
                 console.log(this.expertises);
-                */
+                
             }, (e) => {
                 console.log(e);
             });

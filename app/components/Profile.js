@@ -22,7 +22,6 @@ module.exports = {
                 if (response.statusCode == 200 || response.statusCode == 202) {
                     console.log("Get profile Success!!");
                     const result = response.content.toJSON();
-                    console.log(result);
                     this.cur_username = result.username;
                     this.cur_expertise = result.expertise;
                     this.cur_email = result.email;
@@ -33,12 +32,8 @@ module.exports = {
 
                 //console.log(response.content.toJson.prototype);
             }, (e) => {
-                console.log("response: " + e);
+                console.log(e);
             });
-        },
-        change: function() {
-            console.log("Go to change profile page");
-            this.$router.push('/change');
         }
     },
     template: `
@@ -64,8 +59,8 @@ module.exports = {
                     <Span text="\n" />
                 </FormattedString>
             </TextView>
-            <Button text="Change" @tap="change()" />
-            <Button text="Question" @tap="$router.push('./personal_questionlist')" />
+            <Button text="Change" @tap="$router.push('/change')" />
+            <Button text="Personal Question" @tap="$router.push('./per_qlist')" />
         </StackLayout>
       </Page>
     `

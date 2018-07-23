@@ -47,11 +47,11 @@ module.exports = {
                 this.$user_list = [];
                 this.$user_num = result.length;
 
-                for (var i = this.$question_list.length; i < this.$question_num; i++) {
+                for (var i = this.$user_list.length; i < this.$user_num; i++) {
 
                     var tmp_data = {
                         username: result[i].username,
-                        uid: result[i].id,
+                        uid: result[i].user_id,
                     };
                     this.$user_list.push(tmp_data);
                 }
@@ -65,13 +65,15 @@ module.exports = {
     <Page @loaded="load()">
       <ActionBar :title="$route.path" />
       <StackLayout>
-        <Button text="Register" @tap="$router.push('/register')" />
-        <Button text="Login" @tap="$router.push('/login')" />
-        <Button text="Check" @tap="check()" />
-        <Button text="Profile"        v-if="this.$user_id.val != '0'" @tap="$router.push('/profile')" />
-        <Button text="Ask Question"   v-if="this.$user_id.val != '0'" @tap="$router.push('/question')" />
-        <Button text="Question List"   @tap="$router.push('/questionlist')" />
-        <Button text="User List"   @tap="$router.push('/userlist')" />
+        <Button text="Register"         @tap="$router.push('/register')" />
+        <Button text="Login"            @tap="$router.push('/login')" />
+        <Button text="Check"            @tap="check()" />
+        <Button text="Profile"          v-if="this.$user_id.val != '0'" @tap="$router.push('/profile')" />
+        <Button text="Ask Question"     v-if="this.$user_id.val != '0'" @tap="$router.push('/sendquestion')" />
+        <Button text="Friend List"      v-if="this.$user_id.val != '0'" @tap="$router.push('/question')" />
+        <Button text="Question List"    @tap="$router.push('/questionlist')" />
+        <Button text="User List"        @tap="$router.push('/userlist')" />
+        
       </StackLayout>
     </Page>
   `
