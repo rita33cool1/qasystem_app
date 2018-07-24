@@ -2,7 +2,6 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl: "http://140.114.79.86:8000/api/user/profile/",
             cur_username: "",
             cur_expertises: [],
             cur_email: ""
@@ -10,30 +9,10 @@ module.exports = {
     },
     methods: {
         load: function() {
-            console.log("Load profile!!");
-            httpModule.request({
-                url: this.apiUrl,
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                content: JSON.stringify({
-                    key: this.$user_id.val
-                })
-            }).then((response) => {
-                if (response.statusCode == 200 || response.statusCode == 202) {
-                    console.log(result);
-                    const result = response.content.toJSON();
-                    this.cur_username = result.username;
-                    this.cur_expertises = result.expertises;
-                    this.cur_email = result.email;
-                } else {
-                    const result = response.content.toJSON();
-                    console.log(result);
-                }
-
-                //console.log(response.content.toJson.prototype);
-            }, (e) => {
-                console.log(e);
-            });
+            console.log("Load " + this.$cur_ulist_index.val + " profile");
+            this.cur_username = this.$user_list[this.$cur_ulist_index.val].username;
+            this.cur_expertises = this.$user_list[this.$cur_ulist_index.val].expertises;
+            this.cur_email = this.$user_list[this.$cur_ulist_index.val].email;
         },
         go_per_qlist: function(){
             this.$router.push('./per_qlist');
@@ -62,7 +41,6 @@ module.exports = {
                     <Span text="\n" />
                 </FormattedString>
             </TextView>
-            <Button text="Change" @tap="$router.push('/change')" />
             <Button text="Personal Question" @tap="go_per_qlist()" />
         </StackLayout>
       </Page>

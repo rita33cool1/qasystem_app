@@ -23,6 +23,9 @@ module.exports = {
                     var tmp_data = {
                         username: result[i].username,
                         uid: result[i].user_id,
+                        expertises: result[i].expertises,
+                        email: result[i].email,
+                        index: i
                     };
                     this.$user_list.push(tmp_data);
                 }
@@ -34,6 +37,8 @@ module.exports = {
         onItemTap: function(args) {
             console.log(args.item.uid);
             this.$cur_uid.val = args.item.uid;
+            this.$cur_ulist_index.val = args.item.index;
+            this.$router.push('./userprofile');
         }
     },
     template: `

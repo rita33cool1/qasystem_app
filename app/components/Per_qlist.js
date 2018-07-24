@@ -8,7 +8,7 @@ module.exports = {
     },
     methods: {
         load: function() {
-            console.log("Show the question");
+            console.log(this.$cur_uid.val);
             httpModule.request({
                 url: this.apiUrl,
                 method: "GET",
@@ -17,7 +17,7 @@ module.exports = {
                 const result = response.content.toJSON();
                 console.log(result);
 
-                for (var i = this.$question_list.length; i < this.$question_num; i++) {
+                for (var i = 0; i < result.length; i++) {
                     var tmp_data = {
                         title: result[i].title,
                         qid: result[i].question_id,
