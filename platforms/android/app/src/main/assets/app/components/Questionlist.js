@@ -16,17 +16,15 @@ module.exports = {
                 headers: { "Content-Type": "application/json" }
             }).then((response) => {
                 const result = response.content.toJSON();
-                this.$question_num = result.length;
-
-                for (var i = this.$question_list.length; i < this.$question_num; i++) {
+            
+                for (var i = 0; i < result.length; i++) {
                     var tmp_data = {
                         title: result[i].title,
                         qid: result[i].question_id,
                         uid: result[i].user_id
                     };
-                    this.$question_list.push(tmp_data);
+                    this.questionlist.push(tmp_data);
                 }
-                this.questionlist = this.$question_list;
             }, (e) => {
                 console.log(e);
             });
@@ -43,7 +41,7 @@ module.exports = {
             <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.go(-1);" />
         </ActionBar>
         <StackLayout>
-            <ListView class="list-group" for="question in $question_list" @itemTap="onItemTap" style="height:1250px width:60px">
+            <ListView class="list-group" for="question in questionlist" @itemTap="onItemTap" style="height:1250px width:60px">
                 <v-template>
                     <FlexboxLayout flexDirection="row" class="list-group-item">
                     <Label :text="question.title" class="list-group-item-heading" style="width: 60%" />

@@ -2,7 +2,7 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl: "http://140.114.79.86:8000/api/user/profile/",
+            apiUrl: "http://140.114.79.86:8000/api/users/list/",
             cur_username: "",
             cur_expertises: [],
             cur_email: ""
@@ -13,21 +13,18 @@ module.exports = {
             console.log("Load profile!!");
             httpModule.request({
                 url: this.apiUrl,
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                content: JSON.stringify({
-                    key: this.$user_id.val
-                })
+                method: "GET",
+                headers: { "Content-Type": "application/json" }
             }).then((response) => {
-                if (response.statusCode == 200 || response.statusCode == 202) {
-                    console.log(result);
-                    const result = response.content.toJSON();
-                    this.cur_username = result.username;
-                    this.cur_expertises = result.expertises;
-                    this.cur_email = result.email;
-                } else {
-                    const result = response.content.toJSON();
-                    console.log(result);
+                const result = response.content.toJSON();
+                this.$user_num = result.length;
+
+                for (var i = 0; i < this.$user_num; i++) {
+                    if(result[i].username == this.$user_name.val){
+                        this.cur_username = result[i].username;
+                        this.cur_expertises = result[i].expertises;
+                        this.cur_email = result[i].email;
+                    }
                 }
 
                 //console.log(response.content.toJson.prototype);
