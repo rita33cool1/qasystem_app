@@ -3,14 +3,14 @@ module.exports = {
     data() {
         return {
             apiUrl: "http://140.114.79.86:8000/api/users/list/",
-            addapiUrl: "",
+            addapiUrl: "http://140.114.79.86:8000/api/social/friend/send/",
             cur_username: "",
             cur_expertises: [],
             cur_email: ""
         }
     },
     methods: {
-        load: function() {
+        load: function () {
             console.log("Load " + this.$cur_ulist_index.val + " profile");
 
             httpModule.request({
@@ -22,7 +22,7 @@ module.exports = {
                 this.$user_num = result.length;
 
                 for (var i = 0; i < this.$user_num; i++) {
-                    if(i == this.$cur_ulist_index.val){
+                    if (i == this.$cur_ulist_index.val) {
                         this.cur_username = result[i].username;
                         this.cur_expertises = result[i].expertises;
                         this.cur_email = result[i].email;
@@ -31,17 +31,34 @@ module.exports = {
             }, (e) => {
                 console.log(e);
             });
-            /*
-            this.cur_username = this.$user_list[this.$cur_ulist_index.val].username;
-            this.cur_expertises = this.$user_list[this.$cur_ulist_index.val].expertises;
-            this.cur_email = this.$user_list[this.$cur_ulist_index.val].email;
-            */
         },
-        go_per_qlist: function(){
+        go_per_qlist: function () {
             this.$router.push('./per_qlist');
         },
-        add_friend: function() {
-            
+        add_friend: function () {
+            httpModule.request({
+                url: this.addapiUrl,
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                content: JSON.stringify({
+                    key: this.$user_id.val, 
+                    requester: this.$user_name.val, 
+                    replyer: this.cur_username
+                })
+            }).then((response) => {
+                const result = response.content.toJSON();
+                this.$user_num = result.length;
+
+                for (var i = 0; i < this.$user_num; i++) {
+                    if (i == this.$cur_ulist_index.val) {
+                        this.cur_username = result[i].username;
+                        this.cur_expertises = result[i].expertises;
+                        this.cur_email = result[i].email;
+                    }
+                }
+            }, (e) => {
+                console.log(e);
+            });
         }
     },
     template: `

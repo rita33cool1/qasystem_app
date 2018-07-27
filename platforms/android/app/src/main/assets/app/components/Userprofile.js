@@ -3,7 +3,7 @@ module.exports = {
     data() {
         return {
             apiUrl: "http://140.114.79.86:8000/api/users/list/",
-            addapiUrl: "",
+            addapiUrl: "http://140.114.79.86:8000/api/social/friend/send/",
             cur_username: "",
             cur_expertises: [],
             cur_email: ""
@@ -31,11 +31,6 @@ module.exports = {
             }, (e) => {
                 console.log(e);
             });
-            /*
-            this.cur_username = this.$user_list[this.$cur_ulist_index.val].username;
-            this.cur_expertises = this.$user_list[this.$cur_ulist_index.val].expertises;
-            this.cur_email = this.$user_list[this.$cur_ulist_index.val].email;
-            */
         },
         go_per_qlist: function(){
             this.$router.push('./per_qlist');
