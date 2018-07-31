@@ -34,7 +34,7 @@ module.exports = {
         onItemTap: function(args) {
             console.log(args.item.uid);
             this.$cur_uid.val = args.item.uid;
-            this.$cur_ulist_index.val = args.item.index;
+            this.$watch_username.val = args.item.username;
             this.$router.push('./userprofile');
         }
     },

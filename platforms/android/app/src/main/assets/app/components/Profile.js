@@ -2,37 +2,35 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl: "http://140.114.79.86:8000/api/users/list/",
-            cur_username: "",
-            cur_expertises: [],
-            cur_email: ""
+            apiUrl: "http://140.114.79.86:8000/api/user/profile/",
+            username: "",
+            expertises: [],
+            email: ""
         }
     },
     methods: {
-        load: function() {
+        load: function () {
             console.log("Load profile!!");
             httpModule.request({
                 url: this.apiUrl,
-                method: "GET",
-                headers: { "Content-Type": "application/json" }
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                content: JSON.stringify({
+                    key: this.$user_id.val
+                })
             }).then((response) => {
                 const result = response.content.toJSON();
-                this.$user_num = result.length;
+                console.log(result);
 
-                for (var i = 0; i < this.$user_num; i++) {
-                    if(result[i].username == this.$user_name.val){
-                        this.cur_username = result[i].username;
-                        this.cur_expertises = result[i].expertises;
-                        this.cur_email = result[i].email;
-                    }
-                }
-
-                //console.log(response.content.toJson.prototype);
+                this.username = result.username;
+                this.expertises = result.expertises;
+                this.email = result.email;
             }, (e) => {
                 console.log(e);
             });
         },
-        go_per_qlist: function(){
+        go_per_qlist: function () {
+            //this.$cur_uid.val = args.item.uid;
             this.$router.push('./per_qlist');
         }
     },
@@ -49,18 +47,20 @@ module.exports = {
                 <FormattedString>   
                     
                     <Span text="UserName : " fontWeight="Bold" />
-                    <Span fontWeight="Bold" >{{ cur_username }}</Span>
+                    <Span fontWeight="Bold" >{{ username }}</Span>
                     <Span text="\n" />
                     <Span text="Expertise : " fontWeight="Bold" />
                     <Span fontWeight="Bold" >{{ cur_expertises }}</Span>
                     <Span text="\n" />
                     <Span text="Email : " fontWeight="Bold" />
-                    <Span fontWeight="Bold" >{{ cur_email }}</Span>
+                    <Span fontWeight="Bold" >{{ email }}</Span>
                     <Span text="\n" />
                 </FormattedString>
             </TextView>
             <Button text="Change" @tap="$router.push('/change')" />
             <Button text="Personal Question" @tap="go_per_qlist()" />
+            <Button text="Friend list" @tap="$router.push('/friendlist')" />
+            <Button text="Friend confirm" @tap="$router.push('/friendconfirm')" />
         </StackLayout>
       </Page>
     `

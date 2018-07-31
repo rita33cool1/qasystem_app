@@ -6,12 +6,13 @@ module.exports = {
             addapiUrl: "http://140.114.79.86:8000/api/social/friend/send/",
             cur_username: "",
             cur_expertises: [],
-            cur_email: ""
+            cur_email: "",
+            isfriend: false
         }
     },
     methods: {
         load: function () {
-            console.log("Load " + this.$cur_ulist_index.val + " profile");
+            console.log("Load " + this.$watch_username.val + " profile");
 
             httpModule.request({
                 url: this.apiUrl,
@@ -22,10 +23,16 @@ module.exports = {
                 this.$user_num = result.length;
 
                 for (var i = 0; i < this.$user_num; i++) {
-                    if (i == this.$cur_ulist_index.val) {
+                    if (result[i].username == this.$watch_username.val) {
+                        console.log(result[i]);
                         this.cur_username = result[i].username;
                         this.cur_expertises = result[i].expertises;
                         this.cur_email = result[i].email;
+                        for (var j = 0; j < result[i].friends.length; j++) {
+                            if(result[i].friends[j] == this.$user_name.val){
+                                this.isfriend = true;
+                            }
+                        }
                     }
                 }
             }, (e) => {
@@ -41,20 +48,16 @@ module.exports = {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 content: JSON.stringify({
-                    key: this.$user_id.val, 
-                    requester: this.$user_name.val, 
+                    key: this.$user_id.val,
+                    requester: this.$user_name.val,
                     replyer: this.cur_username
                 })
             }).then((response) => {
                 const result = response.content.toJSON();
-                this.$user_num = result.length;
-
-                for (var i = 0; i < this.$user_num; i++) {
-                    if (i == this.$cur_ulist_index.val) {
-                        this.cur_username = result[i].username;
-                        this.cur_expertises = result[i].expertises;
-                        this.cur_email = result[i].email;
-                    }
+                if(result.msg != "Success"){
+                    alert(result.errorMsg);
+                }else{
+                    alert(result.msg);
                 }
             }, (e) => {
                 console.log(e);
@@ -85,7 +88,7 @@ module.exports = {
                 </FormattedString>
             </TextView>
             <Button text="Personal Question" @tap="go_per_qlist()" />
-            <Button text="Add Friend" v-show="this.$user_name.val != this.cur_username" @tap="add_friend()" />
+            <Button text="Add Friend" v-show="this.isfriend == false" @tap="add_friend()" />
         </StackLayout>
       </Page>
     `

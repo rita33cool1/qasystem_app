@@ -12,7 +12,8 @@ const ModifyQuestion = require('./components/Modifyquestion');
 const Userlist = require('./components/Userlist');
 const Personalquestionlist = require('./components/Per_qlist');
 const Answerquestion = require('./components/Answerquestion');
-const FriendList = require('./components/Friendlist');
+const Friendlist = require('./components/Friendlist');
+const Friendconfirm = require('./components/Friendconfirm');
 const UserProfile = require('./components/Userprofile');
 require("nativescript-vue").registerElement("RadDataForm", () => require("nativescript-ui-dataform").RadDataForm);
 const VueResource = require('vue-resource');
@@ -48,12 +49,13 @@ Vue.prototype.$cur_uid = {
         this.val = data;
     }
 };
-Vue.prototype.$cur_ulist_index = {
+Vue.prototype.$watch_username = {
     val: "",
     set: function(data) {
         this.val = data;
     }
 };
+
 const router = new VueRouter({
     pageRouting: true,
     routes: [
@@ -70,6 +72,8 @@ const router = new VueRouter({
         { path: '/userprofile', component: UserProfile },
         { path: '/per_qlist', component: Personalquestionlist },
         { path: '/answer', component: Answerquestion },
+        { path: '/friendlist', component: Friendlist },
+        { path: '/friendconfirm', component: Friendconfirm },
         { path: '*', redirect: '/home' }
     ]
 });
