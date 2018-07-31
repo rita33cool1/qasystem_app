@@ -9,7 +9,6 @@ module.exports = {
     },
     methods: {
         load: function () {
-            console.log("Load profile!!");
             httpModule.request({
                 url: this.apiUrl,
                 method: "POST",
@@ -26,11 +25,23 @@ module.exports = {
                 console.log(e);
             });
         },
-        Confirm: function () {
-            console.log("confirm");
-        },
-        Rejuct: function(){
-            console.log("rejuct");
+        Response:function(name, answer){
+            httpModule.request({
+                url: this.confirmapiUrl,
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                content: JSON.stringify({
+                    requester: name, 
+                    replyer: this.$user_name.val, 
+                    key: this.$user_id.val,
+                    action: answer
+                })
+            }).then((response) => {
+                const result = response.content.toJSON();
+                console.log(result);
+            }, (e) => {
+                console.log(e);
+            });
         }
     },
     template: `
@@ -43,8 +54,9 @@ module.exports = {
                 <v-template>
                     <FlexboxLayout flexDirection="row" class="list-group-item">
                     <Label :text="friend" class="list-group-item-heading" style="width: 60" />
-                    <Button text="Confirm" @tap="Confirm()" />
-                    <Button text="Rejuct" @tap="Rejuct()" />
+                    <Span text="\n" />
+                    <Button text="Accept" @tap="Response(friend,'accept')" />
+                    <Button text="Reject" @tap="Response(friend,'reject')" />
                     </FlexboxLayout>
                 </v-template>
             </ListView>
