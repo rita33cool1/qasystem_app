@@ -4,10 +4,12 @@ module.exports = {
         return {
             apiUrl: "http://140.114.79.86:8000/api/users/list/",
             addapiUrl: "http://140.114.79.86:8000/api/social/friend/send/",
+            followapiUrl: "http://140.114.79.86:8000/api/social/following/add/",
             cur_username: "",
             cur_expertises: [],
             cur_email: "",
-            isfriend: false
+            isfriend: false,
+            isfollowing: false
         }
     },
     methods: {
@@ -33,6 +35,11 @@ module.exports = {
                                 this.isfriend = true;
                             }
                         }
+                        for (var j = 0; j < result[i].followings.length; j++) {
+                            if(result[i].friends[j] == this.$user_name.val){
+                                this.isfriend = true;
+                            }
+                        }
                     }
                 }
             }, (e) => {
@@ -51,6 +58,26 @@ module.exports = {
                     key: this.$user_id.val,
                     requester: this.$user_name.val,
                     replyer: this.cur_username
+                })
+            }).then((response) => {
+                const result = response.content.toJSON();
+                if(result.msg != "Success"){
+                    alert(result.errorMsg);
+                }else{
+                    alert(result.msg);
+                }
+            }, (e) => {
+                console.log(e);
+            });
+        },
+        follow: function(){
+            httpModule.request({
+                url: this.followapiUrl,
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                content: JSON.stringify({
+                    key: this.$user_id.val,
+                    following: this.cur_username
                 })
             }).then((response) => {
                 const result = response.content.toJSON();
@@ -89,6 +116,7 @@ module.exports = {
             </TextView>
             <Button text="Personal Question" @tap="go_per_qlist()" />
             <Button text="Add Friend" v-show="this.isfriend == false" @tap="add_friend()" />
+            <Button text="Add Friend" v-show="this.isfollowing == false" @tap="follow()" />
         </StackLayout>
       </Page>
     `

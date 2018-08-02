@@ -3,7 +3,7 @@ module.exports = {
     data() {
         return {
             apiUrl: "http://140.114.79.86:8000/api/user/profile/",
-            friends: []
+            follows: []
         }
     },
     methods: {
@@ -20,7 +20,7 @@ module.exports = {
                 const result = response.content.toJSON();
                 console.log(result);
 
-                this.friends = result.friends;
+                this.follows = result.followings;
             }, (e) => {
                 console.log(e);
             });
@@ -37,10 +37,10 @@ module.exports = {
           <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.back()" />
         </ActionBar>
         <StackLayout>
-            <ListView class="list-group" for="friend in friends" @itemTap="onItemTap" style="height:1250px width:60px">
+            <ListView class="list-group" for="follow in follows" @itemTap="onItemTap" style="height:1250px width:60px">
                 <v-template>
                     <FlexboxLayout flexDirection="row" class="list-group-item">
-                    <Label :text="friend" class="list-group-item-heading" style="width: 60%" />
+                    <Label :text="follow" class="list-group-item-heading" style="width: 60%" />
                     </FlexboxLayout>
                 </v-template>
             </ListView>

@@ -1,5 +1,7 @@
 const Vue = require('nativescript-vue');
 const VueRouter = require('vue-router');
+
+/*Page*/ 
 const Home = require('./components/Home');
 const Login = require('./components/Login');
 const Register = require('./components/Register');
@@ -15,6 +17,7 @@ const Answerquestion = require('./components/Answerquestion');
 const Friendlist = require('./components/Friendlist');
 const Friendconfirm = require('./components/Friendconfirm');
 const UserProfile = require('./components/Userprofile');
+
 require("nativescript-vue").registerElement("RadDataForm", () => require("nativescript-ui-dataform").RadDataForm);
 const VueResource = require('vue-resource');
 //import VueResource from 'vue-resource';
@@ -24,7 +27,8 @@ Vue.use(VueResource);
 Vue.version = '__VERSION__';
 Vue.http.options.emulateJSON = true;
 Vue.config.silent = false;
-/*global var*/
+
+/*global variable*/
 Vue.prototype.$user_id = {
     val: "0",
     set: function(data) {
