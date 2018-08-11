@@ -2,7 +2,7 @@
 
 This repo serves as the starting point for NativeScript + Vue.js projects, using [nativescript-vue](https://github.com/rigor789/nativescript-vue).
 
-## Usage
+## Install
 
 相關說明 : 
 https://docs.nativescript.org/start/quick-setup
@@ -21,6 +21,17 @@ https://docs.nativescript.org/start/quick-setup
 tns run android
 tns run ios
 ```
+
+5. build apk
+
+```bash
+tns build android --release --key-store-path my-release-key.jks  --key-store-password 123456789 --key-store-alias key_qasystem --key-store-alias-password 123456789
+```
+
+
+## Upload to smartphone
+
+path = platforms/app/build/outputs/apk/release/app-release.apk
 
 ## Templates
 
