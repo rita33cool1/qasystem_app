@@ -60,6 +60,7 @@ module.exports = {
             <Button text="Change" @tap="$router.push('/change')" />
             <Button text="Personal Question" @tap="go_per_qlist()" />
             <Button text="Friend list" @tap="$router.push('/friendlist')" />
+            <Button text="Follow list" @tap="$router.push('/followlist')" />
             <Button text="Friend confirm" @tap="$router.push('/friendconfirm')" />
         </StackLayout>
       </Page>

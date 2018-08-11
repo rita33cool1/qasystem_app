@@ -36,8 +36,8 @@ module.exports = {
                             }
                         }
                         for (var j = 0; j < result[i].followings.length; j++) {
-                            if(result[i].friends[j] == this.$user_name.val){
-                                this.isfriend = true;
+                            if(result[i].followings[j] == this.$user_name.val){
+                                this.isfollowing = true;
                             }
                         }
                     }
@@ -81,11 +81,7 @@ module.exports = {
                 })
             }).then((response) => {
                 const result = response.content.toJSON();
-                if(result.msg != "Success"){
-                    alert(result.errorMsg);
-                }else{
-                    alert(result.msg);
-                }
+                alert(result.msg);
             }, (e) => {
                 console.log(e);
             });
@@ -116,7 +112,7 @@ module.exports = {
             </TextView>
             <Button text="Personal Question" @tap="go_per_qlist()" />
             <Button text="Add Friend" v-show="this.isfriend == false" @tap="add_friend()" />
-            <Button text="Add Friend" v-show="this.isfollowing == false" @tap="follow()" />
+            <Button text="Follow" v-show="this.isfollowing == false" @tap="follow()" />
         </StackLayout>
       </Page>
     `

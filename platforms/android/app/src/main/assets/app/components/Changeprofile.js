@@ -2,7 +2,7 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl: "http://140.114.79.86:8000/accounts/api/users/set_profile/",
+            apiUrl: "http://140.114.79.86:8000/api/user/expertise/update/",
             new_expertise: [],
             Experise1: "",
             Experise2: "",
@@ -22,6 +22,8 @@ module.exports = {
                 })
             }).then((response) => {
                 const result = response.content.toJSON();
+                console.log(result);
+                /*
                 if (response.statusCode == 200 || response.statusCode == 202) {
                     console.log("Set profile Success!!");
                     console.log(result);
@@ -29,7 +31,7 @@ module.exports = {
                 } else {
                     console.log(result);
                 }
-
+                */
                 //console.log(response.content.toJson.prototype);
             }, (e) => {
                 console.log("response: " + e);

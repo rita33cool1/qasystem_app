@@ -16,19 +16,6 @@ module.exports = {
         sendQuestion() {
 
             console.log("Send the question!!");
-            var time = new Date();
-            console.log(this.TitleText + " : " + this.QuestionText);
-            let year = time.getFullYear();
-            let month = time.getMonth();
-            let day = time.getDate();
-            let hour = time.getHours();
-            let minute = time.getMinutes();
-            let sec = time.getSeconds();
-            console.log("Time stamp : ");
-            console.log(year + "/" + month + "/" + day);
-            console.log(hour + ":" + minute + ":" + sec);
-            console.log(this.category[this.selectCategory2]);
-
             var new_expertises = [];
 
             if (this.Expertise1 != "") {
@@ -57,11 +44,10 @@ module.exports = {
             }).then((response) => {
                 const result = response.content.toJSON();
                 if (result.msg == "Success") {
-
-                    console.log(result);
+                    alert(result.msg);
                     this.$router.go(-1);
                 } else {
-                    console.log(result);
+                    alert(result.msg);
                 }
                 //console.log(response.content.toJson.prototype);
             }, (e) => {
@@ -82,9 +68,11 @@ module.exports = {
             <Label>
                 <Span text="Title : \n"/>
             </Label>
-            <TextField v-model="TitleText" hint="Enter the title" >
+            <TextField v-model="TitleText" hint="Enter the title" />
+            
+            <Label>
                 <Span text="Description : \n"  />
-            </TextField>
+            </Label>
             <TextField v-model="QuestionText" hint="Describe the quesion" />
             <Label>
                 <Span text="Category : \n"/>

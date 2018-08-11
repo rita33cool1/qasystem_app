@@ -15,6 +15,7 @@ const Userlist = require('./components/Userlist');
 const Personalquestionlist = require('./components/Per_qlist');
 const Answerquestion = require('./components/Answerquestion');
 const Friendlist = require('./components/Friendlist');
+const Followlist = require('./components/Followlist');
 const Friendconfirm = require('./components/Friendconfirm');
 const UserProfile = require('./components/Userprofile');
 
@@ -77,6 +78,7 @@ const router = new VueRouter({
         { path: '/per_qlist', component: Personalquestionlist },
         { path: '/answer', component: Answerquestion },
         { path: '/friendlist', component: Friendlist },
+        { path: '/followlist', component: Followlist },
         { path: '/friendconfirm', component: Friendconfirm },
         { path: '*', redirect: '/home' }
     ]

@@ -1,4 +1,0 @@
-#Sat Jul 14 21:42:50 CST 2018
-base.0=C\:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
