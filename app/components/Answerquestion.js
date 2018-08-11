@@ -2,9 +2,8 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl: "",
+            apiUrl: "http://140.114.79.86:8000/api/question/answer/post/",
             content: "",
-
         }
     },
     methods: {
@@ -13,11 +12,13 @@ module.exports = {
         },
         SendAnswer: function() {
             httpModule.request({
-                url: this.EditapiUrl,
+                url: this.apiUrl,
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 content: JSON.stringify({
-
+                    key: this.$user_id.val, 
+                    question_id: this.$cur_qid.val, 
+                    content: this.content 
                 })
             }).then((response) => {
                 const result = response.content.toJSON();

@@ -2,12 +2,13 @@ const httpModule = require("http");
 module.exports = {
     data() {
         return {
-            apiUrl: "http://140.114.79.86:8000/api/questions/?qid=" + this.$cur_qid.val,
+            apiUrl: "http://140.114.79.86:8000/api/question/?qid=" + this.$cur_qid.val,
             deleteUrl: "http://140.114.79.86:8000/api/user/question/delete/",
             title: "Tmp title",
             content: "None",
             askername: "None",
             expertises: [],
+            answers: [],
         }
     },
     methods: {
@@ -19,7 +20,7 @@ module.exports = {
                 headers: { "Content-Type": "application/json" }
             }).then((response) => {
                 const result = response.content.toJSON();
-                console.log(result);
+                console.log(result); //result[0]:question result[1]:answers
                 
                 this.title = result[0].title;
                 this.content = result[0].content;
@@ -28,8 +29,11 @@ module.exports = {
                 for (var i = 0; i < result[0].expertises.length; i++) {
                     this.expertises.push(result[0].expertises[i]);
                 }
-                console.log(this.expertises);
-                
+                    
+                for (var i = 0; i < result[0].answer_number; i++) {
+                    this.answers.push(result[1][i].content);
+                }
+                console.log(this.answers);
             }, (e) => {
                 console.log(e);
             });

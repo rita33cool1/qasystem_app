@@ -1,11 +1,11 @@
 {
-	"time": "Sat Aug 11 2018 20:04:00 GMT+0800 (台北標準時間)",
+	"time": "Sat Aug 11 2018 23:02:07 GMT+0800 (台北標準時間)",
 	"nativePlatformStatus": "3",
 	"bundle": false,
-	"release": true,
-	"changesRequireBuild": true,
+	"release": false,
+	"changesRequireBuild": false,
 	"projectFileHash": "fc6ae4277fee7ba5d2118bd468c115612e47978f0be5839e9536f96ff0e48f64",
-	"changesRequireBuildTime": "Sat Aug 11 2018 20:04:00 GMT+0800 (台北標準時間)",
+	"changesRequireBuildTime": "Sat Aug 11 2018 21:33:25 GMT+0800 (台北標準時間)",
 	"appFilesHashes": {
 		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\components\\Answerquestion.js": "1e270737dcf7713d86f222773eeacc9f42ede202",
 		"C:\\Users\\penguin\\Desktop\\ns-3.26\\app\\qasystem_test\\app\\app.css": "e8a314c0a49afb897e3d58c04c60e464c6dea535",
