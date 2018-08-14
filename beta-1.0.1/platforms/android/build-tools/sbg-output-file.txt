@@ -1,0 +1,1 @@
+C:\qasystem_test\beta-1.0.1\platforms\android\app/src/main/java
