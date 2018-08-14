@@ -3,12 +3,15 @@ module.exports = {
     data() {
         return {
             apiUrl: "http://140.114.79.86:8000/api/question/?qid=" + this.$cur_qid.val,
-            deleteUrl: "http://140.114.79.86:8000/api/user/question/delete/",
+            deleteUrl: "http://140.114.79.86:8000/api/user/question/?qid=" + this.$cur_qid.val + "/delete/",
+            deleteAnswerUrl:  "http://140.114.79.86:8000/api/question/?qid=" + this.$cur_qid.val + "/answer/delete/",
+            deleteCommentUrl:  "http://140.114.79.86:8000/api/question/?qid=" + this.$cur_qid.val + "/comment/delete/",
             title: "Tmp title",
             content: "None",
             askername: "None",
             expertises: [],
             answers: [],
+            comments: [],
         }
     },
     methods: {
@@ -20,18 +23,27 @@ module.exports = {
                 headers: { "Content-Type": "application/json" }
             }).then((response) => {
                 const result = response.content.toJSON();
-                console.log(result.answers); 
+                console.log(result.question[0]); 
                 
                 this.title = result.question[0].title;
                 this.content = result.question[0].content;
                 this.askername = result.question[0].user;
 
+                //expertises
                 for (var i = 0; i < result.question[0].expertises.length; i++) {
                     this.expertises.push(result.question[0].expertises[i]);
                 }
-                    
+
+                //comments
+                /*
+                for (var i = 0; i < result.question[0].comments.length; i++) {
+                    this.expertises.push(result.question[0].expertises[i]);
+                }
+                */
+                //answers
                 for (var i = 0; i < result.answers.length; i++) {
                     var tmp={
+                        answer_id: result.answers[i].id,
                         content: result.answers[i].content,
                         user: result.answers[i].user
                     };
@@ -70,7 +82,31 @@ module.exports = {
         responseQuestion: function() {
             console.log("response the question");
             this.$router.push('/answer');
-        }
+        },
+        modifyAnswer: function() {
+            console.log("modify the answer");
+            //this.$router.push('/modifyquestion');
+        },
+        deleteAnswer: function() {
+            httpModule.request({
+                url: this.deleteAnswerUrl,
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                content: JSON.stringify({
+                    key: this.$user_id.val,
+                    answer_id: id
+                })
+            }).then((response) => {
+                const result = response.content.toJSON();
+                if (result.msg == "Success") {
+                    alert(result.msg);
+                    //this.$router.go(-1);
+                }
+            }, (e) => {
+                console.log(e);
+            });
+        },
+
     },
     template: `
     <Page @loaded="load()" >
@@ -106,8 +142,8 @@ module.exports = {
                             </FormattedString>
                         </TextView>
                         <FlexboxLayout flexDirection="row" class="list-group-item">
-                            <Button text="Edit" @tap="" />
-                            <Button text="Delete" @tap="" />
+                            <Button text="Edit" @tap="modifyAnswer()" />
+                            <Button text="Delete" @tap="deleteAnswer()" />
                         </FlexboxLayout>
                     </FlexboxLayout>
                 </v-template>
