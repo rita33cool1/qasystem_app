@@ -156,8 +156,9 @@ module.exports = {
             </ListView>
 
             <Button text="delete" v-if="this.$user_name.val == this.askername" @tap="deleteQuestion()" />
-            <Button text="Response" v-if="this.$user_name.val != this.askername && this.$user_id.val != '0' " @tap="responseQuestion()" />
             <Button text="modify" v-if="this.$user_name.val == this.askername" @tap="modifyQuestion()" />
+            <Button text="Response" v-if="this.$user_name.val != this.askername && this.$user_id.val != '0' " @tap="responseQuestion()" />
+            <Button text="Comment" v-if="this.$user_name.val != this.askername && this.$user_id.val != '0' " @tap="" />
         </StackLayout>
     </Page>
   `
