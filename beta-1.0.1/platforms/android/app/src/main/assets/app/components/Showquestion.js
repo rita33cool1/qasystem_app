@@ -3,9 +3,9 @@ module.exports = {
     data() {
         return {
             apiUrl: "http://140.114.79.86:8000/api/question/?qid=" + this.$cur_qid.val,
-            deleteUrl: "http://140.114.79.86:8000/api/user/question/?qid=" + this.$cur_qid.val + "/delete/",
-            deleteAnswerUrl:  "http://140.114.79.86:8000/api/question/?qid=" + this.$cur_qid.val + "/answer/delete/",
-            deleteCommentUrl:  "http://140.114.79.86:8000/api/question/?qid=" + this.$cur_qid.val + "/comment/delete/",
+            deleteUrl: "http://140.114.79.86:8000/api/user/question/delete/",
+            deleteAnswerUrl:  "http://140.114.79.86:8000/api/question/answer/delete/",
+            deleteCommentUrl:  "http://140.114.79.86:8000/api/question/comment/delete/",
             title: "Tmp title",
             content: "None",
             askername: "None",
@@ -42,10 +42,17 @@ module.exports = {
                 */
                 //answers
                 for (var i = 0; i < result.answers.length; i++) {
+
+                    var own_user = false;
+                    if(this.$user_name.val == result.answers[i].user){
+                        own_user = true;
+                    }
+
                     var tmp={
                         answer_id: result.answers[i].id,
                         content: result.answers[i].content,
-                        user: result.answers[i].user
+                        user: result.answers[i].user,
+                        own: own_user
                     };
                     this.answers.push(tmp);
                 }
@@ -87,7 +94,7 @@ module.exports = {
             console.log("modify the answer");
             //this.$router.push('/modifyquestion');
         },
-        deleteAnswer: function() {
+        deleteAnswer: function(id) {
             httpModule.request({
                 url: this.deleteAnswerUrl,
                 method: "POST",
@@ -98,6 +105,7 @@ module.exports = {
                 })
             }).then((response) => {
                 const result = response.content.toJSON();
+                console.log(result);
                 if (result.msg == "Success") {
                     alert(result.msg);
                     //this.$router.go(-1);
@@ -142,8 +150,8 @@ module.exports = {
                             </FormattedString>
                         </TextView>
                         <FlexboxLayout flexDirection="row" class="list-group-item">
-                            <Button text="Edit" @tap="modifyAnswer()" />
-                            <Button text="Delete" @tap="deleteAnswer()" />
+                            <Button text="Edit" v-if="answer.own == true" @tap="modifyAnswer()" />
+                            <Button text="Delete" v-if="answer.own == true" @tap="deleteAnswer(answer.answer_id)" />
                         </FlexboxLayout>
                     </FlexboxLayout>
                 </v-template>
