@@ -108,7 +108,7 @@ module.exports = {
                 console.log(result);
                 if (result.msg == "Success") {
                     alert(result.msg);
-                    //this.$router.go(-1);
+                    this.$router.go(-1);
                 }
             }, (e) => {
                 console.log(e);
