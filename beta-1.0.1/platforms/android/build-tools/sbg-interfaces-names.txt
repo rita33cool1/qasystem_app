@@ -1110,9 +1110,9 @@ org.nativescript.widgets.FlexboxLayout.DividerMode
 org.nativescript.widgets.FlexboxLayout.FlexDirection
 org.nativescript.widgets.FlexboxLayout.FlexWrap
 org.nativescript.widgets.FlexboxLayout.JustifyContent
+org.nativescript.widgets.TabLayout.TabColorizer
 org.nativescript.widgets.image.BitmapOwner
 org.nativescript.widgets.image.Worker.OnImageLoadedListener
-org.nativescript.widgets.TabLayout.TabColorizer
 android.support.v4.media.MediaBrowserCompat.ConnectionCallback.ConnectionCallbackInternal
 android.support.v4.media.MediaBrowserServiceCompatApi24.ServiceCompatProxy
 android.support.v4.media.TransportMediatorCallback

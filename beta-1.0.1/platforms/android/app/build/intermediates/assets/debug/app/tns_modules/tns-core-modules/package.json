@@ -1,35 +1,33 @@
 {
-  "_args": [
-    [
-      "tns-core-modules@4.1.0",
-      "/Users/chaowen/qasystem_test"
-    ]
-  ],
-  "_from": "tns-core-modules@4.1.0",
-  "_id": "tns-core-modules@4.1.0",
+  "_from": "tns-core-modules",
+  "_id": "tns-core-modules@4.2.0",
   "_inBundle": false,
-  "_integrity": "sha512-ZTpH7/zHfARrJ+1bPwbBYyqFVQO+2unnygfLW8Bu3clzpTkdwwW++1DS+Qbzw7r84+dzdVPZ7zwEVkjpfAFogw==",
+  "_integrity": "sha512-tEbQfeXVp6i9RJAmC+erd63mr6NYw5nX/gzYDVb1Va52/Jdj9ZeGbXKAPyjVXZ3BGI6O9QM1jQUem/Ow6v5FqQ==",
   "_location": "/tns-core-modules",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "tag",
     "registry": true,
-    "raw": "tns-core-modules@4.1.0",
+    "raw": "tns-core-modules",
     "name": "tns-core-modules",
     "escapedName": "tns-core-modules",
-    "rawSpec": "4.1.0",
+    "rawSpec": "",
     "saveSpec": null,
-    "fetchSpec": "4.1.0"
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-4.1.0.tgz",
-  "_spec": "4.1.0",
-  "_where": "/Users/chaowen/qasystem_test",
+  "_resolved": "https://registry.npmjs.org/tns-core-modules/-/tns-core-modules-4.2.0.tgz",
+  "_shasum": "27552eea5702cd8ade8d154af306b74aaa7112a3",
+  "_spec": "tns-core-modules",
+  "_where": "C:\\qasystem_test\\beta-1.0.1",
+  "bundleDependencies": false,
   "dependencies": {
-    "tns-core-modules-widgets": "4.1.0"
+    "tns-core-modules-widgets": "4.2.0"
   },
+  "deprecated": false,
   "description": "Telerik NativeScript Core Modules",
   "devDependencies": {
     "@types/node": "~7.0.5",
@@ -38,6 +36,7 @@
   "files": [
     "**/*.d.ts",
     "**/*.js",
+    "**/platforms/ios/**",
     "**/package.json",
     "!android17.d.ts",
     "!ios.d.ts",
@@ -61,7 +60,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NativeScript/NativeScript/commit/86f9d3870688f1e7a759fa72061ea07d5d488e09"
+    "url": "https://github.com/NativeScript/NativeScript/commit/0e11d7572b239d1a6126a43e248d02bbcadb3dab"
   },
   "snapshot": {
     "android": {
@@ -74,5 +73,5 @@
     }
   },
   "typings": "tns-core-modules.d.ts",
-  "version": "4.1.0"
+  "version": "4.2.0"
 }

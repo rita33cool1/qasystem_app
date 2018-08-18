@@ -2,7 +2,7 @@
   "_args": [
     [
       "nativescript-theme-core@1.0.4",
-      "/Users/chaowen/qasystem_test"
+      "C:\\qasystem_test\\beta-1.0.1"
     ]
   ],
   "_from": "nativescript-theme-core@1.0.4",
@@ -26,7 +26,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/nativescript-theme-core/-/nativescript-theme-core-1.0.4.tgz",
   "_spec": "1.0.4",
-  "_where": "/Users/chaowen/qasystem_test",
+  "_where": "C:\\qasystem_test\\beta-1.0.1",
   "author": {
     "name": "Telerik",
     "email": "support@telerik.com"

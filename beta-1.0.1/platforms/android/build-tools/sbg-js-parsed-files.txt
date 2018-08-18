@@ -11,6 +11,7 @@ C:\qasystem_test\beta-1.0.1\platforms\android\app\src\main\assets\app\components
 C:\qasystem_test\beta-1.0.1\platforms\android\app\src\main\assets\app\components\Profile.js
 C:\qasystem_test\beta-1.0.1\platforms\android\app\src\main\assets\app\components\Questionlist.js
 C:\qasystem_test\beta-1.0.1\platforms\android\app\src\main\assets\app\components\Register.js
+C:\qasystem_test\beta-1.0.1\platforms\android\app\src\main\assets\app\components\Sendcomment.js
 C:\qasystem_test\beta-1.0.1\platforms\android\app\src\main\assets\app\components\Sendquestion.js
 C:\qasystem_test\beta-1.0.1\platforms\android\app\src\main\assets\app\components\Showquestion.js
 C:\qasystem_test\beta-1.0.1\platforms\android\app\src\main\assets\app\components\Userlist.js

@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c982e4c-32d3-4158-83ac-5351d008dc90" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/.bin/babylon" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/.bin/babylon" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/.bin/loose-envify" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/.bin/loose-envify" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/.bin/repeating" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/.bin/repeating" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/@sindresorhus/is/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/@sindresorhus/is/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/ansi-regex/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/ansi-regex/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/ansi-styles/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/ansi-styles/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/babel-code-frame/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/babel-code-frame/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/babel-messages/node_modules/babel-runtime/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/babel-messages/node_modules/babel-runtime/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/babel-messages/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/babel-messages/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/babel-runtime/node_modules/core-js/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/babel-runtime/node_modules/core-js/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/babel-runtime/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/babel-runtime/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/babel-traverse/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/babel-traverse/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/babel-types/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/babel-types/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/babylon/bin/babylon.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/babylon/bin/babylon.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/babylon/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/babylon/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/cacheable-request/node_modules/lowercase-keys/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/cacheable-request/node_modules/lowercase-keys/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/cacheable-request/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/cacheable-request/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/chalk/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/chalk/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/clone-response/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/clone-response/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/core-js/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/core-js/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/core-util-is/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/core-util-is/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/debug/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/debug/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/decode-uri-component/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/decode-uri-component/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/decompress-response/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/decompress-response/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/duplexer3/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/duplexer3/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/escape-string-regexp/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/escape-string-regexp/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/esutils/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/esutils/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/events/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/events/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/from2/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/from2/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/get-stream/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/get-stream/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/globals/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/globals/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/got/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/got/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/has-ansi/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/has-ansi/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/has-symbol-support-x/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/has-symbol-support-x/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/has-to-string-tag-x/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/has-to-string-tag-x/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/http-cache-semantics/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/http-cache-semantics/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/https/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/https/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/inherits/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/inherits/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/into-stream/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/into-stream/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/invariant/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/invariant/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/is-finite/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/is-finite/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/is-object/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/is-object/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/is-plain-obj/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/is-plain-obj/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/is-retry-allowed/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/is-retry-allowed/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/isarray/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/isarray/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/isurl/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/isurl/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/js-tokens/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/js-tokens/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/json-buffer/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/json-buffer/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/keyv/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/keyv/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/lazy/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/lazy/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/lodash/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/lodash/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/loose-envify/cli.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/loose-envify/cli.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/loose-envify/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/loose-envify/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/lowercase-keys/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/lowercase-keys/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/mimic-response/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/mimic-response/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/ms/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/ms/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/nativescript-theme-core/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/nativescript-theme-core/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/nativescript-vue/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/nativescript-vue/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/normalize-url/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/normalize-url/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/number-is-nan/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/number-is-nan/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/object-assign/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/object-assign/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/p-cancelable/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/p-cancelable/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/p-finally/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/p-finally/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/p-is-promise/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/p-is-promise/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/p-timeout/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/p-timeout/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/pify/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/pify/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/prepend-http/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/prepend-http/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/process-nextick-args/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/process-nextick-args/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/query-string/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/query-string/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/readable-stream/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/readable-stream/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/regenerator-runtime/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/regenerator-runtime/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/repeating/cli.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/repeating/cli.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/repeating/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/repeating/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/responselike/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/responselike/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/safe-buffer/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/safe-buffer/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/sort-keys/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/sort-keys/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/strict-uri-encode/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/strict-uri-encode/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/string_decoder/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/string_decoder/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/strip-ansi/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/strip-ansi/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/supports-color/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/supports-color/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/timed-out/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/timed-out/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules-widgets/LICENSE" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules-widgets/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules-widgets/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules-widgets/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules-widgets/platforms/android/widgets-release.aar" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules-widgets/platforms/android/widgets-release.aar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework/Info.plist" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework/Info.plist" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework/TNSWidgets" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework/TNSWidgets" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/LICENSE" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/application/application.ios.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/application/application.ios.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/debugger/webinspector-network.ios.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/debugger/webinspector-network.ios.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/globals/globals.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/globals/globals.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/http/http.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/http/http.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/image-source/image-source.ios.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/image-source/image-source.ios.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/tns-core-modules.d.ts" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/tns-core-modules.d.ts" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/trace/trace.d.ts" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/trace/trace.d.ts" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/trace/trace.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/trace/trace.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/action-bar/action-bar.android.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/action-bar/action-bar.android.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/action-bar/action-bar.ios.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/action-bar/action-bar.ios.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/animation/animation-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/animation/animation-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/animation/animation.ios.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/animation/animation.ios.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/animation/keyframe-animation.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/animation/keyframe-animation.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/core/bindable/bindable.d.ts" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/core/bindable/bindable.d.ts" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/core/bindable/bindable.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/core/bindable/bindable.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/core/properties/properties.d.ts" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/core/properties/properties.d.ts" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/core/view/view.d.ts" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/core/view/view.d.ts" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/core/view/view.ios.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/core/view/view.ios.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/dialogs/dialogs.ios.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/dialogs/dialogs.ios.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/frame/fragment.transitions.android.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/frame/fragment.transitions.android.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/frame/frame-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/frame/frame-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/frame/frame.android.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/frame/frame.android.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/html-view/html-view.ios.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/html-view/html-view.ios.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/image/image-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/image/image-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/layouts/flexbox-layout/flexbox-layout.android.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/layouts/flexbox-layout/flexbox-layout.android.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/list-picker/list-picker-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/list-picker/list-picker-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/list-picker/list-picker.android.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/list-picker/list-picker.android.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/list-picker/list-picker.ios.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/list-picker/list-picker.ios.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/list-view/list-view-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/list-view/list-view-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/list-view/list-view.android.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/list-view/list-view.android.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/list-view/list-view.d.ts" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/list-view/list-view.d.ts" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/list-view/list-view.ios.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/list-view/list-view.ios.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/page/page-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/page/page-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/placeholder/placeholder.android.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/placeholder/placeholder.android.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/scroll-view/scroll-view-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/scroll-view/scroll-view-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/styling/font.ios.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/styling/font.ios.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/styling/style-scope.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/styling/style-scope.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/tab-view/tab-view-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/tab-view/tab-view-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/tab-view/tab-view.ios.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/tab-view/tab-view.ios.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/text-base/text-base-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/text-base/text-base-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/web-view/web-view-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/ui/web-view/web-view-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/utils/utils.d.ts" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/utils/utils.d.ts" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/utils/utils.ios.js" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/tns-core-modules/utils/utils.ios.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/to-fast-properties/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/to-fast-properties/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/url-parse-lax/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/url-parse-lax/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/url-to-options/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/url-to-options/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/util-deprecate/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/util-deprecate/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/vue-resource/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/vue-resource/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/node_modules/vue-router/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/node_modules/vue-router/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/package-lock.json" afterPath="$PROJECT_DIR$/beta-1.0.1/package-lock.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/fileContent/fileContent.lock" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/fileHashes/resourceHashesCache.bin" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/javaCompile/classAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/javaCompile/jarAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/javaCompile/javaCompile.lock" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/javaCompile/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/javaCompile/taskJars.bin" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/taskHistory/fileSnapshots.bin" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/4.1/taskHistory/taskHistory.lock" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/buildOutputCleanup/cache.properties" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.gradle/buildOutputCleanup/cache.properties" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.nsprepareinfo" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/.nsprepareinfo" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/exploded-dependencies/4/classes.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/exploded-dependencies/4/classes.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/generated/source/r/debug/org/nativescript/widgets/R.java" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/generated/source/r/debug/org/nativescript/widgets/R.java" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/components/Questionlist.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/components/Questionlist.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/components/Showquestion.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/components/Showquestion.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/main.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/main.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/@sindresorhus/is/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/@sindresorhus/is/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/cacheable-request/node_modules/lowercase-keys/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/cacheable-request/node_modules/lowercase-keys/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/cacheable-request/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/cacheable-request/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/clone-response/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/clone-response/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/core-util-is/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/core-util-is/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/decode-uri-component/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/decode-uri-component/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/decompress-response/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/decompress-response/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/duplexer3/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/duplexer3/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/events/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/events/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/from2/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/from2/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/get-stream/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/get-stream/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/got/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/got/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/has-symbol-support-x/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/has-symbol-support-x/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/has-to-string-tag-x/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/has-to-string-tag-x/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/http-cache-semantics/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/http-cache-semantics/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/https/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/https/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/inherits/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/inherits/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/into-stream/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/into-stream/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/is-object/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/is-object/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/is-plain-obj/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/is-plain-obj/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/is-retry-allowed/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/is-retry-allowed/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/isarray/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/isarray/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/isurl/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/isurl/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/json-buffer/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/json-buffer/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/keyv/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/keyv/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/lowercase-keys/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/lowercase-keys/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/mimic-response/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/mimic-response/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/nativescript-theme-core/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/nativescript-theme-core/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/nativescript-vue/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/nativescript-vue/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/normalize-url/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/normalize-url/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/object-assign/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/object-assign/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/p-cancelable/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/p-cancelable/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/p-finally/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/p-finally/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/p-is-promise/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/p-is-promise/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/p-timeout/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/p-timeout/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/pify/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/pify/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/prepend-http/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/prepend-http/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/process-nextick-args/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/process-nextick-args/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/query-string/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/query-string/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/readable-stream/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/readable-stream/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/responselike/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/responselike/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/safe-buffer/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/safe-buffer/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/sort-keys/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/sort-keys/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/strict-uri-encode/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/strict-uri-encode/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/string_decoder/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/string_decoder/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/timed-out/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/timed-out/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules-widgets/LICENSE" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules-widgets/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules-widgets/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules-widgets/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/LICENSE" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/globals/globals.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/globals/globals.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/http/http.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/http/http.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/trace/trace.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/trace/trace.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/action-bar/action-bar.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/action-bar/action-bar.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/animation/animation-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/animation/animation-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/animation/keyframe-animation.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/animation/keyframe-animation.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/core/bindable/bindable.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/core/bindable/bindable.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/frame/fragment.transitions.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/frame/fragment.transitions.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/frame/frame-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/frame/frame-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/frame/frame.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/frame/frame.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/image/image-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/image/image-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/layouts/flexbox-layout/flexbox-layout.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/layouts/flexbox-layout/flexbox-layout.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/list-picker/list-picker-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/list-picker/list-picker-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/list-picker/list-picker.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/list-picker/list-picker.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/list-view/list-view-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/list-view/list-view-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/list-view/list-view.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/list-view/list-view.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/page/page-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/page/page-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/placeholder/placeholder.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/placeholder/placeholder.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/scroll-view/scroll-view-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/scroll-view/scroll-view-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/styling/style-scope.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/styling/style-scope.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/tab-view/tab-view-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/tab-view/tab-view-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/text-base/text-base-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/text-base/text-base-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/web-view/web-view-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/tns-core-modules/ui/web-view/web-view-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/url-parse-lax/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/url-parse-lax/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/url-to-options/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/url-to-options/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/util-deprecate/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/util-deprecate/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/vue-resource/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/vue-resource/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/vue-router/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/app/tns_modules/vue-router/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/metadata/treeNodeStream.dat" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/metadata/treeNodeStream.dat" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/metadata/treeStringsStream.dat" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/metadata/treeStringsStream.dat" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/metadata/treeValueStream.dat" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/assets/debug/metadata/treeValueStream.dat" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/debug.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/blame/res/debug/multi-v2/values.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/classes/debug/com/tns/gen/android/widget/BaseAdapter_view_195_32_ListViewAdapter.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/classes/debug/org/nativescript/widgets/R.class" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/classes/debug/org/nativescript/widgets/R.class" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/fJkVTmREBtEIO7RGRHXN0iabdk8=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/fJkVTmREBtEIO7RGRHXN0iabdk8=" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/packageDebug/debug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/packageDebug/debug/file-input-save-data.txt" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/packageDebug/debug/zip-cache/yjy3cu9i_nQeopLe1gG8vngako8=" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/incremental/packageDebug/debug/zip-cache/yjy3cu9i_nQeopLe1gG8vngako8=" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/res/debug/resources-debug.ap_" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/res/merged/debug/values_values.arsc.flat" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/10.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/10.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/11.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/11.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/12.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/12.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/13.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/13.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/14.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/14.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/15.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/15.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/16.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/16.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/17.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/17.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/18.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/18.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/19.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/19.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/20.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/21.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/22.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/23.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/compat/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/coreui/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/coreutils/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/design/R$anim.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/design/R$animator.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/design/R$attr.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/design/R$bool.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/design/R$color.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/design/R$dimen.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/design/R$drawable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/design/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/design/R$integer.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/design/R$layout.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/design/R$string.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/design/R$style.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/design/R$styleable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/design/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/fragment/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/graphics/drawable/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/graphics/drawable/animated/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/mediacompat/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/multidex/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/transition/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/transition/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v4/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/appcompat/R$anim.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/appcompat/R$attr.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/appcompat/R$bool.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/appcompat/R$color.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/appcompat/R$dimen.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/appcompat/R$drawable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/appcompat/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/appcompat/R$integer.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/appcompat/R$layout.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/appcompat/R$string.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/appcompat/R$style.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/appcompat/R$styleable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/appcompat/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/recyclerview/R$attr.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/recyclerview/R$dimen.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/recyclerview/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/recyclerview/R$styleable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/android/support/v7/recyclerview/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/AndroidJsV8Inspector$JsV8InspectorServer.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/AndroidJsV8Inspector$JsV8InspectorWebSocket$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/AndroidJsV8Inspector$JsV8InspectorWebSocket$2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/AndroidJsV8Inspector$JsV8InspectorWebSocket.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/AndroidJsV8Inspector.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/DefaultExtractPolicy.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/ErrorReport$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/ErrorReport$ExceptionTab$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/ErrorReport$ExceptionTab.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/ErrorReport$LogcatTab$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/ErrorReport$LogcatTab.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/ErrorReport$Pager.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/ErrorReport.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/ErrorReportActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/FragmentClass.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/LogcatLogger.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/NativeScriptActivity.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/NativeScriptApplication.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/NativeScriptSyncService$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/NativeScriptSyncService$ListenerWorker.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/NativeScriptSyncService$LocalServerSocketThread.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/NativeScriptSyncService.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/NativeScriptSyncServiceSocketIml$LiveSyncWorker.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/NativeScriptSyncServiceSocketIml$LocalServerSocketThread$1.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/NativeScriptSyncServiceSocketIml$LocalServerSocketThread.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/NativeScriptSyncServiceSocketIml.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/NativeScriptUncaughtExceptionHandler.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/RuntimeHelper.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/Util.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/android_runtime/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/animation/Animator_AnimatorListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/animation/ValueAnimator_AnimatorUpdateListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/app/Application_ActivityLifecycleCallbacks.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/app/DialogFragment_view_84_32_DialogFragmentImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/app/Dialog_view_62_32_DialogImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/app/Fragment_view_35_32_TabFragmentImplementation.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/content/BroadcastReceiver_application_289_32_BroadcastReceiver.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/content/ComponentCallbacks2.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/content/DialogInterface_OnClickListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/content/DialogInterface_OnDismissListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/support/v4/view/PagerAdapter_view_69_32_FragmentPagerAdapter.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/util/LruCache_cache_11_32_LruBitmapCache.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/view/Choreographer_FrameCallback.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/view/GestureDetector_SimpleOnGestureListener_gestures_16_32_TapAndDoubleTapGestureListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/view/GestureDetector_SimpleOnGestureListener_gestures_91_32_SwipeGestureListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/view/ScaleGestureDetector_SimpleOnScaleGestureListener_gestures_57_32_PinchGestureListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/view/ViewGroup_layout_16_32_NativeViewGroupImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/view/ViewTreeObserver_OnGlobalLayoutListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/view/ViewTreeObserver_OnScrollChangedListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/view/View_OnClickListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/view/View_OnLayoutChangeListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/webkit/WebViewClient_view_15_32_WebViewClientImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/widget/BaseAdapter_view_195_32_ListViewAdapter.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/android/widget/TabHost_bar_63_32_TabHostImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_bar_20_32_CompatQueryTextListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_bar_26_32_TabChangeListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_bar_29_32_MenuItemClickListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_bar_44_32_TabContentFactoryImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_bar_50_32_CompatCloseListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_base_17_32_TextTransformationImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_base_39_32_EditTextListenersImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_button_19_32_ClickListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_frame_32_36_AttachListener.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_image_20_32_ImageLoadedListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_picker_15_32_DateChangedListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_picker_16_32_FormatterImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_picker_16_32_TimeChangedListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_picker_31_32_ValueChangeListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_slider_17_36_SeekBarChangeListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_switch_15_32_CheckedChangeListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_transitions_215_36_TransitionListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_transitions_264_36_AnimationListnerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_view_22_32_ItemClickListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Object_view_30_32_TouchListenerImpl.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/java/lang/Runnable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/gen/org/nativescript/widgets/Async_CompleteCallback.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/internal/AppBuilderCallback.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/com/tns/internal/Plugin.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/testapp/BuildConfig.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/testapp/R$anim.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/testapp/R$animator.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/testapp/R$attr.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/testapp/R$bool.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/testapp/R$color.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/testapp/R$dimen.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/testapp/R$drawable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/testapp/R$id.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/testapp/R$integer.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/testapp/R$layout.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/testapp/R$string.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/testapp/R$style.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/testapp/R$styleable.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/testapp/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/24/org/nativescript/widgets/R.dex" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/5.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/5.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/6.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/6.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/7.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/7.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/8.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/8.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/9.jar" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/9.jar" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/outputs/apk/.nsbuildinfo" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/outputs/apk/.nsbuildinfo" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/outputs/apk/debug/app-debug.apk" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/outputs/apk/debug/app-debug.apk" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/outputs/logs/manifest-merger-debug-report.txt" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/@sindresorhus/is/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/@sindresorhus/is/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/cacheable-request/node_modules/lowercase-keys/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/cacheable-request/node_modules/lowercase-keys/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/cacheable-request/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/cacheable-request/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/clone-response/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/clone-response/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/core-util-is/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/core-util-is/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/decode-uri-component/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/decode-uri-component/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/decompress-response/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/decompress-response/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/duplexer3/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/duplexer3/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/events/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/events/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/from2/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/from2/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/get-stream/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/get-stream/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/got/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/got/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/has-symbol-support-x/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/has-symbol-support-x/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/has-to-string-tag-x/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/has-to-string-tag-x/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/http-cache-semantics/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/http-cache-semantics/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/https/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/https/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/inherits/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/inherits/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/into-stream/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/into-stream/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/is-object/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/is-object/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/is-plain-obj/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/is-plain-obj/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/is-retry-allowed/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/is-retry-allowed/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/isarray/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/isarray/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/isurl/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/isurl/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/json-buffer/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/json-buffer/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/keyv/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/keyv/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/lowercase-keys/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/lowercase-keys/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/mimic-response/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/mimic-response/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/nativescript-theme-core/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/nativescript-theme-core/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/nativescript-vue/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/nativescript-vue/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/normalize-url/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/normalize-url/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/object-assign/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/object-assign/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/p-cancelable/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/p-cancelable/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/p-finally/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/p-finally/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/p-is-promise/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/p-is-promise/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/p-timeout/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/p-timeout/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/pify/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/pify/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/prepend-http/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/prepend-http/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/process-nextick-args/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/process-nextick-args/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/query-string/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/query-string/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/readable-stream/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/readable-stream/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/responselike/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/responselike/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/safe-buffer/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/safe-buffer/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/sort-keys/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/sort-keys/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/strict-uri-encode/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/strict-uri-encode/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/string_decoder/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/string_decoder/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/timed-out/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/timed-out/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules-widgets/LICENSE" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules-widgets/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules-widgets/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules-widgets/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/LICENSE" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/globals/globals.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/globals/globals.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/http/http.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/http/http.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/trace/trace.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/trace/trace.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/action-bar/action-bar.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/action-bar/action-bar.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/animation/animation-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/animation/animation-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/animation/keyframe-animation.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/animation/keyframe-animation.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/core/bindable/bindable.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/core/bindable/bindable.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/frame/fragment.transitions.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/frame/fragment.transitions.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/frame/frame-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/frame/frame-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/frame/frame.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/frame/frame.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/image/image-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/image/image-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/flexbox-layout/flexbox-layout.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/layouts/flexbox-layout/flexbox-layout.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/list-picker/list-picker-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/list-picker/list-picker-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/list-picker/list-picker.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/list-picker/list-picker.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/list-view/list-view-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/list-view/list-view-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/list-view/list-view.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/list-view/list-view.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/page/page-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/page/page-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/placeholder/placeholder.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/placeholder/placeholder.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/scroll-view/scroll-view-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/scroll-view/scroll-view-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/styling/style-scope.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/styling/style-scope.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/tab-view/tab-view-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/tab-view/tab-view-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/text-base/text-base-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/text-base/text-base-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/web-view/web-view-common.js" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/tns-core-modules/ui/web-view/web-view-common.js" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/url-parse-lax/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/url-parse-lax/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/url-to-options/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/url-to-options/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/util-deprecate/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/util-deprecate/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/vue-resource/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/vue-resource/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/vue-router/package.json" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/app/tns_modules/vue-router/package.json" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/metadata/treeNodeStream.dat" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/metadata/treeNodeStream.dat" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/metadata/treeStringsStream.dat" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/metadata/treeStringsStream.dat" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/metadata/treeValueStream.dat" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/assets/metadata/treeValueStream.dat" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/java/com/tns/gen/android/widget/BaseAdapter_view_195_32_ListViewAdapter.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/src/main/res/values/strings.xml" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/build-tools/sbg-bindings.txt" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/build-tools/sbg-bindings.txt" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/build-tools/sbg-interfaces-names.txt" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/build-tools/sbg-interfaces-names.txt" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/build-tools/sbg-js-parsed-files.txt" afterPath="$PROJECT_DIR$/beta-1.0.1/platforms/android/build-tools/sbg-js-parsed-files.txt" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/build/android-profile/profile-2018-08-14-19-40-16-154.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/build/android-profile/profile-2018-08-14-19-40-16-154.rawproto" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/build/android-profile/profile-2018-08-14-19-40-54-238.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/beta-1.0.1/platforms/android/build/android-profile/profile-2018-08-14-19-40-54-238.rawproto" afterPath="" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Answerquestion.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/beta-1.0.1/app/components/Answerquestion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-144" />
+    <option name="y" value="108" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Concurrency annotation issuesJava</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>StaticGuardedByInstance</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="qasystem_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qasystem_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qasystem_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qasystem_test" type="462c0819:PsiDirectoryNode" />
+              <item name="beta-1.0.1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qasystem_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qasystem_test" type="462c0819:PsiDirectoryNode" />
+              <item name="beta-1.0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="qasystem_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="qasystem_test" type="462c0819:PsiDirectoryNode" />
+              <item name="beta-1.0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/outputs/apk" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$/beta-1.0.1/platforms/android/app/build/outputs/apk" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c982e4c-32d3-4158-83ac-5351d008dc90" name="Default" comment="" />
+      <created>1534505389444</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1534505389444</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297062" sideWeight="0.50842994" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297062" sideWeight="0.4915701" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/beta-1.0.1/app/components/Answerquestion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta-1.0.1/app/components/Answerquestion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta-1.0.1/app/components/Answerquestion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta-1.0.1/app/components/Answerquestion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>qasystem_test</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

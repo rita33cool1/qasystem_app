@@ -10,7 +10,7 @@ MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\penguin\.g
 MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\520b19f22f099ce0826792ae6a615022\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\9d9208ff7cd06b06bd1780ccafb34ae1\AndroidManifest.xml:17:1-31:12
 MERGED from [:nativescript-optimized:] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\nativescript-optimized.aar\eda4032e43bbea24b29e95dc8d594943\AndroidManifest.xml:2:1-11:12
-MERGED from [:widgets-release:] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\f02d5e2825580286d39ec14f5c6cfa0c\AndroidManifest.xml:2:1-14:12
+MERGED from [:widgets-release:] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\16d0b19b25c2e1d9891af780ccce267a\AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\07567771f3e3686b71eb34ebb7271079\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\5a3173ba9c8cd9ad75e038de0fe84e82\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\b0cf532c78927aef7a5b626fa8707cfc\AndroidManifest.xml:17:1-31:12
@@ -62,8 +62,8 @@ MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\penguin\.gra
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\9d9208ff7cd06b06bd1780ccafb34ae1\AndroidManifest.xml:21:5-23:54
 MERGED from [:nativescript-optimized:] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\nativescript-optimized.aar\eda4032e43bbea24b29e95dc8d594943\AndroidManifest.xml:7:5-9:41
 MERGED from [:nativescript-optimized:] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\nativescript-optimized.aar\eda4032e43bbea24b29e95dc8d594943\AndroidManifest.xml:7:5-9:41
-MERGED from [:widgets-release:] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\f02d5e2825580286d39ec14f5c6cfa0c\AndroidManifest.xml:7:5-9:41
-MERGED from [:widgets-release:] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\f02d5e2825580286d39ec14f5c6cfa0c\AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\16d0b19b25c2e1d9891af780ccce267a\AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\16d0b19b25c2e1d9891af780ccce267a\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\07567771f3e3686b71eb34ebb7271079\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\07567771f3e3686b71eb34ebb7271079\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\5a3173ba9c8cd9ad75e038de0fe84e82\AndroidManifest.xml:21:5-23:60
@@ -114,8 +114,8 @@ MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\penguin\.gra
 MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\transition-26.0.0-alpha1.aar\520b19f22f099ce0826792ae6a615022\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\9d9208ff7cd06b06bd1780ccafb34ae1\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\9d9208ff7cd06b06bd1780ccafb34ae1\AndroidManifest.xml:29:5-20
-MERGED from [:widgets-release:] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\f02d5e2825580286d39ec14f5c6cfa0c\AndroidManifest.xml:11:5-12:19
-MERGED from [:widgets-release:] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\f02d5e2825580286d39ec14f5c6cfa0c\AndroidManifest.xml:11:5-12:19
+MERGED from [:widgets-release:] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\16d0b19b25c2e1d9891af780ccce267a\AndroidManifest.xml:11:5-12:19
+MERGED from [:widgets-release:] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\16d0b19b25c2e1d9891af780ccce267a\AndroidManifest.xml:11:5-12:19
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\07567771f3e3686b71eb34ebb7271079\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\07567771f3e3686b71eb34ebb7271079\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\5a3173ba9c8cd9ad75e038de0fe84e82\AndroidManifest.xml:29:5-20
