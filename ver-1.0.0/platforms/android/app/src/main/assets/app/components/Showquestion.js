@@ -38,7 +38,7 @@ module.exports = {
 
                 for (var i = this.comments.length; i < result.question[0].comments.length; i++) {
                     var own_user = false;
-                    if (this.$user_name.val == result.question[0].comments[i].user) {
+                    if (this.$user_name.val == result.question[0].comments[i].user && this.$user_id.val != '0') {
                         own_user = true;
                     }
 
@@ -55,7 +55,7 @@ module.exports = {
                 for (var i = this.answers.length; i < result.answers.length; i++) {
 
                     var own_user = false;
-                    if (this.$user_name.val == result.answers[i].user) {
+                    if (this.$user_name.val == result.answers[i].user &&　this.$user_id.val != '0') {
                         own_user = true;
                     }
 
@@ -162,7 +162,7 @@ module.exports = {
             </FlexboxLayout>
 
             <Label text="Comment:" />
-            <ListView class="list-group" for="comment in comments" style="height:150px" >
+            <ListView class="list-group" for="comment in comments" style="height:100px" >
                 <v-template>
                      <FlexboxLayout flexDirection="column" class="list-group-item">
                         <TextView editable="false">
@@ -181,7 +181,7 @@ module.exports = {
             </ListView>
 
             <Label text="Answer:" />
-            <ListView class="list-group" for="answer in answers" style="height:150px" >
+            <ListView class="list-group" for="answer in answers" style="height:100px" >
                 <v-template>
                     <FlexboxLayout flexDirection="column" class="list-group-item">
                         <TextView editable="false">
@@ -194,7 +194,7 @@ module.exports = {
                         <FlexboxLayout flexDirection="row" class="list-group-item">
                             <Button text="Edit" v-if="answer.own == true" @tap="modifyAnswer()" />
                             <Button text="Delete" v-if="answer.own == true" @tap="deleteAnswer(answer.answer_id)" />
-                            <Button text="Comment" v-if="answer.own != true" @tap="sendcomment('answer', answer.answer_id)" />
+                            <Button text="Comment" v-if="answer.own == true" @tap="sendcomment('answer', answer.answer_id)" />
                         </FlexboxLayout>
                     </FlexboxLayout>
                 </v-template>
