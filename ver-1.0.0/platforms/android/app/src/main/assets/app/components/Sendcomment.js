@@ -42,7 +42,7 @@ module.exports = {
                         key: this.$user_id.val, 
                         question_id: this.$cur_qid.val, 
                         content: this.content,
-                        QorA:　'answer'
+                        QorA:　'question'
                     })
                 }).then((response) => {
                     const result = response.content.toJSON();

@@ -18,6 +18,8 @@ const Friendlist = require('./components/Friendlist');
 const Followlist = require('./components/Followlist');
 const Friendconfirm = require('./components/Friendconfirm');
 const UserProfile = require('./components/Userprofile');
+const SendComment = require('./components/Sendcomment');
+
 
 require("nativescript-vue").registerElement("RadDataForm", () => require("nativescript-ui-dataform").RadDataForm);
 const VueResource = require('vue-resource');
@@ -61,6 +63,20 @@ Vue.prototype.$watch_username = {
     }
 };
 
+Vue.prototype.$comment_type = {
+    val: "",
+    set: function(data) {
+        this.val = data;
+    }
+};
+
+Vue.prototype.$cur_answer_id = {
+    val: "",
+    set: function(data) {
+        this.val = data;
+    }
+};
+
 const router = new VueRouter({
     pageRouting: true,
     routes: [
@@ -80,6 +96,7 @@ const router = new VueRouter({
         { path: '/friendlist', component: Friendlist },
         { path: '/followlist', component: Followlist },
         { path: '/friendconfirm', component: Friendconfirm },
+        { path: '/sendcomment', component: SendComment },
         { path: '*', redirect: '/home' }
     ]
 });

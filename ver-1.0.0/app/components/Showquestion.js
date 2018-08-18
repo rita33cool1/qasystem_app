@@ -162,7 +162,7 @@ module.exports = {
             </FlexboxLayout>
 
             <Label text="Comment:" />
-            <ListView class="list-group" for="comment in comments" >
+            <ListView class="list-group" for="comment in comments" style="height:150px" >
                 <v-template>
                      <FlexboxLayout flexDirection="column" class="list-group-item">
                         <TextView editable="false">
@@ -181,7 +181,7 @@ module.exports = {
             </ListView>
 
             <Label text="Answer:" />
-            <ListView class="list-group" for="answer in answers" >
+            <ListView class="list-group" for="answer in answers" style="height:150px" >
                 <v-template>
                     <FlexboxLayout flexDirection="column" class="list-group-item">
                         <TextView editable="false">
