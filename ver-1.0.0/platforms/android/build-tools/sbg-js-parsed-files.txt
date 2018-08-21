@@ -1,6 +1,5 @@
 C:\qasystem_test\ver-1.0.0\platforms\android\app\src\main\assets\app\components\Answerquestion.js
 C:\qasystem_test\ver-1.0.0\platforms\android\app\src\main\assets\app\components\Changeprofile.js
-C:\qasystem_test\ver-1.0.0\platforms\android\app\src\main\assets\app\components\Counter.js
 C:\qasystem_test\ver-1.0.0\platforms\android\app\src\main\assets\app\components\Followlist.js
 C:\qasystem_test\ver-1.0.0\platforms\android\app\src\main\assets\app\components\Friendconfirm.js
 C:\qasystem_test\ver-1.0.0\platforms\android\app\src\main\assets\app\components\Friendlist.js
