@@ -46,7 +46,7 @@ module.exports = {
             <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
         </ActionBar>
         <StackLayout>
-            <Label :text="Register" />
+            <Label text="Register" />
             <TextField v-model="AccountText" hint="Enter Account..." />
             <TextField v-model="PasswordText" hint="Enter Password..." secure="true" />
             <TextField v-model="EmailText" hint="Enter Email..." />

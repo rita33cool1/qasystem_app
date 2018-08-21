@@ -23,6 +23,7 @@ module.exports = {
 
                 if (response.statusCode == 200) {
                     const result = response.content.toJSON();
+                    console.log(result);
                     if (result.msg == "Success") {
                         this.$user_id.val = result.key;
                         this.$user_name.val = this.AccountText;

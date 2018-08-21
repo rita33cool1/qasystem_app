@@ -45,7 +45,7 @@ module.exports = {
             <ListView class="list-group" for="follow in follows" @itemTap="onItemTap" style="height:1250px width:60px">
                 <v-template>
                     <FlexboxLayout flexDirection="row" class="list-group-item">
-                    <Label :text="follow" class="list-group-item-heading" style="width: 60%" />
+                        <Label :text="follow" class="list-group-item-heading" style="width: 60%" />
                     </FlexboxLayout>
                 </v-template>
             </ListView>

@@ -126,7 +126,24 @@ module.exports = {
                 console.log(e);
             });
         },
-
+        Upquestion: function(){
+            console.log("Up question");
+        },
+        Downquestion: function(){
+            console.log("Down question");
+        },
+        Starquestion: function(){
+            console.log("Star question");
+        },
+        Upanswer: function(id){
+            console.log("Up answer");
+        },
+        Downanswer: function(id){
+            console.log("Down answer");
+        },
+        votecomment: function(){
+            console.log("Vote comment");
+        }
     },
     template: `
     <Page @loaded="load()" >
@@ -152,6 +169,9 @@ module.exports = {
                 <Button text="Modify" v-if="this.$user_name.val == this.askername" @tap="modifyQuestion()" />
                 <Button text="Response" v-if="this.$user_name.val != this.askername && this.$user_id.val != '0' " @tap="responseQuestion()" />
                 <Button text="Comment" v-if="this.$user_name.val != this.askername && this.$user_id.val != '0' " @tap="sendcomment('question' , 0)" />
+                <Button text="Up" v-if="$user_name.val != this.askername && $user_id.val != '0' " @tap="Upquestion()" />
+                <Button text="Down" v-if="$user_name.val != this.askername && $user_id.val != '0' " @tap="Downquestion()" />
+                <Button text="Star" v-if="$user_name.val != this.askername && $user_id.val != '0' " @tap="Starquestion()" />
             </FlexboxLayout>
 
             <Label text="Comment:" fontWeight="Bold" />
@@ -166,7 +186,6 @@ module.exports = {
                         <FlexboxLayout flexDirection="row" class="list-group-item">
                             <Button text="Edit" v-if="comment.own == true" @tap="" />
                             <Button text="Delete" v-if="comment.own == true" @tap="" />
-                            <Button text="Vote" v-if="$user_name.val != comment.user && $user_id.val != '0' " @tap="" />
                         </FlexboxLayout>
                     </FlexboxLayout>
                 </v-template>
@@ -185,6 +204,8 @@ module.exports = {
                             <Button text="Edit" v-if="answer.own == true" @tap="modifyAnswer()" />
                             <Button text="Delete" v-if="answer.own == true" @tap="deleteAnswer(answer.answer_id)" />
                             <Button text="Comment" v-if="answer.own == true" @tap="sendcomment('answer', answer.answer_id)" />
+                            <Button text="Up" v-if="$user_name.val != answer.user && $user_id.val != '0' " @tap="Upanswer(answer.answer_id)" />
+                            <Button text="Down" v-if="$user_name.val != answer.user && $user_id.val != '0' " @tap="Downanswer(answer.answer_id)" />
                         </FlexboxLayout>
                     </FlexboxLayout>
                 </v-template>

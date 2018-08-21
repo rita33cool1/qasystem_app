@@ -16,10 +16,7 @@ module.exports = {
                 headers: { "Content-Type": "application/json" }
             }).then((response) => {
                 const result = response.content.toJSON();
-                
-                if(this.questionlist.length != 0){
-                    this.questionlist = [];
-                }
+                //console.log(result);
                 for (var i = 0; i < result.length; i++) {
                     var tmp_data = {
                         title: result[i].title,
