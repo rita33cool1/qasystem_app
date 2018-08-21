@@ -4,6 +4,7 @@ module.exports = {
         return {
             apiUrl: "http://140.114.79.86:8000/api/questions/",
             questionlist: [],
+            searchPhrase: "",
         }
     },
     methods: {
@@ -33,7 +34,11 @@ module.exports = {
             console.log(args.item.qid);
             this.$cur_qid.val = args.item.qid;
             this.$router.push('/showquestion');
-        }
+        },
+        onSearchSubmit(args) {
+            let searchBar = args.object;
+            console.log("You are searching for " + searchBar.text);
+        },
     },
     template: `
     <Page @loaded="load()">
@@ -41,6 +46,7 @@ module.exports = {
             <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
         </ActionBar>
         <StackLayout>
+            <SearchBar hint="Search" :text="searchPhrase" @submit="onSearchSubmit" />
             <ListView class="list-group" for="question in questionlist" @itemTap="onItemTap" style="height:1250px width:60px">
                 <v-template>
                     <FlexboxLayout flexDirection="row" class="list-group-item">

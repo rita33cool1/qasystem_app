@@ -19,9 +19,6 @@ const Followlist = require('./components/Followlist');
 const Friendconfirm = require('./components/Friendconfirm');
 const UserProfile = require('./components/Userprofile');
 const SendComment = require('./components/Sendcomment');
-const Voteanswer = require('./components/Voteanswer');
-const Votecomment = require('./components/Votecomment');
-const Staranswer = require('./components/Staranswer');
 
 require("nativescript-vue").registerElement("RadDataForm", () => require("nativescript-ui-dataform").RadDataForm);
 const VueResource = require('vue-resource');

@@ -6,6 +6,7 @@ module.exports = {
             deleteUrl: "http://140.114.79.86:8000/api/user/question/delete/",
             deleteAnswerUrl: "http://140.114.79.86:8000/api/question/answer/delete/",
             deleteCommentUrl: "http://140.114.79.86:8000/api/question/comment/delete/",
+            voteUrl: "http://140.114.79.86:8000/api/question/vote/",
             title: "Tmp title",
             content: "None",
             askername: "None",
@@ -126,23 +127,51 @@ module.exports = {
                 console.log(e);
             });
         },
-        Upquestion: function(){
+        Votequestion: function(){
             console.log("Up question");
-        },
-        Downquestion: function(){
-            console.log("Down question");
+        
         },
         Starquestion: function(){
             console.log("Star question");
+            httpModule.request({
+                url: this.voteUrl,
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                content: JSON.stringify({
+                    key: this.$user_id.val,
+                    QorA: 'answer',
+                    answer_id: id,
+                    vote: vote_value
+                })
+            }).then((response) => {
+                const result = response.content.toJSON();
+                if (result.msg == "Success") {
+                    alert(result.msg);
+                }
+            }, (e) => {
+                console.log(e);
+            });
         },
-        Upanswer: function(id){
-            console.log("Up answer");
-        },
-        Downanswer: function(id){
-            console.log("Down answer");
-        },
-        votecomment: function(){
-            console.log("Vote comment");
+        Voteanswer: function(id, vote_value){
+            console.log("Vote answer");
+            httpModule.request({
+                url: this.voteUrl,
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                content: JSON.stringify({
+                    key: this.$user_id.val,
+                    QorA: 'answer',
+                    answer_id: id,
+                    vote: vote_value
+                })
+            }).then((response) => {
+                const result = response.content.toJSON();
+                if (result.msg == "Success") {
+                    alert(result.msg);
+                }
+            }, (e) => {
+                console.log(e);
+            });
         }
     },
     template: `
@@ -204,8 +233,8 @@ module.exports = {
                             <Button text="Edit" v-if="answer.own == true" @tap="modifyAnswer()" />
                             <Button text="Delete" v-if="answer.own == true" @tap="deleteAnswer(answer.answer_id)" />
                             <Button text="Comment" v-if="answer.own == true" @tap="sendcomment('answer', answer.answer_id)" />
-                            <Button text="Up" v-if="$user_name.val != answer.user && $user_id.val != '0' " @tap="Upanswer(answer.answer_id)" />
-                            <Button text="Down" v-if="$user_name.val != answer.user && $user_id.val != '0' " @tap="Downanswer(answer.answer_id)" />
+                            <Button text="Up" v-if="$user_name.val != answer.user && $user_id.val != '0' " @tap="Voteanswer(answer.answer_id, 1)" />
+                            <Button text="Down" v-if="$user_name.val != answer.user && $user_id.val != '0' " @tap="Voteanswer(answer.answer_id, -1)" />
                         </FlexboxLayout>
                     </FlexboxLayout>
                 </v-template>
