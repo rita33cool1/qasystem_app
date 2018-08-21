@@ -127,20 +127,16 @@ module.exports = {
                 console.log(e);
             });
         },
-        Votequestion: function(){
-            console.log("Up question");
-        
-        },
-        Starquestion: function(){
-            console.log("Star question");
+        Votequestion: function(id, vote_value){
+            console.log("Vote question");
             httpModule.request({
                 url: this.voteUrl,
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 content: JSON.stringify({
                     key: this.$user_id.val,
-                    QorA: 'answer',
-                    answer_id: id,
+                    QorA: 'question',
+                    question_id: id,
                     vote: vote_value
                 })
             }).then((response) => {
@@ -151,6 +147,10 @@ module.exports = {
             }, (e) => {
                 console.log(e);
             });
+        },
+        Starquestion: function(){
+            console.log("Star question");
+            
         },
         Voteanswer: function(id, vote_value){
             console.log("Vote answer");
@@ -198,8 +198,8 @@ module.exports = {
                 <Button text="Modify" v-if="this.$user_name.val == this.askername" @tap="modifyQuestion()" />
                 <Button text="Response" v-if="this.$user_name.val != this.askername && this.$user_id.val != '0' " @tap="responseQuestion()" />
                 <Button text="Comment" v-if="this.$user_name.val != this.askername && this.$user_id.val != '0' " @tap="sendcomment('question' , 0)" />
-                <Button text="Up" v-if="$user_name.val != this.askername && $user_id.val != '0' " @tap="Upquestion()" />
-                <Button text="Down" v-if="$user_name.val != this.askername && $user_id.val != '0' " @tap="Downquestion()" />
+                <Button text="Up" v-if="$user_name.val != this.askername && $user_id.val != '0' " @tap="Votequestion($cur_qid.val, 1)" />
+                <Button text="Down" v-if="$user_name.val != this.askername && $user_id.val != '0' " @tap="Votequestion($cur_qid.val, -1)" />
                 <Button text="Star" v-if="$user_name.val != this.askername && $user_id.val != '0' " @tap="Starquestion()" />
             </FlexboxLayout>
 
