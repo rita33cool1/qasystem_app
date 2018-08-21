@@ -38,13 +38,13 @@ module.exports = {
     template: `
     <Page @loaded="load()" >
         <ActionBar :title="$route.path">
-            <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.go(-1);" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
         </ActionBar>
         <StackLayout>
             <ListView class="list-group" for="question in per_question_list" @itemTap="onItemTap" style="height:1250px width:60px">
                 <v-template>
                     <FlexboxLayout flexDirection="row" class="list-group-item">
-                    <Label :text="question.title" class="list-group-item-heading" style="width: 60%" />
+                        <Label class="list-group-item-heading" >{{ question.qid }} {{ question.title }}</Label>
                     </FlexboxLayout>
                 </v-template>
             </ListView>

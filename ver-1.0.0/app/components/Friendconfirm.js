@@ -47,7 +47,7 @@ module.exports = {
     template: `
       <Page @loaded="load()">
         <ActionBar :title="$route.path">
-          <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.back()" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
         </ActionBar>
         <StackLayout>
             <ListView class="list-group" for="friend in friend_requests" style="height:1250px width:60px">

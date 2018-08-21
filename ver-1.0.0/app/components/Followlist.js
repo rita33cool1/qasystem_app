@@ -34,9 +34,14 @@ module.exports = {
     template: `
       <Page @loaded="load()">
         <ActionBar :title="$route.path">
-          <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.back()" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
         </ActionBar>
         <StackLayout>
+
+            <Label>
+                <Span v-if="follows.length == 0" text="Empty" />
+            </Label>
+
             <ListView class="list-group" for="follow in follows" @itemTap="onItemTap" style="height:1250px width:60px">
                 <v-template>
                     <FlexboxLayout flexDirection="row" class="list-group-item">

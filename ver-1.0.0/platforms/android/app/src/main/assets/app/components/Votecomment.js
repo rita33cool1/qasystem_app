@@ -63,9 +63,7 @@ module.exports = {
             <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
         </ActionBar>
         <StackLayout>
-            <Label text="Content" />
-            <TextField v-model="content" />
-            <Button text="Send" @tap="SendComment()" />
+            <Label text="Comment Vote" />
         </StackLayout>
     </Page>
   `

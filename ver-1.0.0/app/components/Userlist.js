@@ -35,13 +35,13 @@ module.exports = {
             console.log(args.item.uid);
             this.$cur_uid.val = args.item.uid;
             this.$watch_username.val = args.item.username;
-            this.$router.push('./userprofile');
+            this.$router.push('/userprofile');
         }
     },
     template: `
     <Page @loaded="load()">
         <ActionBar :title="$route.path">
-            <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.go(-1);" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
         </ActionBar>
         <StackLayout>
             <Span text="User : " fontWeight="Bold" />

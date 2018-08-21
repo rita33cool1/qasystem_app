@@ -16,15 +16,18 @@ module.exports = {
                 headers: { "Content-Type": "application/json" }
             }).then((response) => {
                 const result = response.content.toJSON();
-            
-                for (var i = this.questionlist.length; i < result.length; i++) {
+                
+                if(this.questionlist.length != 0){
+                    this.questionlist = [];
+                }
+                for (var i = 0; i < result.length; i++) {
                     var tmp_data = {
                         title: result[i].title,
                         qid: result[i].question_id,
                         uid: result[i].user_id
                     };
                     this.questionlist.push(tmp_data);
-                }
+                }    
             }, (e) => {
                 console.log(e);
             });
@@ -38,13 +41,13 @@ module.exports = {
     template: `
     <Page @loaded="load()">
         <ActionBar :title="$route.path">
-            <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.go(-1);" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
         </ActionBar>
         <StackLayout>
             <ListView class="list-group" for="question in questionlist" @itemTap="onItemTap" style="height:1250px width:60px">
                 <v-template>
                     <FlexboxLayout flexDirection="row" class="list-group-item">
-                    <Label :text="question.title" class="list-group-item-heading" style="width: 60%" />
+                        <Label class="list-group-item-heading" >{{ question.qid }} {{ question.title }}</Label>
                     </FlexboxLayout>
                 </v-template>
             </ListView>

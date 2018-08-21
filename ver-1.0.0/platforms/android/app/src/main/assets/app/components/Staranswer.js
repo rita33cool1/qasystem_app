@@ -60,12 +60,10 @@ module.exports = {
     template: `
     <Page @loaded="load()">
         <ActionBar :title="$route.path">
-            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
+            <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.go(-1);" />
         </ActionBar>
         <StackLayout>
-            <Label text="Content" />
-            <TextField v-model="content" />
-            <Button text="Send" @tap="SendComment()" />
+        <Label text="Star for answer" />
         </StackLayout>
     </Page>
   `

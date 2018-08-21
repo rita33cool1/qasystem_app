@@ -61,7 +61,7 @@ module.exports = {
     template: `
     <Page>
     <ActionBar :title="$route.path">
-        <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.back()" />
+        <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
     </ActionBar>
     <ScrollView>
         <StackLayout >
@@ -82,10 +82,9 @@ module.exports = {
             <TextField v-model="Expertise2" hint="Enter Expertise..." />
             <TextField v-model="Expertise3" hint="Enter Expertise..." />        
             <Button text="submit" @tap="sendQuestion()" />                  
- 
+
         </StackLayout>
     </ScrollView>
-      
     </Page>
   `
 };

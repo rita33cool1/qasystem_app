@@ -23,20 +23,18 @@ module.exports = {
                 headers: { "Content-Type": "application/json" }
             }).then((response) => {
                 const result = response.content.toJSON();
-                console.log(result.question[0]);
-
+                
                 this.title = result.question[0].title;
                 this.content = result.question[0].content;
                 this.askername = result.question[0].user;
-
+                console.log(result.question[0]);
                 //expertises
-                for (var i = this.expertises.length; i < result.question[0].expertises.length; i++) {
+                for (var i = 0; i < result.question[0].expertises.length; i++) {
                     this.expertises.push(result.question[0].expertises[i]);
                 }
 
                 //comments
-
-                for (var i = this.comments.length; i < result.question[0].comments.length; i++) {
+                for (var i = 0; i < result.question[0].comments.length; i++) {
                     var own_user = false;
                     if (this.$user_name.val == result.question[0].comments[i].user && this.$user_id.val != '0') {
                         own_user = true;
@@ -50,10 +48,9 @@ module.exports = {
                     };
                     this.comments.push(tmp);
                 }
-
+                
                 //answers
-                for (var i = this.answers.length; i < result.answers.length; i++) {
-
+                for (var i = 0; i < result.answers.length; i++) {
                     var own_user = false;
                     if (this.$user_name.val == result.answers[i].user &&　this.$user_id.val != '0') {
                         own_user = true;
@@ -134,61 +131,54 @@ module.exports = {
     template: `
     <Page @loaded="load()" >
         <ActionBar :title="$route.path">
-            <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.go(-1);" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
         </ActionBar>
         <StackLayout>
             <TextView editable="false">
-                <FormattedString>   
-                    <Span text="Title : " fontWeight="Bold" />
-                    <Span fontWeight="Bold" >{{ title }}</Span>
-                    <Span text="\n" />
-                    <Span text="Content : " fontWeight="Bold" />
-                    <Span fontWeight="Bold" >{{ content }}</Span>
-                    <Span text="\n" />
-                    <Span text="Asker : " fontWeight="Bold" />
-                    <Span fontWeight="Bold" >{{ askername }}</Span>
-                    <Span text="\n" />
-                    <Span text="Expertises : " fontWeight="Bold" />
-                    <Span fontWeight="Bold" >{{ expertises }}</Span>
-                    <Span text="\n" />
+                <FormattedString>
+                    <Span fontWeight="Bold" >Asker : {{ askername }}\n</Span>
+                    <Span fontWeight="Bold" >Title : {{ title }}\n</Span>
+                    <Span fontWeight="Bold" >Content : {{ content }}\n</Span>
+                    
+                    <Span v-if="this.expertises[0]" fontWeight="Bold" >Expertises : {{ expertises[0] }}</Span>
+                    <Span v-else fontWeight="Bold" >Empty</Span>
+                    <Span v-if="this.expertises[1]" fontWeight="Bold" >, {{ expertises[1] }}</Span>
+                    <Span v-if="this.expertises[2]" fontWeight="Bold" >, {{ expertises[2] }}</Span>
                 </FormattedString>
             </TextView>
-
+            
             <FlexboxLayout flexDirection="row" class="list-group-item">
-                <Button text="delete" v-if="this.$user_name.val == this.askername" @tap="deleteQuestion()" />
-                <Button text="modify" v-if="this.$user_name.val == this.askername" @tap="modifyQuestion()" />
+                <Button text="Delete" v-if="this.$user_name.val == this.askername" @tap="deleteQuestion()" />
+                <Button text="Modify" v-if="this.$user_name.val == this.askername" @tap="modifyQuestion()" />
                 <Button text="Response" v-if="this.$user_name.val != this.askername && this.$user_id.val != '0' " @tap="responseQuestion()" />
                 <Button text="Comment" v-if="this.$user_name.val != this.askername && this.$user_id.val != '0' " @tap="sendcomment('question' , 0)" />
             </FlexboxLayout>
 
-            <Label text="Comment:" />
-            <ListView class="list-group" for="comment in comments" style="height:100px" >
+            <Label text="Comment:" fontWeight="Bold" />
+            <ListView class="list-group" for="comment in comments" style="height:80px" >
                 <v-template>
                      <FlexboxLayout flexDirection="column" class="list-group-item">
                         <TextView editable="false">
                             <FormattedString> 
-                            <Span :text="comment.user" />
-                            <Span text=":\n" />
-                            <Span :text="comment.content" />
+                                <Span>{{ comment.user }} : \n {{ comment.content}}</Span>
                             </FormattedString>
                         </TextView>
                         <FlexboxLayout flexDirection="row" class="list-group-item">
                             <Button text="Edit" v-if="comment.own == true" @tap="" />
                             <Button text="Delete" v-if="comment.own == true" @tap="" />
+                            <Button text="Vote" v-if="$user_name.val != comment.user && $user_id.val != '0' " @tap="" />
                         </FlexboxLayout>
                     </FlexboxLayout>
                 </v-template>
             </ListView>
 
-            <Label text="Answer:" />
-            <ListView class="list-group" for="answer in answers" style="height:100px" >
+            <Label text="Answer:" fontWeight="Bold" />
+            <ListView class="list-group" for="answer in answers" style="height:80px" >
                 <v-template>
                     <FlexboxLayout flexDirection="column" class="list-group-item">
                         <TextView editable="false">
                             <FormattedString> 
-                            <Span :text="answer.user" />
-                            <Span text=":\n" />
-                            <Span :text="answer.content" />
+                                <Span>{{ answer.user }} : \n {{ answer.content}}</Span>
                             </FormattedString>
                         </TextView>
                         <FlexboxLayout flexDirection="row" class="list-group-item">

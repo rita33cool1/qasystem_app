@@ -5,8 +5,7 @@ module.exports = {
             apiUrl: "http://140.114.79.86:8000/api/user/register/",
             EmailText: "",
             AccountText: "",
-            PasswordText: "",
-            item: {},
+            PasswordText: ""
         }
     },
     methods: {
@@ -24,9 +23,7 @@ module.exports = {
             }).then((response) => {
 
                 if (response.statusCode == 200) {
-
                     const result = response.content.toJSON();
-                    //console.log(result);
                     if (result.msg == "Success") {
                         alert('Regist Success!').then(() => {
                             console.log('Regist Success!');
@@ -46,15 +43,14 @@ module.exports = {
     template: `
       <Page>
         <ActionBar :title="$route.path">
-          <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.back()" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
         </ActionBar>
         <StackLayout>
             <Label :text="Register" />
             <TextField v-model="AccountText" hint="Enter Account..." />
-            <TextField v-model="PasswordText" hint="Enter Password..." secure=true />
+            <TextField v-model="PasswordText" hint="Enter Password..." secure="true" />
             <TextField v-model="EmailText" hint="Enter Email..." />
             <Button text="Submit" @tap="register()" />
-            <Button text="Back" @tap="$router.go(-1)" />
         </StackLayout>
       </Page>
     `

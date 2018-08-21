@@ -90,7 +90,7 @@ module.exports = {
     template: `
       <Page @loaded="load()">
         <ActionBar :title="$route.path">
-          <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.back()" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
         </ActionBar>
         <StackLayout>
             <Label :text="Profile">
@@ -98,21 +98,18 @@ module.exports = {
             </Label>       
             <TextView editable="false">
                 <FormattedString>   
-                    
-                    <Span text="UserName : " fontWeight="Bold" />
-                    <Span fontWeight="Bold" >{{ cur_username }}</Span>
-                    <Span text="\n" />
-                    <Span text="Expertise : " fontWeight="Bold" />
-                    <Span fontWeight="Bold" >{{ cur_expertises }}</Span>
-                    <Span text="\n" />
-                    <Span text="Email : " fontWeight="Bold" />
-                    <Span fontWeight="Bold" >{{ cur_email }}</Span>
+                <Span fontWeight="Bold" >UserName : {{ cur_username }}\n</Span>
+                <Span fontWeight="Bold" >Email : {{ cur_email }}\n</Span>
+                <Span v-if="this.cur_expertises[0]" fontWeight="Bold" >Expertises : {{ cur_expertises[0] }}</Span>
+                <Span v-else fontWeight="Bold" >Empty</Span>
+                <Span v-if="this.cur_expertises[1]" fontWeight="Bold" >, {{ cur_expertises[1] }}</Span>
+                <Span v-if="this.cur_expertises[2]" fontWeight="Bold" >, {{ cur_expertises[2] }}</Span>
                     <Span text="\n" />
                 </FormattedString>
             </TextView>
             <Button text="Personal Question" @tap="go_per_qlist()" />
-            <Button text="Add Friend" v-show="this.isfriend == false" @tap="add_friend()" />
-            <Button text="Follow" v-show="this.isfollowing == false" @tap="follow()" />
+            <Button text="Add Friend" v-show="this.isfriend == false && this.$user_id.val != '0' " @tap="add_friend()" />
+            <Button text="Follow" v-show="this.isfollowing == false && this.$user_id.val != '0' " @tap="follow()" />
         </StackLayout>
       </Page>
     `
