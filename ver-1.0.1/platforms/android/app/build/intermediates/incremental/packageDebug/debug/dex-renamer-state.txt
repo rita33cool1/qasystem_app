@@ -1,0 +1,4 @@
+#Thu Aug 30 00:01:04 CST 2018
+base.0=C\:\\qasystem_test\\ver-1.0.1\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

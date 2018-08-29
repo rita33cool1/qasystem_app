@@ -7,7 +7,7 @@ module.exports = {
         }
     },
     methods: {
-        load: function() {
+        load: function () {
             console.log(this.$cur_uid.val);
             httpModule.request({
                 url: this.apiUrl,
@@ -17,7 +17,8 @@ module.exports = {
                 const result = response.content.toJSON();
                 console.log(result);
 
-                for (var i = 0; i < result.length; i++) {
+
+                for (var i = this.per_question_list.length; i < result.length; i++) {
                     var tmp_data = {
                         title: result[i].title,
                         qid: result[i].question_id,
@@ -25,11 +26,13 @@ module.exports = {
                     };
                     this.per_question_list.push(tmp_data);
                 }
+
+
             }, (e) => {
                 console.log(e);
             });
         },
-        onItemTap: function(args) {
+        onItemTap: function (args) {
             console.log(args.item.qid);
             this.$cur_qid.val = args.item.qid;
             this.$router.push('/showquestion');

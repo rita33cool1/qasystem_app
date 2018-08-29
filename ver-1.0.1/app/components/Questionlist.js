@@ -18,7 +18,7 @@ module.exports = {
             }).then((response) => {
                 const result = response.content.toJSON();
                 //console.log(result);
-                for (var i = 0; i < result.length; i++) {
+                for (var i = this.questionlist.length; i < result.length; i++) {
                     var tmp_data = {
                         title: result[i].title,
                         qid: result[i].question_id,

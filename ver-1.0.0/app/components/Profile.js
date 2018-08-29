@@ -20,7 +20,7 @@ module.exports = {
                 })
             }).then((response) => {
                 const result = response.content.toJSON();
-                console.log(result);
+                console.log(result.username);
 
                 this.username = result.username;
                 this.expertises = result.expertises;
@@ -45,7 +45,8 @@ module.exports = {
                 <FormattedString>   
                     <Span fontWeight="Bold" >Name : {{ username }}\n</Span>
                     <Span fontWeight="Bold" >Email : {{ email }}\n</Span>
-                    <Span v-if="this.expertises[0]" fontWeight="Bold" >Expertises : {{ expertises[0] }}</Span>
+                    <Span>Expertises :</Span>
+                    <Span v-if="this.expertises[0]" fontWeight="Bold" >{{ expertises[0] }}</Span>
                     <Span v-else fontWeight="Bold" >Empty</Span>
                     <Span v-if="this.expertises[1]" fontWeight="Bold" >, {{ expertises[1] }}</Span>
                     <Span v-if="this.expertises[2]" fontWeight="Bold" >, {{ expertises[2] }}</Span>
