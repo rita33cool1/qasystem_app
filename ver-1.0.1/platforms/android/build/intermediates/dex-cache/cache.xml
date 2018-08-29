@@ -21,5 +21,25 @@
         sha1="f5470a0421a30b50599f0e279d64a60614707c27">
         <dex dex="C:\qasystem_test\ver-1.0.0\platforms\android\app\build\intermediates\transforms\preDex\release\5.jar" />
     </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\nativescript-optimized.aar\a3122ba17cdbc4fcd85a7226ffb38519\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="17"
+        optimize="true"
+        revision="27.0.3"
+        sha1="0b6d7d548de1d9c9cca297a3ea0071c3a8895712">
+        <dex dex="C:\qasystem_test\ver-1.0.1\platforms\android\app\build\intermediates\transforms\preDex\release\4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\penguin\.gradle\caches\transforms-1\files-1.1\widgets-release.aar\658989e45f9287a87518b95a2470c1d9\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="17"
+        optimize="true"
+        revision="27.0.3"
+        sha1="f5470a0421a30b50599f0e279d64a60614707c27">
+        <dex dex="C:\qasystem_test\ver-1.0.1\platforms\android\app\build\intermediates\transforms\preDex\release\5.jar" />
+    </item>
 
 </items>
