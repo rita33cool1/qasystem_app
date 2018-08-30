@@ -46,7 +46,7 @@ module.exports = {
             <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
         </ActionBar>
         <StackLayout>
-            <SearchBar hint="Search" :text="searchPhrase" @submit="onSearchSubmit" />
+            <!--SearchBar hint="Search" :text="searchPhrase" @submit="onSearchSubmit" /-->
             <ListView class="list-group" for="question in questionlist" @itemTap="onItemTap" style="height:1250px width:60px">
                 <v-template>
                     <FlexboxLayout flexDirection="row" class="list-group-item">
