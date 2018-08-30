@@ -18,6 +18,7 @@ module.exports = {
     methods: {
         load: function () {
             console.log("Show the question");
+            Object.assign(this.$data, this.$options.data.call(this));
             httpModule.request({
                 url: this.apiUrl,
                 method: "GET",

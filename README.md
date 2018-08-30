@@ -31,7 +31,7 @@ tns build android --release --key-store-path my-release-key.jks  --key-store-pas
 
 ## Upload to smartphone
 
-path = apk/ver-x.x.x.apk
+path = apk/x.x.x.apk
 
 ## Templates
 

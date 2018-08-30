@@ -8,7 +8,8 @@ module.exports = {
     },
     methods: {
         load: function () {
-            console.log("Load profile!!");
+            console.log("Load friendlist!!");
+            Object.assign(this.$data, this.$options.data.call(this));
             httpModule.request({
                 url: this.apiUrl,
                 method: "POST",

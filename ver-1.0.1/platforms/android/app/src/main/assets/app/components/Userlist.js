@@ -10,6 +10,7 @@ module.exports = {
     methods: {
         load: function() {
             console.log("Load userlist");
+            Object.assign(this.$data, this.$options.data.call(this));
             httpModule.request({
                 url: this.apiUrl,
                 method: "GET",

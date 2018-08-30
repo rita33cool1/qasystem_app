@@ -9,6 +9,7 @@ module.exports = {
     methods: {
         load: function () {
             console.log(this.$cur_uid.val);
+            Object.assign(this.$data, this.$options.data.call(this));
             httpModule.request({
                 url: this.apiUrl,
                 method: "GET",
