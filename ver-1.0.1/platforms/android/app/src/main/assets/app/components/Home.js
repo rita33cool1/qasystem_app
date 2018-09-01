@@ -4,18 +4,18 @@ module.exports = {
         return {
             logoutUrl: "http://140.114.79.86:8000/api/user/logout/",
             key: "0",
-            name: "0",
+            name: "0"
         }
     },
     methods: {
         load: function () {
-            //Object.assign(this.$data, this.$options.data.call(this));
+            Object.assign(this.$data, this.$options.data.call(this));
             this.key = this.$user_id.val;
-            this.name = this.$user_name.val;
+            this.name = this.$user_name.val
         },
         check: function () {
             console.log("Check for data");
-            console.log(this.key);
+            console.log(this.$user_id.val);
 
             //Object.assign(this.$data, this.$options.data.call(this));
         },
@@ -30,13 +30,14 @@ module.exports = {
                 })
             }).then((response) => {
                 const result = response.content.toJSON();
+                console.log(result);
                 if (result.msg == "Success") {
                     
-                    alert(result.msg).then((response) => {
-                        this.$user_id.val = "0";
-                        this.$user_name.val = "0";
-                        Object.assign(this.$data, this.$options.data.call(this));
-                    });
+                    alert(result.msg);
+                    this.$user_id.val = "0";
+                    this.$user_name.val = "0";
+                    Object.assign(this.$data, this.$options.data.call(this));
+
                 } else {
                     alert('Connect Fail!');
                 }
