@@ -11,7 +11,7 @@ module.exports = {
     },
     methods: {
         load: function() {
-
+            
             httpModule.request({
                 url: this.apiUrl,
                 method: "GET",

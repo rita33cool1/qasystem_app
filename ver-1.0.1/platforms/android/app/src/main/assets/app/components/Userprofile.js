@@ -15,7 +15,7 @@ module.exports = {
     methods: {
         load: function () {
             console.log("Load " + this.$watch_username.val + " profile");
-
+            Object.assign(this.$data, this.$options.data.call(this));
             httpModule.request({
                 url: this.apiUrl,
                 method: "GET",

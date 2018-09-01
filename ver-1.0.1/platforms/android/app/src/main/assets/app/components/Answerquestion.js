@@ -25,7 +25,7 @@ module.exports = {
                 console.log(result);
                 if (result.msg == "Success") {
                     alert(result.msg);
-                    this.$router.go(-1);
+                    this.$router.replace('/showquestion');
                 }
             }, (e) => {
                 console.log(e);

@@ -29,9 +29,9 @@ module.exports = {
                     key: this.$user_id.val
                 })
             }).then((response) => {
-                if (response.statusCode == 200) {
-                    const result = response.content.toJSON();
-                    console.log(result);
+                const result = response.content.toJSON();
+                if (result.msg == "Success") {
+                    
                     alert(result.msg).then((response) => {
                         this.$user_id.val = "0";
                         this.$user_name.val = "0";

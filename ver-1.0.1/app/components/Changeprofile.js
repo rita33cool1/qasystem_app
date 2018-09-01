@@ -3,36 +3,44 @@ module.exports = {
     data() {
         return {
             apiUrl: "http://140.114.79.86:8000/api/user/expertise/update/",
-            new_expertise: [],
-            Experise1: "",
-            Experise2: "",
-            Experise3: "",
+            Expertise1: "",
+            Expertise2: "",
+            Expertise3: "",
         }
     },
     methods: {
         submit: function() {
             console.log("Change profile");
+            TmpExpertise = [];
+
+            if(this.Expertise1 != ""){
+                TmpExpertise.push(this.Expertise1);
+            }
+            if(this.Expertise2 != ""){
+                TmpExpertise.push(this.Expertise2);
+            }
+            if(this.Expertise3 != ""){
+                TmpExpertise.push(this.Expertise3);
+            }
+            console.log(TmpExpertise);
             httpModule.request({
                 url: this.apiUrl,
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 content: JSON.stringify({
                     key: this.$user_id.val,
-                    expertises: [this.Experise1, this.Experise2, this.Experise3]
+                    expertises: TmpExpertise
                 })
             }).then((response) => {
                 const result = response.content.toJSON();
                 console.log(result);
-                /*
-                if (response.statusCode == 200 || response.statusCode == 202) {
-                    console.log("Set profile Success!!");
+                
+                if (result.msg == "Success") {
                     console.log(result);
-                    this.$router.go(-1);
+                    this.$router.replace('profile');
                 } else {
                     console.log(result);
                 }
-                */
-                //console.log(response.content.toJson.prototype);
             }, (e) => {
                 console.log("response: " + e);
             });
@@ -47,9 +55,9 @@ module.exports = {
             <Label>
                 <Span text="New Expertise : " fontWeight="Bold" />
             </Label>
-            <TextField v-model="Experise1" hint="Enter Expertise1..." />
-            <TextField v-model="Experise2" hint="Enter Expertise2..." />
-            <TextField v-model="Experise3" hint="Enter Expertise3..." />
+            <TextField v-model="Expertise1" hint="Enter Expertise1..." />
+            <TextField v-model="Expertise2" hint="Enter Expertise2..." />
+            <TextField v-model="Expertise3" hint="Enter Expertise3..." />
             <Button text="Submit" @tap="submit()" />
         </StackLayout>
       </Page>

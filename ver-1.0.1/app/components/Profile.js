@@ -12,6 +12,7 @@ module.exports = {
     methods: {
         load: function () {
             console.log("Load profile!!");
+            Object.assign(this.$data, this.$options.data.call(this));
             httpModule.request({
                 url: this.apiUrl,
                 method: "POST",
@@ -26,8 +27,8 @@ module.exports = {
                 this.username = result.username;
                 this.email = result.email;
                 this.uid = result.uid;
-                for (var i = 0; i < result.expertises.length; i++) {
-                    this.expertises.push(result.expertises[i]);
+                for (var i = 0; i < result.expertise.length; i++) {
+                    this.expertises.push(result.expertise[i]);
                 }
                 //this.expertises = result.expertises;
                 
@@ -44,7 +45,7 @@ module.exports = {
     template: `
       <Page @loaded="load()">
         <ActionBar :title="$route.path">
-            <NavigationButton text="Back!" android.systemIcon="ic_menu_back" @tap="$router.back()" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
         </ActionBar>
         <StackLayout>
             <Label text="User Profile" fontWeight="Bold" />      

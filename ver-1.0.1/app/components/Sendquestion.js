@@ -28,9 +28,6 @@ module.exports = {
                 new_expertises.push(this.Expertise3);
             }
 
-
-            console.log(new_expertises);
-
             httpModule.request({
                 url: this.apiUrl,
                 method: "POST",
