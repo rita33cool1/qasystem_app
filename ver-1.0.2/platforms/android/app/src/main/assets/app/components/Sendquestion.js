@@ -57,38 +57,31 @@ module.exports = {
 
     template: `
     <Page>
-    <ActionBar :title="$route.path">
-        <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
-    </ActionBar>
-    <ScrollView>
-        <StackLayout >
-            <Label>
-                <Span text="Title : \n"/>
-            </Label>
-            <TextField v-model="TitleText" hint="Enter the title" />
-            
-            <Label>
-                <Span text="Description : \n"  />
-            </Label>
-            <TextField v-model="QuestionText" hint="Describe the quesion" />
-            <Label>
-                <Span text="Category : \n"/>
-            </Label>
+        <ActionBar :title="$route.path">
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.replace('/home');" />
+        </ActionBar>
+        <ScrollView>
+            <StackLayout >
+                <Label>
+                    <Span text="Title : \n"/>
+                </Label>
+                <TextField v-model="TitleText" hint="Enter the title" />
+                
+                <Label>
+                    <Span text="Description : \n"  />
+                </Label>
+                <TextField v-model="QuestionText" hint="Describe the quesion" />
+                <Label>
+                    <Span text="Category : \n"/>
+                </Label>
 
-            <TextField v-model="Expertise1" hint="Enter Expertise..." />
-            <TextField v-model="Expertise2" hint="Enter Expertise..." />
-            <TextField v-model="Expertise3" hint="Enter Expertise..." />        
-            <Button text="submit" @tap="sendQuestion()" />                  
+                <TextField v-model="Expertise1" hint="Enter Expertise..." />
+                <TextField v-model="Expertise2" hint="Enter Expertise..." />
+                <TextField v-model="Expertise3" hint="Enter Expertise..." />        
+                <Button text="submit" @tap="sendQuestion()" />                  
 
-        </StackLayout>
-    </ScrollView>
+            </StackLayout>
+        </ScrollView>
     </Page>
   `
 };
-
-/*
-<StackLayout >
-<Span text="Wanted replay time : \n" />
-<ListPicker :items="wantedtime" v-model="selectTime"/>              
-</StackLayout>
-*/

@@ -8,7 +8,7 @@ module.exports = {
     },
     methods: {
         load: function () {
-            console.log("Load followlist!!");
+            console.log("Load friendlist!!");
             Object.assign(this.$data, this.$options.data.call(this));
             httpModule.request({
                 url: this.apiUrl,
@@ -21,7 +21,10 @@ module.exports = {
                 const result = response.content.toJSON();
                 console.log(result);
 
-                this.follows = result.followings;
+                for (var i = 0; i < result.followings.length; i++) {
+                    this.follows.push(result.followings[i]);
+                }
+                //this.follows = result.followings;
             }, (e) => {
                 console.log(e);
             });
@@ -29,24 +32,19 @@ module.exports = {
         onItemTap: function(args) {
             console.log(args.item);
             this.$watch_username.val = args.item;
-            this.$router.push('./userprofile');
+            this.$router.push('/userprofile');
         }
     },
     template: `
       <Page @loaded="load()">
         <ActionBar :title="$route.path">
-            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.replace('/home');" />
         </ActionBar>
         <StackLayout>
-
-            <Label>
-                <Span v-if="follows.length == 0" text="Empty" />
-            </Label>
-
             <ListView class="list-group" for="follow in follows" @itemTap="onItemTap" style="height:1250px width:60px">
                 <v-template>
                     <FlexboxLayout flexDirection="row" class="list-group-item">
-                        <Label :text="follow" class="list-group-item-heading" style="width: 60%" />
+                        <Label :text="follow" class="list-group-item-heading" />
                     </FlexboxLayout>
                 </v-template>
             </ListView>

@@ -12,6 +12,7 @@ module.exports = {
     methods: {
         load: function () {
             console.log("Load profile!!");
+
             Object.assign(this.$data, this.$options.data.call(this));
             httpModule.request({
                 url: this.apiUrl,
@@ -26,7 +27,7 @@ module.exports = {
 
                 this.username = result.username;
                 this.email = result.email;
-                this.uid = result.uid;
+                this.uid = result.uid.toString();
                 for (var i = 0; i < result.expertise.length; i++) {
                     this.expertises.push(result.expertise[i]);
                 }
@@ -39,13 +40,13 @@ module.exports = {
         go_per_qlist: function () {
             console.log(this.uid);
             this.$cur_uid.val = this.uid;
-            this.$router.push('./per_qlist');
+            this.$router.push('/per_qlist');
         }
     },
     template: `
       <Page @loaded="load()">
         <ActionBar :title="$route.path">
-            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.replace('/home');" />
         </ActionBar>
         <StackLayout>
             <Label text="User Profile" fontWeight="Bold" />      
@@ -61,10 +62,10 @@ module.exports = {
                 </FormattedString>
             </TextView>
             <Button text="Change profile" @tap="$router.push('/change')" />
-            <Button text="Personal question" @tap="go_per_qlist()" />
             <Button text="Friend list" @tap="$router.push('/friendlist')" />
             <Button text="Follow list" @tap="$router.push('/followlist')" />
             <Button text="Friend confirm" @tap="$router.push('/friendconfirm')" />
+            <Button text="Personal question" @tap="go_per_qlist()" />
         </StackLayout>
       </Page>
     `

@@ -49,7 +49,7 @@ module.exports = {
             <ListView class="list-group" for="user in userlist" @itemTap="onItemTap" style="height:1250px">
                 <v-template>
                     <FlexboxLayout flexDirection="row" class="list-group-item">
-                    <Label :text="user.username" class="list-group-item-heading" style="width: 60%" />
+                        <Label :text="user.username" class="list-group-item-heading" style="width: 60%" />
                     </FlexboxLayout>
                 </v-template>
             </ListView>    

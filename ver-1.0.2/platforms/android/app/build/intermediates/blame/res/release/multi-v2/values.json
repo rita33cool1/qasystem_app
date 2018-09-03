@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\qasystem_test\\ver-1.0.1\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\qasystem_test\\ver-1.0.2\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\qasystem_test\\ver-1.0.1\\platforms\\android\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\qasystem_test\\ver-1.0.2\\platforms\\android\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
                         "startLines": "4,5,2,3",
                         "startColumns": "1,4,4,1",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\qasystem_test\\ver-1.0.1\\platforms\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\qasystem_test\\ver-1.0.2\\platforms\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "31,22,18,4,42,35",
                         "startColumns": "4,4,4,4,4,4",
@@ -40,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\qasystem_test\\ver-1.0.1\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\qasystem_test\\ver-1.0.2\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -57,7 +57,7 @@
                     }
                 },
                 {
-                    "source": "C:\\qasystem_test\\ver-1.0.1\\platforms\\android\\app\\src\\main\\res\\values\\errorstyles.xml",
+                    "source": "C:\\qasystem_test\\ver-1.0.2\\platforms\\android\\app\\src\\main\\res\\values\\errorstyles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

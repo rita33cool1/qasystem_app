@@ -8,7 +8,7 @@ module.exports = {
     },
     methods: {
         load: function () {
-            console.log(this.$cur_uid.val);
+            console.log("Load personal question");
             Object.assign(this.$data, this.$options.data.call(this));
             httpModule.request({
                 url: this.apiUrl,
@@ -17,9 +17,8 @@ module.exports = {
             }).then((response) => {
                 const result = response.content.toJSON();
                 console.log(result);
-
-
-                for (var i = this.per_question_list.length; i < result.length; i++) {
+                
+                for (var i = 0; i < result.length; i++) {
                     var tmp_data = {
                         title: result[i].title,
                         qid: result[i].question_id,
@@ -27,32 +26,29 @@ module.exports = {
                     };
                     this.per_question_list.push(tmp_data);
                 }
-
-
             }, (e) => {
                 console.log(e);
             });
         },
         onItemTap: function (args) {
-            console.log(args.item.qid);
             this.$cur_qid.val = args.item.qid;
             this.$router.push('/showquestion');
         }
     },
     template: `
-    <Page @loaded="load()" >
+      <Page @loaded="load()" >
         <ActionBar :title="$route.path">
-            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.replace('/home');" />
         </ActionBar>
         <StackLayout>
-            <ListView class="list-group" for="question in per_question_list" @itemTap="onItemTap" style="height:1250px width:60px">
+            <ListView class="list-group" for="question in per_question_list" @itemTap="onItemTap" style="height:300px width:60px">
                 <v-template>
                     <FlexboxLayout flexDirection="row" class="list-group-item">
-                        <Label class="list-group-item-heading" >{{ question.qid }} {{ question.title }}</Label>
+                        <Label :text="question.title" class="list-group-item-heading" style="width: 60%" />
                     </FlexboxLayout>
                 </v-template>
             </ListView>
         </StackLayout>
-    </Page>
-  `
+      </Page>
+    `
 };

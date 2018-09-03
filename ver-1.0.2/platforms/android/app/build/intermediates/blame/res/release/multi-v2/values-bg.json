@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\qasystem_test\\ver-1.0.1\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-bg\\values-bg.xml",
+            "outputFile": "C:\\qasystem_test\\ver-1.0.2\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-bg\\values-bg.xml",
             "map": [
                 {
                     "source": "C:\\Users\\penguin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-alpha1.aar\\13524089c8e3c626cccf711eb9843f57\\res\\values-bg\\values-bg.xml",

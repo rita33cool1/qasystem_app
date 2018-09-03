@@ -9,9 +9,10 @@ module.exports = {
     },
     methods: {
         load: function () {
+            console.log("Assign data");
             Object.assign(this.$data, this.$options.data.call(this));
             this.key = this.$user_id.val;
-            this.name = this.$user_name.val
+            this.name = this.$user_name.val;
         },
         check: function () {
             console.log("Check for data");
@@ -48,7 +49,7 @@ module.exports = {
         }
     },
     template: `
-    <Page @loaded="load()">
+    <Page @loaded="load()"  @unloaded="load()">
       <ActionBar :title="$route.path" />
       <StackLayout>
         <TextView editable="false">
@@ -64,7 +65,6 @@ module.exports = {
         <Button text="Check"            @tap="check()" />
         <Button text="Question List"    @tap="$router.push('/questionlist')" />
         <Button text="User List"        @tap="$router.push('/userlist')" />
-        
         <Button text="Logout"           v-if="this.key != '0'" @tap="logout()" />
 
       </StackLayout>

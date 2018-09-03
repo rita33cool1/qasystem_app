@@ -178,7 +178,7 @@ module.exports = {
     template: `
     <Page @loaded="load()" >
         <ActionBar :title="$route.path">
-            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.replace('/home');" />
         </ActionBar>
         <StackLayout>
             <TextView editable="false">
@@ -187,21 +187,21 @@ module.exports = {
                     <Span fontWeight="Bold" >Title : {{ title }}\n</Span>
                     <Span fontWeight="Bold" >Content : {{ content }}\n</Span>
                     
-                    <Span v-if="this.expertises[0]" fontWeight="Bold" >Expertises : {{ expertises[0] }}</Span>
+                    <Span v-show="this.expertises[0]" fontWeight="Bold" >Expertises : {{ expertises[0] }}</Span>
                     <Span v-else fontWeight="Bold" >Empty</Span>
-                    <Span v-if="this.expertises[1]" fontWeight="Bold" >, {{ expertises[1] }}</Span>
-                    <Span v-if="this.expertises[2]" fontWeight="Bold" >, {{ expertises[2] }}</Span>
+                    <Span v-show="this.expertises[1]" fontWeight="Bold" >, {{ expertises[1] }}</Span>
+                    <Span v-show="this.expertises[2]" fontWeight="Bold" >, {{ expertises[2] }}</Span>
                 </FormattedString>
             </TextView>
             
             <FlexboxLayout flexDirection="row" class="list-group-item">
-                <Button text="Delete" v-if="this.$user_name.val == this.askername" @tap="deleteQuestion()" />
-                <Button text="Modify" v-if="this.$user_name.val == this.askername" @tap="modifyQuestion()" />
-                <Button text="Response" v-if="this.$user_name.val != this.askername && this.$user_id.val != '0' " @tap="responseQuestion()" />
-                <Button text="Comment" v-if="this.$user_name.val != this.askername && this.$user_id.val != '0' " @tap="sendcomment('question' , 0)" />
-                <Button text="Up" v-if="$user_name.val != this.askername && $user_id.val != '0' " @tap="Votequestion($cur_qid.val, 1)" />
-                <Button text="Down" v-if="$user_name.val != this.askername && $user_id.val != '0' " @tap="Votequestion($cur_qid.val, -1)" />
-                <Button text="Star" v-if="$user_name.val != this.askername && $user_id.val != '0' " @tap="Starquestion()" />
+                <Button text="Delete" v-show="this.$user_name.val == this.askername" @tap="deleteQuestion()" />
+                <Button text="Modify" v-show="this.$user_name.val == this.askername" @tap="modifyQuestion()" />
+                <Button text="Response" v-show="this.$user_name.val != this.askername && this.$user_id.val != '0' " @tap="responseQuestion()" />
+                <Button text="Comment" v-show="this.$user_name.val != this.askername && this.$user_id.val != '0' " @tap="sendcomment('question' , 0)" />
+                <Button text="Up" v-show="$user_name.val != this.askername && $user_id.val != '0' " @tap="Votequestion($cur_qid.val, 1)" />
+                <Button text="Down" v-show="$user_name.val != this.askername && $user_id.val != '0' " @tap="Votequestion($cur_qid.val, -1)" />
+                <Button text="Star" v-show="$user_name.val != this.askername && $user_id.val != '0' " @tap="Starquestion()" />
             </FlexboxLayout>
 
             <Label text="Comment:" fontWeight="Bold" />
@@ -214,8 +214,8 @@ module.exports = {
                             </FormattedString>
                         </TextView>
                         <FlexboxLayout flexDirection="row" class="list-group-item">
-                            <Button text="Edit" v-if="comment.own == true" @tap="" />
-                            <Button text="Delete" v-if="comment.own == true" @tap="" />
+                            <Button text="Edit" v-show="comment.own == true" @tap="" />
+                            <Button text="Delete" v-show="comment.own == true" @tap="" />
                         </FlexboxLayout>
                     </FlexboxLayout>
                 </v-template>
@@ -231,17 +231,15 @@ module.exports = {
                             </FormattedString>
                         </TextView>
                         <FlexboxLayout flexDirection="row" class="list-group-item">
-                            <Button text="Edit" v-if="answer.own == true" @tap="modifyAnswer()" />
-                            <Button text="Delete" v-if="answer.own == true" @tap="deleteAnswer(answer.answer_id)" />
-                            <Button text="Comment" v-if="answer.own == true" @tap="sendcomment('answer', answer.answer_id)" />
-                            <Button text="Up" v-if="$user_name.val != answer.user && $user_id.val != '0' " @tap="Voteanswer(answer.answer_id, 1)" />
-                            <Button text="Down" v-if="$user_name.val != answer.user && $user_id.val != '0' " @tap="Voteanswer(answer.answer_id, -1)" />
+                            <Button text="Edit" v-show="answer.own == true" @tap="modifyAnswer()" />
+                            <Button text="Delete" v-show="answer.own == true" @tap="deleteAnswer(answer.answer_id)" />
+                            <Button text="Comment" v-show="answer.own == true" @tap="sendcomment('answer', answer.answer_id)" />
+                            <Button text="Up" v-show="$user_name.val != answer.user && $user_id.val != '0' " @tap="Voteanswer(answer.answer_id, 1)" />
+                            <Button text="Down" v-show="$user_name.val != answer.user && $user_id.val != '0' " @tap="Voteanswer(answer.answer_id, -1)" />
                         </FlexboxLayout>
                     </FlexboxLayout>
                 </v-template>
             </ListView>
-
-            
         </StackLayout>
     </Page>
   `

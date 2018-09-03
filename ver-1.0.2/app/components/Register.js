@@ -43,7 +43,7 @@ module.exports = {
     template: `
       <Page>
         <ActionBar :title="$route.path">
-            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.replace('/home');" />
         </ActionBar>
         <StackLayout>
             <Label text="Register" />

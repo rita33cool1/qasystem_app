@@ -3,11 +3,13 @@ module.exports = {
     data() {
         return {
             apiUrl: "http://140.114.79.86:8000/api/users/list/",
+            UserapiUrl: "http://140.114.79.86:8000/api/user/profile/",
             addapiUrl: "http://140.114.79.86:8000/api/social/friend/send/",
             followapiUrl: "http://140.114.79.86:8000/api/social/following/add/",
             cur_username: "",
             cur_expertises: [],
             cur_email: "",
+            cur_uid: "",
             isfriend: false,
             isfollowing: false
         }
@@ -22,32 +24,50 @@ module.exports = {
                 headers: { "Content-Type": "application/json" }
             }).then((response) => {
                 const result = response.content.toJSON();
-                this.$user_num = result.length;
+                var user_num = result.length;
 
-                for (var i = 0; i < this.$user_num; i++) {
+                for (var i = 0; i < user_num; i++) {
                     if (result[i].username == this.$watch_username.val) {
                         console.log(result[i]);
                         this.cur_username = result[i].username;
                         this.cur_expertises = result[i].expertises;
                         this.cur_email = result[i].email;
-                        for (var j = 0; j < result[i].friends.length; j++) {
-                            if(result[i].friends[j] == this.$user_name.val){
-                                this.isfriend = true;
-                            }
-                        }
-                        for (var j = 0; j < result[i].followings.length; j++) {
-                            if(result[i].followings[j] == this.$user_name.val){
-                                this.isfollowing = true;
-                            }
-                        }
+                        this.cur_uid = result[i].user_id;
                     }
                 }
+
+                httpModule.request({
+                    url: this.UserapiUrl,
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    content: JSON.stringify({
+                        key: this.$user_id.val
+                    })
+                }).then((response) => {
+                    const result = response.content.toJSON();
+                    
+                    for (var j = 0; j < result.friends.length; j++) {
+                        if (result.friends[j] == this.cur_username) {
+                            console.log("isfriend");
+                            this.isfriend = true;
+                        }
+                    }
+                    for (var j = 0; j < result.followings.length; j++) {
+                        if (result.followings[j] == this.cur_username) {
+                            console.log("isfollowing");
+                            this.isfollowing = true;
+                        }
+                    }
+                }, (e) => {
+                    console.log(e);
+                });
             }, (e) => {
                 console.log(e);
             });
         },
         go_per_qlist: function () {
-            this.$router.push('./per_qlist');
+            this.$cur_uid.val = this.cur_uid;
+            this.$router.push('/per_qlist');
         },
         add_friend: function () {
             httpModule.request({
@@ -61,16 +81,16 @@ module.exports = {
                 })
             }).then((response) => {
                 const result = response.content.toJSON();
-                if(result.msg != "Success"){
+                if (result.msg != "Success") {
                     alert(result.errorMsg);
-                }else{
+                } else {
                     alert(result.msg);
                 }
             }, (e) => {
                 console.log(e);
             });
         },
-        follow: function(){
+        follow: function () {
             httpModule.request({
                 url: this.followapiUrl,
                 method: "POST",
@@ -90,7 +110,7 @@ module.exports = {
     template: `
       <Page @loaded="load()">
         <ActionBar :title="$route.path">
-            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.replace('/home');" />
         </ActionBar>
         <StackLayout>
             <Label :text="Profile">
@@ -103,8 +123,7 @@ module.exports = {
                 <Span v-if="this.cur_expertises[0]" fontWeight="Bold" >Expertises : {{ cur_expertises[0] }}</Span>
                 <Span v-else fontWeight="Bold" >Empty</Span>
                 <Span v-if="this.cur_expertises[1]" fontWeight="Bold" >, {{ cur_expertises[1] }}</Span>
-                <Span v-if="this.cur_expertises[2]" fontWeight="Bold" >, {{ cur_expertises[2] }}</Span>
-                    <Span text="\n" />
+                <Span v-if="this.cur_expertises[2]" fontWeight="Bold" >, {{ cur_expertises[2] }}\n</Span>
                 </FormattedString>
             </TextView>
             <Button text="Personal Question" @tap="go_per_qlist()" />

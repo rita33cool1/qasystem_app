@@ -48,16 +48,15 @@ module.exports = {
     template: `
       <Page @loaded="load()">
         <ActionBar :title="$route.path">
-            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.push('/home');" />
+            <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.replace('/home');" />
         </ActionBar>
         <StackLayout>
             <ListView class="list-group" for="friend in friend_requests" style="height:1250px width:60px">
                 <v-template>
                     <FlexboxLayout flexDirection="row" class="list-group-item">
-                    <Label :text="friend" class="list-group-item-heading" style="width: 60" />
-                    <Span text="\n" />
-                    <Button text="Accept" @tap="Response(friend,'accept')" />
-                    <Button text="Reject" @tap="Response(friend,'reject')" />
+                        <Label :text="friend\n" class="list-group-item-heading" style="width: 60" />
+                        <Button text="Accept" @tap="Response(friend,'accept')" />
+                        <Button text="Reject" @tap="Response(friend,'reject')" />
                     </FlexboxLayout>
                 </v-template>
             </ListView>
