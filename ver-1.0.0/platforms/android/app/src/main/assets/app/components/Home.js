@@ -7,12 +7,12 @@ module.exports = {
     },
     methods: {
         load: function () {
-            
+
         },
         check: function () {
             console.log("Check for data");
             console.log(this.$user_id.val);
-        },
+        }
     },
     template: `
     <Page @loaded="load()">
@@ -28,10 +28,13 @@ module.exports = {
         <Button text="Profile"          v-else @tap="$router.push('/profile')" />
         <Button text="Login"            v-if="this.$user_id.val == '0'" @tap="$router.push('/login')" />
         <Button text="Ask Question"     v-else @tap="$router.push('/sendquestion')" />
+        
         <Button text="Check"            @tap="check()" />
         <Button text="Question List"    @tap="$router.push('/questionlist')" />
         <Button text="User List"        @tap="$router.push('/userlist')" />
         
+        
+
       </StackLayout>
     </Page>
   `
