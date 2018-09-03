@@ -4,7 +4,9 @@ module.exports = {
         return {
             apiUrl: "http://140.114.79.86:8000/api/question/?qid=" + this.$cur_qid.val,
             deleteUrl: "http://140.114.79.86:8000/api/user/question/delete/",
+            editAnswerUrl: "http://140.114.79.86:8000/api/question/answer/edit/",
             deleteAnswerUrl: "http://140.114.79.86:8000/api/question/answer/delete/",
+            editCommentUrl: "http://140.114.79.86:8000/api/question/comment/edit/",
             deleteCommentUrl: "http://140.114.79.86:8000/api/question/comment/delete/",
             voteUrl: "http://140.114.79.86:8000/api/question/vote/",
             title: "Tmp title",
@@ -187,7 +189,7 @@ module.exports = {
                     <Span fontWeight="Bold" >Title : {{ title }}\n</Span>
                     <Span fontWeight="Bold" >Content : {{ content }}\n</Span>
                     
-                    <Span v-show="this.expertises[0]" fontWeight="Bold" >Expertises : {{ expertises[0] }}</Span>
+                    <Span v-if="this.expertises[0]" fontWeight="Bold" >Expertises : {{ expertises[0] }}</Span>
                     <Span v-else fontWeight="Bold" >Empty</Span>
                     <Span v-show="this.expertises[1]" fontWeight="Bold" >, {{ expertises[1] }}</Span>
                     <Span v-show="this.expertises[2]" fontWeight="Bold" >, {{ expertises[2] }}</Span>

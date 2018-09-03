@@ -58,6 +58,10 @@ module.exports = {
                             this.isfollowing = true;
                         }
                     }
+                    if(this.cur_username == this.$user_name.val){
+                        this.isfollowing = true;
+                        this.isfriend = true;
+                    }
                 }, (e) => {
                     console.log(e);
                 });
