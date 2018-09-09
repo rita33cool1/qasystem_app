@@ -9,6 +9,7 @@ module.exports = {
             editCommentUrl: "http://140.114.79.86:8000/api/question/comment/edit/",
             deleteCommentUrl: "http://140.114.79.86:8000/api/question/comment/delete/",
             voteUrl: "http://140.114.79.86:8000/api/question/vote/",
+            starUrl: "http://140.114.79.86:8000/api/question/star/",
             title: "Tmp title",
             content: "None",
             askername: "None",
@@ -151,9 +152,25 @@ module.exports = {
                 console.log(e);
             });
         },
-        Starquestion: function(){
+        Staranswer: function(id){
             console.log("Star question");
-            
+            httpModule.request({
+                url: this.starUrl,
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                content: JSON.stringify({
+                    key: this.$user_id.val,
+                    question_id: this.$cur_qid.val, 
+                    answer_id: id
+                })
+            }).then((response) => {
+                const result = response.content.toJSON();
+                if (result.msg == "Success") {
+                    alert(result.msg);
+                }
+            }, (e) => {
+                console.log(e);
+            });
         },
         Voteanswer: function(id, vote_value){
             console.log("Vote answer");
@@ -203,7 +220,6 @@ module.exports = {
                 <Button text="Comment" v-show="this.$user_name.val != this.askername && this.$user_id.val != '0' " @tap="sendcomment('question' , 0)" />
                 <Button text="Up" v-show="$user_name.val != this.askername && $user_id.val != '0' " @tap="Votequestion($cur_qid.val, 1)" />
                 <Button text="Down" v-show="$user_name.val != this.askername && $user_id.val != '0' " @tap="Votequestion($cur_qid.val, -1)" />
-                <Button text="Star" v-show="$user_name.val != this.askername && $user_id.val != '0' " @tap="Starquestion()" />
             </FlexboxLayout>
 
             <Label text="Comment:" fontWeight="Bold" />
@@ -236,6 +252,7 @@ module.exports = {
                             <Button text="Edit" v-show="answer.own == true" @tap="modifyAnswer()" />
                             <Button text="Delete" v-show="answer.own == true" @tap="deleteAnswer(answer.answer_id)" />
                             <Button text="Comment" v-show="answer.own == true" @tap="sendcomment('answer', answer.answer_id)" />
+                            <Button text="Star" v-show="this.$user_name.val == this.askername" @tap="Staranswer(answer.answer_id)" />
                             <Button text="Up" v-show="$user_name.val != answer.user && $user_id.val != '0' " @tap="Voteanswer(answer.answer_id, 1)" />
                             <Button text="Down" v-show="$user_name.val != answer.user && $user_id.val != '0' " @tap="Voteanswer(answer.answer_id, -1)" />
                         </FlexboxLayout>
