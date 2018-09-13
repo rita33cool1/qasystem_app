@@ -20,8 +20,9 @@ module.exports = {
             }).then((response) => {
                 const result = response.content.toJSON();
                 console.log(result);
-
-                this.friend_requests = result.friend_requests;
+                for (var i = 0; i < result.friend_requests.length; i++) {
+                    this.friend_requests.push(result.friend_requests[i]);
+                }
             }, (e) => {
                 console.log(e);
             });

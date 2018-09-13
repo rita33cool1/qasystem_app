@@ -2,13 +2,8 @@
 
 ---
 
-## Quick Guide
-This repo serves as the starting point for NativeScript + Vue.js projects, using [nativescript-vue](https://github.com/rigor789/nativescript-vue). Use NativeScript Vue.js template to develop.
-
----
-
 ## Introduction
-This application wish to implement a question and answer system, which is designed to let users can ask questions and get the answers they want more quickly. 
+This application implements a question and answer system, which is designed to let users can ask questions and get the answers they want more quickly. By adding expertises to questions lets system use these expertises to choose user's friends who has high priority to these and transport question to them. 
 
 Current features:
 1. Register
@@ -30,7 +25,6 @@ Current features:
 17. Send/Show/Edit/Delete answer to the specific question
 18. Star the specific question
 19. Score up/down the specific question
-
 
 ---
 

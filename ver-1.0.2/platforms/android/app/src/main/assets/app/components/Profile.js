@@ -31,8 +31,6 @@ module.exports = {
                 for (var i = 0; i < result.expertise.length; i++) {
                     this.expertises.push(result.expertise[i]);
                 }
-                //this.expertises = result.expertises;
-                
             }, (e) => {
                 console.log(e);
             });
