@@ -1,11 +1,11 @@
 {
-	"time": "Thu Sep 13 2018 21:42:49 GMT+0800 (台北標準時間)",
+	"time": "Fri Sep 14 2018 12:45:17 GMT+0800 (台北標準時間)",
 	"nativePlatformStatus": "3",
 	"bundle": false,
-	"release": false,
-	"changesRequireBuild": false,
+	"release": true,
+	"changesRequireBuild": true,
 	"projectFileHash": "fc6ae4277fee7ba5d2118bd468c115612e47978f0be5839e9536f96ff0e48f64",
-	"changesRequireBuildTime": "Thu Sep 13 2018 21:25:35 GMT+0800 (台北標準時間)",
+	"changesRequireBuildTime": "Fri Sep 14 2018 12:45:17 GMT+0800 (台北標準時間)",
 	"appFilesHashes": {
 		"C:\\qasystem_test\\ver-1.0.2\\app\\app.css": "e8a314c0a49afb897e3d58c04c60e464c6dea535",
 		"C:\\qasystem_test\\ver-1.0.2\\app\\components\\app.css": "7957b93103d361900c893bdba3c94472bbb06946",
