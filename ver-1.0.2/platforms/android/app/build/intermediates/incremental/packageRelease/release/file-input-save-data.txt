@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Sep 14 12:46:17 CST 2018
+#Tue Sep 18 02:33:41 CST 2018
 38.path=app/tns_modules/nativescript-theme-core/scss/skins/light/_index.scss
 429.baseType=DIRECTORY
 100.set=ASSET

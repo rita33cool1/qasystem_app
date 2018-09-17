@@ -28,7 +28,7 @@ module.exports = {
                 this.username = result.username;
                 this.email = result.email;
                 this.uid = result.uid.toString();
-                for (var i = 0; i < result.expertise.length; i++) {
+                for (var i = this.expertises.length; i < result.expertise.length; i++) {
                     this.expertises.push(result.expertise[i]);
                 }
             }, (e) => {
@@ -42,7 +42,7 @@ module.exports = {
         }
     },
     template: `
-      <Page @loaded="load()">
+      <Page @loaded="load()" @unloaded="load()">
         <ActionBar :title="$route.path">
             <NavigationButton android.systemIcon="ic_menu_home" @tap="$router.replace('/home');" />
         </ActionBar>
@@ -56,7 +56,9 @@ module.exports = {
                     <Span v-if="this.expertises[0]" fontWeight="Bold" >{{ expertises[0] }}</Span>
                     <Span v-else fontWeight="Bold" >Empty</Span>
                     <Span v-if="this.expertises[1]" fontWeight="Bold" >, {{ expertises[1] }}</Span>
+                    <Span v-else fontWeight="Bold" ></Span>
                     <Span v-if="this.expertises[2]" fontWeight="Bold" >, {{ expertises[2] }}</Span>
+                    <Span v-else fontWeight="Bold" ></Span>
                 </FormattedString>
             </TextView>
             <Button text="Change profile" @tap="$router.push('/change')" />

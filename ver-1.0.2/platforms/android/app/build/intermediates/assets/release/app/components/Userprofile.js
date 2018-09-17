@@ -128,7 +128,9 @@ module.exports = {
                 <Span v-if="this.cur_expertises[0]" fontWeight="Bold" >{{ cur_expertises[0] }}</Span>
                 <Span v-else fontWeight="Bold" >Empty</Span>
                 <Span v-if="this.cur_expertises[1]" fontWeight="Bold" >, {{ cur_expertises[1] }}</Span>
+                <Span v-else fontWeight="Bold" ></Span>
                 <Span v-if="this.cur_expertises[2]" fontWeight="Bold" >, {{ cur_expertises[2] }}\n</Span>
+                <Span v-else fontWeight="Bold" ></Span>
                 </FormattedString>
             </TextView>
             <Button text="Personal Question" @tap="go_per_qlist()" />
