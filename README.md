@@ -54,13 +54,6 @@ If apk file is successfully built, then it will at the path "ver-x.x.x/platforms
 tns build android --release --key-store-path my-release-key.jks  --key-store-password 123456789 --key-store-alias key_qasystem --key-store-alias-password 123456789
 ```
 
-5. build apk：
-If apk file is successfully built, then it will at the path "ver-x.x.x/platforms/app/build/outputs/apk/release/app-release.apk"
-
-```bash
-tns build android --release --key-store-path my-release-key.jks  --key-store-password 123456789 --key-store-alias key_qasystem --key-store-alias-password 123456789
-```
-
 ### Problems may occur
 1. Simulation devices may broken for some reasons. The fastest and most easy way to fix it is running the instruction below.
 However, you can skip most of the installation, just install the Android emulator and the following installations.
