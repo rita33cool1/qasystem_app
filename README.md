@@ -1,6 +1,6 @@
 # Q&A system
 ---
-This application is firstly developed by penguin210135
+This application is firstly developed by penguin210135, and now this is mantained by us.
 
 ## Introduction
 This application implements a question and answer system, which is designed to let users can ask questions and get the answers they want more quickly. By adding expertises to questions lets system use these expertises to choose user's friends who has high priority to these and transport question to them.
@@ -28,7 +28,19 @@ Current features:
 
 ---
 
-## Development Installation
+
+## Software Installation (in Mobile)  
+
+Applications are put in the file `/apk`
+Release information is shown [here](https://docs.google.com/document/d/1iWeg9uhPaBQHT9AP_gHWpl9yy38Vu8cfxQwX1rVm15g/edit?usp=sharing)
+
+Please download from `/apk` and install the application.
+This application does not need any permissions from user.
+
+---
+## Development Installation (in PC)
+If you want to develop this app, please follow the below steps to build your environment in your PC.  
+
 相關說明 :
 https://docs.nativescript.org/start/quick-setup
 
@@ -54,6 +66,13 @@ If apk file is successfully built, then it will at the path "ver-x.x.x/platforms
 tns build android --release --key-store-path my-release-key.jks  --key-store-password 123456789 --key-store-alias key_qasystem --key-store-alias-password 123456789
 ```
 
+5. build apk：
+If apk file is successfully built, then it will at the path "ver-x.x.x/platforms/app/build/outputs/apk/release/app-release.apk"
+
+```bash
+tns build android --release --key-store-path my-release-key.jks  --key-store-password 123456789 --key-store-alias key_qasystem --key-store-alias-password 123456789
+```
+
 ### Problems may occur
 1. Simulation devices may broken for some reasons. The fastest and most easy way to fix it is running the instruction below.
 However, you can skip most of the installation, just install the Android emulator and the following installations.
@@ -61,15 +80,6 @@ However, you can skip most of the installation, just install the Android emulato
 ```bash
 tns setup
 ```
----
-
-## Software Installation (in Mobile)  
-
-Applications are put in the file ```/apk```
-Release information is shown [here](https://docs.google.com/document/d/1iWeg9uhPaBQHT9AP_gHWpl9yy38Vu8cfxQwX1rVm15g/edit?usp=sharing)
-
-Please download from ```/apk``` and install the application.
-This application does not need any permissions from user.
 
 ---
 ## Contact
