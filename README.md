@@ -1,3 +1,4 @@
+Github
 # Q&A system
 ---
 This application is firstly developed by penguin210135, and now this is mantained by us.
@@ -39,7 +40,8 @@ This application does not need any permissions from user.
 
 ---
 ## Development Installation (in PC)
-If you want to develop this app, please follow the below steps to build your environment in your PC.  
+**This is only needed when you want to develop this app.**  
+Please follow the below steps to build your environment in your PC.  
 
 相關說明 :
 https://docs.nativescript.org/start/quick-setup
